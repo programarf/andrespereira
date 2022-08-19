@@ -1,0 +1,21 @@
+uuid: 082e254a-ba28-422c-8909-b0bba3aced7e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_hi_title
+    - paragraphs.paragraphs_type.half_item
+  module:
+    - text
+id: paragraph.half_item.field_hi_title
+field_name: field_hi_title
+entity_type: paragraph
+bundle: half_item
+label: Title
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

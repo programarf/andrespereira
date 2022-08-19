@@ -1,0 +1,7 @@
+uuid: 35c6e7be-e4ab-4045-9c08-b69c36143eb0
+langcode: es
+status: true
+dependencies: {  }
+id: classy_paragraphs_carrusel_one_item
+label: 'Carrusel screem half'
+classes: variant__screen--half

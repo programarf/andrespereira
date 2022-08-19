@@ -1,0 +1,53 @@
+uuid: 7d4a52a5-b120-48b9-9aef-a8a6debd9922
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content
+    - node.type.home
+    - paragraphs.paragraphs_type.banner_carousel
+    - paragraphs.paragraphs_type.block_add_views
+    - paragraphs.paragraphs_type.block_logos
+  module:
+    - entity_reference_revisions
+id: node.home.field_content
+field_name: field_content
+entity_type: node
+bundle: home
+label: Content
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      banner_carousel: banner_carousel
+      block_add_views: block_add_views
+      block_logos: block_logos
+    negate: 0
+    target_bundles_drag_drop:
+      banner_carousel:
+        weight: 3
+        enabled: true
+      block_add_views:
+        weight: 7
+        enabled: true
+      block_logos:
+        weight: 10
+        enabled: true
+      half_item:
+        weight: 5
+        enabled: false
+      image_banner:
+        weight: 4
+        enabled: false
+      logos:
+        weight: 11
+        enabled: false
+      specialties:
+        weight: 8
+        enabled: false
+field_type: entity_reference_revisions

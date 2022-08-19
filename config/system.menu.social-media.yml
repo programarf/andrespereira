@@ -1,0 +1,8 @@
+uuid: dac8d395-3b3d-4426-a1d8-8573abc58c4a
+langcode: es
+status: true
+dependencies: {  }
+id: social-media
+label: 'Social media'
+description: 'Link to Social media'
+locked: false

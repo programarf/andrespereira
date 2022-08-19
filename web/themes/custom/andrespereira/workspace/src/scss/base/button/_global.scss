@@ -1,0 +1,24 @@
+.btn-check:focus 
++ .btn-primary, 
+.btn-primary:focus {
+  box-shadow: 0 0 0 0.25rem #b4821c66;
+}
+
+.btn-check:checked + 
+.btn-primary:focus, 
+.btn-check:active + 
+.btn-primary:focus, 
+.btn-primary:active:focus, 
+.btn-primary.active:focus, 
+.show 
+> .btn-primary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.25rem #b4821c66;
+}
+
+.form-control:focus,
+.form-control:active:focus,
+.form-select:focus,
+.form-select:active:focus {
+  border-color: #b4821c66;
+  box-shadow: 0 0 0 0.25rem #b4821c66;
+}

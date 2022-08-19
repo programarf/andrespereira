@@ -1,0 +1,19 @@
+.view-categories {
+  .row > * {
+    padding: 0;
+    margin: 0;
+  }
+  .view-content {
+    display: block;
+    padding: 1.5rem 0 3rem;
+    .views-row {
+      a {
+        color: $white;
+        display: block;
+        font-family: $RobotoR;
+        font-size: 1.4rem;
+        margin: 1rem 0;
+      }
+    }
+  }
+}

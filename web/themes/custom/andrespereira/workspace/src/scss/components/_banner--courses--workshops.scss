@@ -1,0 +1,74 @@
+.banner--courses--workshops {
+  position: relative;
+  .field--name-field-caw-image-banner {
+    position: relative;
+    &::before {
+      @include pseudo();
+      background: linear-gradient(270deg, transparent, #000000 50%);
+      width: 100%;
+      height: 100%;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      z-index: 0;
+    }
+    img {
+      width: 100%;
+      height: 35rem;
+      object-fit: cover;
+      @include from (l) {
+        height: auto;
+        width: 100%;
+      }
+    }
+  }
+  .banner--wrapper__item {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    @include from (xlg) {
+      top: 25%;
+      left: 25%;
+    }
+    .field {
+      &--name-field-caw-watermark {
+        color: $white;
+        display: block;
+        font-family: $RobotoM;
+        font-size: 6rem;
+        line-height: 1;
+        margin: 1rem 0 0;
+        opacity: .1;
+        @include from (l) {
+          font-size: 12rem;
+        }
+      }
+      &--name-field-texto-caw-banner {
+        color: $white;
+        font-family: $RobotoB;
+        font-size: 3.8rem;
+        margin: 2rem 0 0;
+        padding: 0 2rem;
+        position: relative;
+        width: 75%;
+        @include from (l) {
+          margin: initial;
+          padding: initial;
+          font-size: 5.2rem;
+          left: 10%;
+          width: 100%;
+        }
+        span {
+          color: $goldlabel;
+        }
+      }
+    }
+  }
+}
+
+.node--type-courses-and-workshops {
+  img {
+    height: auto;
+    width: 100%;
+  }
+}

@@ -1,0 +1,29 @@
+uuid: a7113884-2707-45fe-8efe-e807a606f6f3
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_caw_image_banner
+    - media.type.image
+    - node.type.courses_and_workshops
+id: node.courses_and_workshops.field_caw_image_banner
+field_name: field_caw_image_banner
+entity_type: node
+bundle: courses_and_workshops
+label: 'Image Banner'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

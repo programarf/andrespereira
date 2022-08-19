@@ -1,0 +1,24 @@
+uuid: 2e59dd34-4215-4b49-9f89-d08892dd0462
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.block_logos.field_logo
+    - paragraphs.paragraphs_type.block_logos
+  module:
+    - entity_reference_revisions
+id: paragraph.block_logos.default
+targetEntityType: paragraph
+bundle: block_logos
+mode: default
+content:
+  field_logo:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

@@ -1,0 +1,19 @@
+uuid: 2a325bf2-8c5f-4dc9-9799-5b01eeb086f8
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_caw_watermark
+    - node.type.courses_and_workshops
+id: node.courses_and_workshops.field_caw_watermark
+field_name: field_caw_watermark
+entity_type: node
+bundle: courses_and_workshops
+label: 'watermark banner'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

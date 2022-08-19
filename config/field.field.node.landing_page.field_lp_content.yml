@@ -1,0 +1,73 @@
+uuid: fc1ad5e7-3a89-4ff1-876e-6c1d4b5749c0
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_lp_content
+    - node.type.landing_page
+    - paragraphs.paragraphs_type.banner_carousel
+    - paragraphs.paragraphs_type.block_logos
+    - paragraphs.paragraphs_type.other_studies
+    - paragraphs.paragraphs_type.studies
+  module:
+    - entity_reference_revisions
+id: node.landing_page.field_lp_content
+field_name: field_lp_content
+entity_type: node
+bundle: landing_page
+label: Content
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      banner_carousel: banner_carousel
+      block_logos: block_logos
+      other_studies: other_studies
+      studies: studies
+    negate: 0
+    target_bundles_drag_drop:
+      banner_carousel:
+        weight: 5
+        enabled: true
+      block_add_views:
+        weight: 11
+        enabled: false
+      block_logos:
+        weight: 12
+        enabled: true
+      half_item:
+        weight: 6
+        enabled: false
+      image_banner:
+        weight: 7
+        enabled: false
+      item_social_media:
+        weight: 15
+        enabled: false
+      logos:
+        weight: 16
+        enabled: false
+      other_studies:
+        weight: 21
+        enabled: true
+      slider_other_studies:
+        weight: 22
+        enabled: false
+      slider_studies:
+        weight: 19
+        enabled: false
+      social_media:
+        weight: 17
+        enabled: false
+      specialties:
+        weight: 8
+        enabled: false
+      studies:
+        weight: 22
+        enabled: true
+field_type: entity_reference_revisions

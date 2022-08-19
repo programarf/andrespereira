@@ -1,0 +1,86 @@
+uuid: b0a6c1bf-90c8-40fc-b654-69335b9a9272
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.card_modal_courses_and_workshops.field_mcw_body
+    - field.field.paragraph.card_modal_courses_and_workshops.field_mcw_cta
+    - field.field.paragraph.card_modal_courses_and_workshops.field_mcw_modal
+    - paragraphs.paragraphs_type.card_modal_courses_and_workshops
+  module:
+    - field_group
+    - link
+    - text
+third_party_settings:
+  field_group:
+    group_mcw_div_content:
+      children:
+        - field_mcw_body
+        - field_mcw_cta
+      label: 'Div content'
+      parent_name: ''
+      region: content
+      weight: 1
+      format_type: html_element
+      format_settings:
+        classes: paragraph--type--card-modal-courses-and-workshops--content
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+    group_mcw_div_modal:
+      children:
+        - field_mcw_modal
+      label: 'Div modal'
+      parent_name: ''
+      region: content
+      weight: 2
+      format_type: html_element
+      format_settings:
+        classes: paragraph--type--card-modal-courses-and-workshops--modal
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+id: paragraph.card_modal_courses_and_workshops.default
+targetEntityType: paragraph
+bundle: card_modal_courses_and_workshops
+mode: default
+content:
+  field_mcw_body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_mcw_cta:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_mcw_modal:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+hidden: {  }

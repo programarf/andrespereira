@@ -1,0 +1,131 @@
+uuid: b44b8305-1330-4f92-9971-afe05a95fb64
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.other_studies.field_os_imagen_bg
+    - field.field.paragraph.other_studies.field_os_item
+    - field.field.paragraph.other_studies.field_os_support
+    - field.field.paragraph.other_studies.field_sing_svg
+    - field.field.paragraph.other_studies.field_video_os_id
+    - paragraphs.paragraphs_type.other_studies
+  module:
+    - entity_reference_revisions
+    - field_group
+    - svg_image
+third_party_settings:
+  field_group:
+    group_media:
+      children:
+        - field_video_os_id
+        - group_video_youtube
+        - field_os_imagen_bg
+        - field_sing_svg
+        - field_os_support
+      label: Media
+      parent_name: ''
+      region: content
+      weight: 0
+      format_type: html_element
+      format_settings:
+        classes: paragraph--type--other-studies--media
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+    group_items:
+      children:
+        - field_os_item
+      label: Items
+      parent_name: ''
+      region: content
+      weight: 1
+      format_type: html_element
+      format_settings:
+        classes: paragraph--type--other-studies--items
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+    group_video_youtube:
+      children: {  }
+      label: 'Video youtube'
+      parent_name: group_media
+      region: content
+      weight: 4
+      format_type: html_element
+      format_settings:
+        classes: playerap
+        show_empty_fields: true
+        id: playerap
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+id: paragraph.other_studies.default
+targetEntityType: paragraph
+bundle: other_studies
+mode: default
+content:
+  field_os_imagen_bg:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_os_item:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_os_support:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_sing_svg:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: true
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_video_os_id:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+hidden: {  }

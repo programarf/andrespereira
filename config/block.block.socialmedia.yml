@@ -1,0 +1,25 @@
+uuid: 6c3b56ab-abf6-4ff9-a844-233fba2b97f8
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.social-media
+  module:
+    - system
+  theme:
+    - andrespereira
+id: socialmedia
+theme: andrespereira
+region: content
+weight: -11
+provider: null
+plugin: 'system_menu_block:social-media'
+settings:
+  id: 'system_menu_block:social-media'
+  label: 'Social media'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

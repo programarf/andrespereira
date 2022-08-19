@@ -1,0 +1,21 @@
+uuid: a91a6071-c4e6-4c57-bd39-9e7321387ff8
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_isc_content
+    - paragraphs.paragraphs_type.isc_items_slider_complete
+  module:
+    - text
+id: paragraph.isc_items_slider_complete.field_isc_content
+field_name: field_isc_content
+entity_type: paragraph
+bundle: isc_items_slider_complete
+label: Content
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

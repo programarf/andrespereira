@@ -1,0 +1,96 @@
+uuid: ec0beec7-0522-40fa-a656-1206bce694fb
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.my_business_workshops.field_mbw_bg_imagen
+    - field.field.paragraph.my_business_workshops.field_mbw_body
+    - field.field.paragraph.my_business_workshops.field_mbw_content
+    - field.field.paragraph.my_business_workshops.field_mbw_id_video
+    - paragraphs.paragraphs_type.my_business_workshops
+  module:
+    - entity_reference_revisions
+    - field_group
+    - media
+    - text
+third_party_settings:
+  field_group:
+    group_div_bg:
+      children:
+        - field_mbw_bg_imagen
+        - field_mbw_id_video
+      label: 'Div bg'
+      parent_name: ''
+      region: content
+      weight: 0
+      format_type: html_element
+      format_settings:
+        classes: paragraph--type--my-business-workshops--bg
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+    group_div_content:
+      children:
+        - field_mbw_body
+        - field_mbw_content
+      label: 'Div content'
+      parent_name: ''
+      region: content
+      weight: 1
+      format_type: html_element
+      format_settings:
+        classes: paragraph--type--my-business-workshops--content
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+id: paragraph.my_business_workshops.default
+targetEntityType: paragraph
+bundle: my_business_workshops
+mode: default
+content:
+  field_mbw_bg_imagen:
+    type: media_thumbnail
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_mbw_body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_mbw_content:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_mbw_id_video:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden: {  }

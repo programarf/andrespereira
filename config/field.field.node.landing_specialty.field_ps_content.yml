@@ -1,0 +1,98 @@
+uuid: 5259ccc0-83fe-41ec-a2f4-1040e5602711
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ps_content
+    - node.type.landing_specialty
+    - paragraphs.paragraphs_type.block_add_views
+    - paragraphs.paragraphs_type.block_iconos
+    - paragraphs.paragraphs_type.block_switch_
+    - paragraphs.paragraphs_type.carrusel_specialties
+    - paragraphs.paragraphs_type.cic_carrusel_items
+    - paragraphs.paragraphs_type.half_item
+  module:
+    - entity_reference_revisions
+id: node.landing_specialty.field_ps_content
+field_name: field_ps_content
+entity_type: node
+bundle: landing_specialty
+label: Content
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      block_add_views: block_add_views
+      half_item: half_item
+      block_switch_: block_switch_
+      block_iconos: block_iconos
+      carrusel_specialties: carrusel_specialties
+      cic_carrusel_items: cic_carrusel_items
+    negate: 0
+    target_bundles_drag_drop:
+      banner_carousel:
+        weight: 14
+        enabled: false
+      block_add_views:
+        weight: 15
+        enabled: true
+      block_iconos:
+        weight: 20
+        enabled: true
+      block_logos:
+        weight: 16
+        enabled: false
+      block_switch_:
+        weight: 19
+        enabled: true
+      carrusel_specialties:
+        weight: 24
+        enabled: true
+      cic_carrusel_items:
+        weight: 27
+        enabled: true
+      half_item:
+        weight: 17
+        enabled: true
+      iconos:
+        weight: 24
+        enabled: false
+      image_banner:
+        weight: 18
+        enabled: false
+      isc_items_slider_complete:
+        weight: 31
+        enabled: false
+      item_social_media:
+        weight: 19
+        enabled: false
+      logos:
+        weight: 20
+        enabled: false
+      other_studies:
+        weight: 21
+        enabled: false
+      slider_other_studies:
+        weight: 22
+        enabled: false
+      slider_studies:
+        weight: 23
+        enabled: false
+      social_media:
+        weight: 24
+        enabled: false
+      specialties:
+        weight: 25
+        enabled: false
+      studies:
+        weight: 26
+        enabled: false
+      tabs_link:
+        weight: 30
+        enabled: false
+field_type: entity_reference_revisions

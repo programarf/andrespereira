@@ -1,0 +1,50 @@
+#block-topinfo {
+  .block__top {
+    &--info {
+      display: flex;
+      justify-content: space-between;
+      color: $white;
+      font-family: $RobotoR;
+    }
+    &--number-phone,
+    &--email,
+    &--location {
+      position: relative;
+      font-size: 1.2rem;
+      @include from(lm) {
+        font-size: 1.4rem;  
+      }
+      &::before {
+        @include pseudo();
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        left: -2.4rem;
+        height: 1.5rem;
+        width: 1.5rem;
+      }
+    }
+    &--number-phone {
+      &::before {
+        background-image: url('../assets/images/icons/phone.svg');
+      }
+    }
+    &--email {
+      &::before {
+        background-image: url('../assets/images/icons/email.svg');
+      }
+      a {
+        color: $white;
+        &:hover {
+          color: $gold;
+          text-decoration: underline;
+        }
+      }
+    } 
+    &--location {
+      &::before {
+        background-image: url('../assets/images/icons/map-marker.svg');
+      }
+    }
+  }
+}

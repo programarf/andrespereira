@@ -1,0 +1,10 @@
+uuid: be8ae85f-a0c9-48a9-825e-daf6df189178
+langcode: es
+status: true
+dependencies: {  }
+id: slider_other_studies
+label: 'Slider other studies'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

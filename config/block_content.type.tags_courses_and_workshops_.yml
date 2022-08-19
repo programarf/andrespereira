@@ -1,0 +1,8 @@
+uuid: 8d4dd447-ceaa-40b2-a893-acd9b21c142e
+langcode: es
+status: true
+dependencies: {  }
+id: tags_courses_and_workshops_
+label: 'Tags Courses and workshops '
+revision: 0
+description: ''

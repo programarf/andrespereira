@@ -1,0 +1,21 @@
+uuid: 3a30854f-ad36-4741-a87f-fae4d0871136
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_st_description
+    - paragraphs.paragraphs_type.slider_studies
+  module:
+    - text
+id: paragraph.slider_studies.field_st_description
+field_name: field_st_description
+entity_type: paragraph
+bundle: slider_studies
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

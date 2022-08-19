@@ -1,0 +1,19 @@
+uuid: 1ad68618-6b8a-48e5-91b0-e3c4fb07fae6
+langcode: es
+status: true
+dependencies:
+  module:
+    - link
+    - paragraphs
+id: paragraph.field_tl_tab
+field_name: field_tl_tab
+entity_type: paragraph
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

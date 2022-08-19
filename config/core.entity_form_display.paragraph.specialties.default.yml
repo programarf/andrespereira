@@ -1,0 +1,75 @@
+uuid: d48d32e2-9ccd-40fd-a8da-ca82cb1a1102
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.specialties.field_av_name_block
+    - field.field.paragraph.specialties.field_cs_class
+    - field.field.paragraph.specialties.field_cs_imagen
+    - field.field.paragraph.specialties.field_cs_info
+    - field.field.paragraph.specialties.field_cs_titulo
+    - field.field.paragraph.specialties.field_cs_vista
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.specialties
+  module:
+    - image
+id: paragraph.specialties.default
+targetEntityType: paragraph
+bundle: specialties
+mode: default
+content:
+  field_av_name_block:
+    type: entity_reference_autocomplete
+    weight: 5
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_cs_class:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_cs_imagen:
+    type: image_image
+    weight: 1
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_cs_info:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_cs_titulo:
+    type: string_textfield
+    weight: 3
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_cs_vista:
+    type: entity_reference_autocomplete
+    weight: 4
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

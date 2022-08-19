@@ -1,0 +1,29 @@
+uuid: 7a04e3fd-549d-428f-8481-38de3863a364
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_social_media
+    - paragraphs.paragraphs_type.item_social_media
+    - taxonomy.vocabulary.list_of_item_the_social_media
+id: paragraph.item_social_media.field_social_media
+field_name: field_social_media
+entity_type: paragraph
+bundle: item_social_media
+label: 'Social media'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      list_of_item_the_social_media: list_of_item_the_social_media
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

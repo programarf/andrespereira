@@ -1,0 +1,26 @@
+uuid: 4e43a8e8-820e-47ed-919f-40eb243fa355
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.logos.field_lg_imagen
+    - field.field.paragraph.logos.field_lg_titulo
+    - paragraphs.paragraphs_type.logos
+  module:
+    - image
+id: paragraph.logos.default
+targetEntityType: paragraph
+bundle: logos
+mode: default
+content:
+  field_lg_imagen:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_lg_titulo: true

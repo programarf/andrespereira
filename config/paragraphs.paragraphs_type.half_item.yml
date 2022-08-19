@@ -1,0 +1,10 @@
+uuid: bd4d32c7-22fa-4007-9f5d-08cd3e3f8437
+langcode: es
+status: true
+dependencies: {  }
+id: half_item
+label: 'Half Item'
+icon_uuid: null
+icon_default: null
+description: 'Item para componente 50%'
+behavior_plugins: {  }

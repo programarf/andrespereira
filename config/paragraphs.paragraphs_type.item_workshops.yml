@@ -1,0 +1,10 @@
+uuid: 683e8d98-1814-437d-9f3e-a51eeb4bbad3
+langcode: es
+status: true
+dependencies: {  }
+id: item_workshops
+label: 'Item workshops'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

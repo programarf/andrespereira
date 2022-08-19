@@ -1,0 +1,67 @@
+uuid: f88b39d0-72db-4053-8e9a-860edd4a2224
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_os_item
+    - paragraphs.paragraphs_type.other_studies
+    - paragraphs.paragraphs_type.slider_other_studies
+  module:
+    - entity_reference_revisions
+id: paragraph.other_studies.field_os_item
+field_name: field_os_item
+entity_type: paragraph
+bundle: other_studies
+label: Items
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      slider_other_studies: slider_other_studies
+    negate: 0
+    target_bundles_drag_drop:
+      banner_carousel:
+        weight: 14
+        enabled: false
+      block_add_views:
+        weight: 15
+        enabled: false
+      block_logos:
+        weight: 16
+        enabled: false
+      half_item:
+        weight: 17
+        enabled: false
+      image_banner:
+        weight: 18
+        enabled: false
+      item_social_media:
+        weight: 19
+        enabled: false
+      logos:
+        weight: 20
+        enabled: false
+      other_studies:
+        weight: 21
+        enabled: false
+      slider_other_studies:
+        weight: 22
+        enabled: true
+      slider_studies:
+        weight: 23
+        enabled: false
+      social_media:
+        weight: 24
+        enabled: false
+      specialties:
+        weight: 25
+        enabled: false
+      studies:
+        weight: 26
+        enabled: false
+field_type: entity_reference_revisions

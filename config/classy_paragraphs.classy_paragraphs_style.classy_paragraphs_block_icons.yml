@@ -1,0 +1,7 @@
+uuid: 2a4be343-f089-4e0e-a1d5-e87eb277c962
+langcode: es
+status: true
+dependencies: {  }
+id: classy_paragraphs_block_icons
+label: 'Classy paragraphs block icons'
+classes: variant__type--one

@@ -1,0 +1,10 @@
+#block-whatsapp {
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  z-index: 2;
+  img {
+    width: 100%;
+    animation: crescendo 1s alternate infinite ease-in;
+  }
+}

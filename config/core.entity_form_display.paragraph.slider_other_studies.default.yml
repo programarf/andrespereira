@@ -1,0 +1,55 @@
+uuid: 81902bce-808b-4a9c-9579-07e53edbcd9e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.slider_other_studies.field_ios_body
+    - field.field.paragraph.slider_other_studies.field_ios_cta
+    - field.field.paragraph.slider_other_studies.field_ios_modal
+    - field.field.paragraph.slider_other_studies.field_os_icono
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.slider_other_studies
+  module:
+    - link
+    - svg_image
+    - text
+id: paragraph.slider_other_studies.default
+targetEntityType: paragraph
+bundle: slider_other_studies
+mode: default
+content:
+  field_ios_body:
+    type: text_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_ios_cta:
+    type: link_default
+    weight: 2
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_ios_modal:
+    type: text_textarea
+    weight: 3
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_os_icono:
+    type: image_image
+    weight: 0
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

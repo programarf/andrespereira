@@ -1,0 +1,19 @@
+uuid: efbaf0c9-297e-4710-82c5-fd9651525fa9
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_av_titulo
+    - paragraphs.paragraphs_type.block_add_views
+id: paragraph.block_add_views.field_av_titulo
+field_name: field_av_titulo
+entity_type: paragraph
+bundle: block_add_views
+label: Titulo
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

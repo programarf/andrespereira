@@ -1,0 +1,20 @@
+uuid: 7ec471f6-958c-4446-baba-9dbfcfa511ec
+langcode: es
+status: true
+dependencies:
+  module:
+    - classy_paragraphs
+    - paragraphs
+id: paragraph.field_variant_class
+field_name: field_variant_class
+entity_type: paragraph
+type: entity_reference
+settings:
+  target_type: classy_paragraphs_style
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

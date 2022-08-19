@@ -1,0 +1,10 @@
+uuid: 645de617-576b-4240-921e-61e8a5f1d47a
+langcode: es
+status: true
+dependencies: {  }
+id: cic_carrusel_items
+label: 'Carrusel Items'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

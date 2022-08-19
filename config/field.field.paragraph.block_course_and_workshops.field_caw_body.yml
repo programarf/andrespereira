@@ -1,0 +1,21 @@
+uuid: ce220942-2765-4296-9f53-8764614e4f6e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_caw_body
+    - paragraphs.paragraphs_type.block_course_and_workshops
+  module:
+    - text
+id: paragraph.block_course_and_workshops.field_caw_body
+field_name: field_caw_body
+entity_type: paragraph
+bundle: block_course_and_workshops
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

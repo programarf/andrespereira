@@ -1,0 +1,90 @@
+uuid: f28864db-d512-49a1-b4d1-48e3103f6618
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.cic_carrusel_items.field_cic_bg_imagen
+    - field.field.paragraph.cic_carrusel_items.field_cic_items
+    - field.field.paragraph.cic_carrusel_items.field_cic_title
+    - paragraphs.paragraphs_type.cic_carrusel_items
+  module:
+    - entity_reference_revisions
+    - field_group
+    - svg_image
+third_party_settings:
+  field_group:
+    group_div:
+      children:
+        - field_cic_items
+      label: div
+      parent_name: ''
+      region: content
+      weight: 3
+      format_type: html_element
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+    group_div_imagen:
+      children:
+        - field_cic_title
+        - field_cic_bg_imagen
+      label: div
+      parent_name: ''
+      region: content
+      weight: 0
+      format_type: html_element
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+id: paragraph.cic_carrusel_items.default
+targetEntityType: paragraph
+bundle: cic_carrusel_items
+mode: default
+content:
+  field_cic_bg_imagen:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_cic_items:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_cic_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

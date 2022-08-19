@@ -1,0 +1,49 @@
+uuid: 201b7e33-334b-456e-8355-1bc010ba6049
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_logo
+    - paragraphs.paragraphs_type.block_logos
+    - paragraphs.paragraphs_type.logos
+  module:
+    - entity_reference_revisions
+id: paragraph.block_logos.field_logo
+field_name: field_logo
+entity_type: paragraph
+bundle: block_logos
+label: logo
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      logos: logos
+    negate: 0
+    target_bundles_drag_drop:
+      banner_carousel:
+        weight: 8
+        enabled: false
+      block_add_views:
+        weight: 9
+        enabled: false
+      block_logos:
+        weight: 10
+        enabled: false
+      half_item:
+        weight: 11
+        enabled: false
+      image_banner:
+        weight: 12
+        enabled: false
+      logos:
+        weight: 13
+        enabled: true
+      specialties:
+        weight: 14
+        enabled: false
+field_type: entity_reference_revisions

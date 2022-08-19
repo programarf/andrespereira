@@ -1,0 +1,10 @@
+uuid: 1f8d9a78-7765-4416-bf10-707fdf10abdf
+langcode: es
+status: true
+dependencies: {  }
+id: studies
+label: studies
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

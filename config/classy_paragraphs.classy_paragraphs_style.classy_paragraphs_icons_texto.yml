@@ -1,0 +1,7 @@
+uuid: 8eb54eeb-b7cd-4669-9e51-0f42f2a2dacc
+langcode: es
+status: true
+dependencies: {  }
+id: classy_paragraphs_icons_texto
+label: 'Classy paragraphs icons texto'
+classes: variant__icons--text

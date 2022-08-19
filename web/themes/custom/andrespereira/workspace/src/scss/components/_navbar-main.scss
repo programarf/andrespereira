@@ -1,0 +1,225 @@
+body {
+  &.scrolled--header {
+    nav {
+      &.navbar {
+        &#navbar-main {
+          position: fixed;
+          width: 100%;
+          margin: auto;
+          left: 0;
+          right: 0;
+          z-index: 3;
+          background: $white;
+          box-shadow: 0 10px 10px -10px #333;
+          ul {
+            &.navbar-nav {
+              .nav-link {
+                &.is-active {
+                  &::after {
+                    bottom: -.4rem !important;
+                  }
+                }
+              }
+              .nav-item {
+                &:hover {
+                  &::after {
+                    bottom: -.4rem !important;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    #main-wrapper{
+      padding: 10rem 0 0;
+    }
+  }
+}
+
+nav {
+  &.navbar {
+    &#navbar-main {
+      background: $white;
+      justify-content: flex-start;
+      margin: auto;
+      padding: .5rem 1rem;
+      top: 0;
+      height: 7rem;
+      @include from (l) {
+        padding: 0;
+        height: 10rem;
+      }
+      @include from (xlg) {
+        justify-content: center;
+        max-width: 132rem;
+      }
+      .navbar-brand {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        padding: 0;
+        left: 0;
+        right: 0;
+        width: max-content;
+        margin: auto;
+        @include from (l) {
+          margin: 0;
+          padding: initial;
+          left: initial;
+          right: initial;
+          justify-content: center;
+          width: 32.7rem;
+          border-right: .2rem solid $gray;
+        }
+        img {
+          width: 82%;
+          position: relative;
+          z-index: 3;
+          @include from(l) {
+            position: initial;
+            z-index: initial;
+            width: 70%; 
+          }
+        }
+        + {
+          #block-blockcontacto-mobile {
+            background-image: url('../assets/images/icons/icon-phone-xs.svg');
+            display: block;
+            position: absolute;
+            right: 2rem;
+            top: 2rem;
+            width: 3rem;
+            height: 3.5rem;
+            z-index: 1;
+            cursor: pointer;
+          }
+        }
+      }
+      .navbar-toggler {
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        z-index: 3;
+        .navbar-toggler-icon {
+          height: 4rem;
+          width: 4rem;
+        }
+        &[aria-expanded="false"] {
+          .navbar-toggler-icon {
+            background-image: url('../assets/images/icons/icon-hamb.svg');
+          }
+        }
+        &[aria-expanded="true"] {
+          .navbar-toggler-icon {
+            background-image: url('../assets/images/icons/icon-close-hamb.svg'); 
+          }
+        }
+      }  
+      #CollapsingNavbar {
+        @include from (l) {
+          height: 100%;
+        }
+      }  
+      .navbar-collapse {
+        height: 0;
+        opacity: 0;
+        transition: all .5s;
+        @include from (l) {
+          opacity: 1;  
+        }
+        &.show {
+          background: $white;
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100vh;
+          opacity: 1;
+          overflow: hidden;
+          transition: all .5s;
+          z-index: 2;
+        }
+      }
+      nav {
+        &[role="navigation"] {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 100%;
+          width: 100%;
+          ul {
+            &.navbar-nav {
+              display: flex;
+              align-items: center;
+              justify-content: flex-start;
+              padding: 12rem 0 0;
+              height: 100%;
+              @include from (l) {
+                padding: initial;
+                justify-content: center;
+              }
+              .nav {
+                &-item,
+                &-link {
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  height: auto;
+                  @include from(l) {
+                    height: 100%;
+                  }
+                }
+                &-item {
+                  position: relative;
+                  &:hover {
+                    &::after {
+                      @include pseudo();
+                      background-image: url('../assets/images/bg/line-gold.svg');
+                      background-size: cover;
+                      height: .7rem;
+                      width: 100%;
+                      bottom: -.4rem;
+                      z-index: 1;
+                    }
+                  } 
+                }
+                &-link {
+                  color: $black;
+                  font-family: $RobotoM;
+                  font-size: 1.6rem;
+                  padding: 1.5rem;
+                  @include from (l) {
+                    font-size: 1.3rem;
+                    padding: 0 1.5rem;
+                  }
+                  @include from (lm) {
+                    font-size: 1.6rem;  
+                  }
+                  &:hover {
+                    color: $gold;
+                  }
+                  &.is-active {
+                    color: $gold;
+                    &::after {
+                      @include pseudo();
+                      background-image: url('../assets/images/bg/line-gold.svg');
+                      background-size: cover;
+                      height: .7rem;
+                      width: 100%;
+                      bottom: -.4rem;
+                      left: 0;
+                      z-index: 2;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

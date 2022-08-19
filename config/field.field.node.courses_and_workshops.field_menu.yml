@@ -1,0 +1,29 @@
+uuid: 0c45b59f-6552-4ef0-9211-74947be354f5
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.tags_courses_and_workshops_
+    - field.storage.node.field_menu
+    - node.type.courses_and_workshops
+id: node.courses_and_workshops.field_menu
+field_name: field_menu
+entity_type: node
+bundle: courses_and_workshops
+label: Menu
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:block_content'
+  handler_settings:
+    target_bundles:
+      tags_courses_and_workshops_: tags_courses_and_workshops_
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

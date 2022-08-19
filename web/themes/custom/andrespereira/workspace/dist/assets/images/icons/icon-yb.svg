@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="59" height="59" viewBox="0 0 59 59">
+  <defs>
+    <linearGradient id="linear-gradient" x1="1" y1="0.455" x2="0" y2="0.452" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#d5af43"/>
+      <stop offset="0.134" stop-color="#d5af43"/>
+      <stop offset="0.308" stop-color="#b48217"/>
+      <stop offset="0.659" stop-color="#d5af43"/>
+      <stop offset="0.872" stop-color="#b48217"/>
+      <stop offset="1" stop-color="#d5af43"/>
+    </linearGradient>
+    <filter id="Elipse_26" x="0" y="0" width="59" height="59" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Componente_73_11" data-name="Componente 73 – 11" transform="translate(9 6)">
+    <g transform="matrix(1, 0, 0, 1, -9, -6)" filter="url(#Elipse_26)">
+      <circle id="Elipse_26-2" data-name="Elipse 26" cx="20.5" cy="20.5" r="20.5" transform="translate(9 6)" fill="url(#linear-gradient)"/>
+    </g>
+    <path id="noun-youtube-3451621" d="M132.658,93.834a37.307,37.307,0,0,0-12.232,0c-2.316.485-3.76,1.979-3.76,3.929v6.927c0,1.979,1.445,3.454,3.8,3.958h0a36.827,36.827,0,0,0,12.212.01c2.3-.435,3.78-1.979,3.78-3.958V97.773c0-1.969-1.484-3.513-3.8-3.939Zm-2.87,7.858-4.948,2.969a.474.474,0,0,1-.257.069.565.565,0,0,1-.247-.059.515.515,0,0,1-.247-.455V98.278a.514.514,0,0,1,.247-.435.534.534,0,0,1,.5,0l4.948,2.969a.5.5,0,0,1,0,.851Z" transform="translate(-106.062 -80.746)" fill="#fff"/>
+  </g>
+</svg>

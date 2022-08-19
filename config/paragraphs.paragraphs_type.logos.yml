@@ -1,0 +1,10 @@
+uuid: dcd8f451-9a32-4106-9a6a-007bc4ca5129
+langcode: es
+status: true
+dependencies: {  }
+id: logos
+label: Logo
+icon_uuid: null
+icon_default: null
+description: 'Para el bloque con logos con slider'
+behavior_plugins: {  }

@@ -1,0 +1,19 @@
+uuid: 360f3f08-447e-4723-9b6c-929022c0fb7f
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_url
+    - paragraphs.paragraphs_type.item_social_media
+id: paragraph.item_social_media.field_url
+field_name: field_url
+entity_type: paragraph
+bundle: item_social_media
+label: Url
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,25 @@
+uuid: f5636b4f-05af-4f7a-9d88-19fb8c1c0a40
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:81c2c7fc-4526-40d0-a795-a850c5ac5c14'
+  module:
+    - block_content
+  theme:
+    - andrespereira
+id: contactinformation
+theme: andrespereira
+region: footer_first
+weight: -10
+provider: null
+plugin: 'block_content:81c2c7fc-4526-40d0-a795-a850c5ac5c14'
+settings:
+  id: 'block_content:81c2c7fc-4526-40d0-a795-a850c5ac5c14'
+  label: 'Contact information'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

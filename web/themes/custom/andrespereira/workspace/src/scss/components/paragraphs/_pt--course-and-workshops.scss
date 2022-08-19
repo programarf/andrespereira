@@ -1,0 +1,187 @@
+.paragraph--type--block-course-and-workshops {
+  position: relative;
+  .paragraph--type--block-course-and-workshops {
+    &--bg  {
+      background-color: $black;
+      height: 70rem;
+      overflow: hidden;
+      .field--name-field-caw-video-id {
+        display: none;
+      }
+      iframe {
+        width: 100%;
+        height: 100rem;
+        position: relative;
+        top: -10rem;
+        visibility: hidden;
+        @include from (l) {
+          visibility: visible;
+        }
+      }
+      img {
+        height: 70rem;
+        width: 100%;
+        object-fit: cover;
+        @include from (l) {
+          height: 70rem;
+        }
+      }
+    }
+    &--content {
+      .paragraph--type--card-modal-courses-and-workshops {
+        &--content {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          padding: 0 2.5rem;
+          position: absolute;
+          height: 100%;
+          width: 100%;
+          top: 0;
+          z-index: 1;
+          @include from (l) {
+            padding: initial;
+            width: 50%;
+          }
+          h2 {
+            display: block;
+            position: relative;
+            margin: 0 0 3rem;
+            &::after {
+              @include pseudo();
+              background-color: $goldlabel;
+              height: .2rem;
+              width: 30%;
+              bottom: -.5rem;
+            }  
+          }
+          h2,
+          h4 {
+            color: $goldlabel;
+            font-family: $RobotoM;
+            font-size: 2.5rem;
+            @include from (l) {
+              font-size: 3.8rem;
+            }
+          }
+          h3,
+          p {
+            color: $white;
+          }
+          h3 {
+            font-family: $RobotoB;
+            font-size: 1.8rem;
+            text-transform: uppercase;
+            @include from (l) {
+              font-size: 2.5rem;
+            }
+          }
+          p {
+            font-size: 1.6rem;
+            line-height: 1.2;
+            margin: 0 0 1rem;
+            @include from (l) {
+              line-height: 1.5;
+              font-size: 1.8rem;
+            }
+          }
+          .field--name-field-mcw-cta {
+            width: 100%;
+            a {
+              @extend %button-trans;
+              font-size: 1.4rem;
+              max-width: 24rem;
+              @include from (l) {
+                font-size: 1.6rem;
+              }
+            }
+          }
+        }
+        &--modal {
+          position: fixed;
+          width: 0;
+          height: 0;
+          opacity: 0;
+          transition: all 1s;
+          &.active-modal {
+            background-color: $white;
+            border-radius: 2.5rem;
+            border-right: 2rem solid $white;
+            border-top: 3rem solid $white;
+            border-bottom: 2rem solid $white;
+            top: 15%;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: 0 auto 0 0;
+            padding: 15rem 2.5rem 2.5rem;
+            height: 75vh;
+            width: 82%;
+            overflow-y: scroll;
+            opacity: 1;
+            transition: all 1s;
+            z-index: 3;
+            @include from (l) {
+              border-right: 3rem solid $white;
+              border-top: 5rem solid $white;
+              border-bottom: 3rem solid $white;
+              height: 40rem;
+              top: 12%;
+              margin: auto;
+              padding: 0 7rem 7rem 22rem;
+              width: 80rem;
+            }
+            &::before {
+              @include pseudo();
+              background-image: url('../assets/images/icons/icon-studies.svg');
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: 100%;
+              height: 15rem;
+              width: 15rem;
+              top: 0;
+              left: 0;
+              right: 0;
+              margin: auto;
+              @include from (l) {
+                top: initial;
+                left: 3rem;
+                right: initial;
+                margin: initial;
+              }
+            }
+            &::-webkit-scrollbar {
+              width: 12px;
+              background-color: transparent;
+              scroll-padding: 2.5rem;
+            }
+            &::-webkit-scrollbar-track{
+              border-radius: 10px;
+              background-color: transparent;
+            }
+            &::-webkit-scrollbar-thumb {
+              border-radius: 10px;
+              background-color: $goldlabel;
+            }
+            .icon-close {
+              background-image: url('../assets/images/icons/icon-close.svg');
+              background-size: 100%;
+              display: block;
+              position: absolute;
+              top: 1.5rem;
+              right: 1.5rem;
+              height: 3rem;
+              width: 3rem;
+              cursor: pointer;
+              @include from (l) {
+                top: 0;
+                right: 2rem;
+              }
+            } 
+          }
+        }
+      }
+    } 
+  }
+}

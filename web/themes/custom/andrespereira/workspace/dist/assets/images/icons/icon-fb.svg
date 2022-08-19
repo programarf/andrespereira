@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="59" height="59" viewBox="0 0 59 59">
+  <defs>
+    <linearGradient id="linear-gradient" x1="1" y1="0.462" x2="0" y2="0.449" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#d5af43"/>
+      <stop offset="0.134" stop-color="#d5af43"/>
+      <stop offset="0.308" stop-color="#b48217"/>
+      <stop offset="0.659" stop-color="#d5af43"/>
+      <stop offset="0.872" stop-color="#b48217"/>
+      <stop offset="1" stop-color="#d5af43"/>
+    </linearGradient>
+    <filter id="Elipse_24" x="0" y="0" width="59" height="59" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Componente_75_1" data-name="Componente 75 – 1" transform="translate(9 6)">
+    <g transform="matrix(1, 0, 0, 1, -9, -6)" filter="url(#Elipse_24)">
+      <circle id="Elipse_24-2" data-name="Elipse 24" cx="20.5" cy="20.5" r="20.5" transform="translate(9 6)" fill="url(#linear-gradient)"/>
+    </g>
+    <path id="facebook_2_" data-name="facebook (2)" d="M137.58,6.587h-3.593v-2.4a1.2,1.2,0,0,1,1.2-1.2h1.2V0h-2.4A3.592,3.592,0,0,0,130.4,3.593V6.587H128V9.58h2.4v9.58h3.593V9.58h2.4Z" transform="translate(-112.223 11.147)" fill="#fff"/>
+  </g>
+</svg>

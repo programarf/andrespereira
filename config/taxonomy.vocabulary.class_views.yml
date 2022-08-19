@@ -1,0 +1,8 @@
+uuid: 035412eb-b2e4-4a99-b6dd-e0ac19f7a903
+langcode: es
+status: true
+dependencies: {  }
+name: 'Class views'
+vid: class_views
+description: 'Clases para los bloque de vista'
+weight: 0

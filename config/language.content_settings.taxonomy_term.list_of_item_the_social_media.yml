@@ -1,0 +1,11 @@
+uuid: c39c7fc3-c3df-4cd3-8ae3-bd3a39b41d4b
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.list_of_item_the_social_media
+id: taxonomy_term.list_of_item_the_social_media
+target_entity_type_id: taxonomy_term
+target_bundle: list_of_item_the_social_media
+default_langcode: site_default
+language_alterable: false

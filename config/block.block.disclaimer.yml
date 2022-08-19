@@ -1,0 +1,25 @@
+uuid: db4d5407-d964-490b-bdc9-df062486178b
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:32319225-9b61-4e4a-90df-3d21881c3ef5'
+  module:
+    - block_content
+  theme:
+    - andrespereira
+id: disclaimer
+theme: andrespereira
+region: footer_fifth
+weight: 0
+provider: null
+plugin: 'block_content:32319225-9b61-4e4a-90df-3d21881c3ef5'
+settings:
+  id: 'block_content:32319225-9b61-4e4a-90df-3d21881c3ef5'
+  label: Disclaimer
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

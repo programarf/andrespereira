@@ -1,0 +1,25 @@
+uuid: 237022d4-7c4d-441a-9fc2-9240c978acba
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.slider_studies.field_st_description
+    - paragraphs.paragraphs_type.slider_studies
+  module:
+    - text
+id: paragraph.slider_studies.default
+targetEntityType: paragraph
+bundle: slider_studies
+mode: default
+content:
+  field_st_description:
+    type: text_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

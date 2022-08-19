@@ -1,0 +1,10 @@
+uuid: 44a58306-2c8b-4409-9ba5-ef69c951902c
+langcode: es
+status: true
+dependencies: {  }
+id: my_business_workshops
+label: 'My business workshops'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

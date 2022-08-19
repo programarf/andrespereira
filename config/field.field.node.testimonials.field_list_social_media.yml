@@ -1,0 +1,55 @@
+uuid: 5ac00991-3df9-4bab-890c-bbfe63138987
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_list_social_media
+    - node.type.testimonials
+    - paragraphs.paragraphs_type.social_media
+  module:
+    - entity_reference_revisions
+id: node.testimonials.field_list_social_media
+field_name: field_list_social_media
+entity_type: node
+bundle: testimonials
+label: 'list social media'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      social_media: social_media
+    negate: 0
+    target_bundles_drag_drop:
+      banner_carousel:
+        weight: 10
+        enabled: false
+      block_add_views:
+        weight: 11
+        enabled: false
+      block_logos:
+        weight: 12
+        enabled: false
+      half_item:
+        weight: 13
+        enabled: false
+      image_banner:
+        weight: 14
+        enabled: false
+      item_social_media:
+        weight: 15
+        enabled: false
+      logos:
+        weight: 16
+        enabled: false
+      social_media:
+        weight: 17
+        enabled: true
+      specialties:
+        weight: 18
+        enabled: false
+field_type: entity_reference_revisions

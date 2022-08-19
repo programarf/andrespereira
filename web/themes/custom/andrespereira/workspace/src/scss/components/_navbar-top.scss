@@ -1,0 +1,95 @@
+#navbar-top {
+  background-color: $black;
+  justify-content: center;
+  align-items: center;
+  height: 5.5rem;
+  padding: 0;
+  width: 100%;
+  display: none;
+  @include from (l) {
+    display: block;
+  }
+  .region {
+    &-top-header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+      margin: auto;
+      width: 100%;
+      @include from (lm) {
+        max-width: 100%;
+      }
+      @include from (xl) {
+        max-width: 85%;
+      }
+      @include from (xlg) {
+        max-width: 132rem;
+      }
+      #block-topinfo {
+        width: 70%;
+      }
+      #block-formulariodebusqueda {
+        width: 20%;
+        #search-block-form {
+          display: flex;
+          margin: 0 0 -1rem;
+          position: relative;
+           .form {
+             &-type-search {
+               margin: 0;
+               padding: 0;
+               input[type="search"] {
+                border: .2rem solid $gold;
+                border-radius:3rem;
+                font-family: $RobotoR;
+                font-size: 1.4rem;
+                height: 4.1rem;
+                padding: 0 2rem;
+                position: relative;
+                top: .2rem;
+                pointer-events: none;
+                opacity: 0;
+                width: .1rem;
+                transition: all 1s;
+                &.input--show {
+                  opacity: 1;
+                  pointer-events: initial;
+                  transition: all 1s;
+                  @include from (lm) {
+                  width: 20rem;
+                  }
+                  @include from (xl) {
+                    width: 28rem;
+                  }
+                }  
+               }
+             }
+            &-actions {
+              padding: 0;
+              button {
+                &.btn-primary {
+                  color: transparent;
+                  background-color: transparent;
+                  background-image: url('../assets/images/icons/icon-glass.svg');
+                  background-position: center;
+                  background-repeat: no-repeat;
+                  background-size: contain;
+                  border: 0;
+                  margin-right: 1rem;
+                  width: 4.4rem;
+                  height: 4.1rem;
+                  position: absolute;
+                  top: .7rem;
+                  &.btn-disabled {
+                    pointer-events: none;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,41 @@
+uuid: 41e9acc5-40db-4f0e-a460-89906baa391a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.banner_carousel.field_bc_banners
+    - field.field.paragraph.banner_carousel.field_bc_intro
+    - field.field.paragraph.banner_carousel.field_bc_title
+    - paragraphs.paragraphs_type.banner_carousel
+  module:
+    - entity_reference_revisions
+id: paragraph.banner_carousel.default
+targetEntityType: paragraph
+bundle: banner_carousel
+mode: default
+content:
+  field_bc_banners:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_bc_intro:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_bc_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden: {  }

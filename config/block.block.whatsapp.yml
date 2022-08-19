@@ -1,0 +1,25 @@
+uuid: 401d09da-6a42-4289-be99-d07b06a91ede
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:45cf2064-807e-4852-ba71-1f623d577a65'
+  module:
+    - block_content
+  theme:
+    - andrespereira
+id: whatsapp
+theme: andrespereira
+region: content
+weight: -9
+provider: null
+plugin: 'block_content:45cf2064-807e-4852-ba71-1f623d577a65'
+settings:
+  id: 'block_content:45cf2064-807e-4852-ba71-1f623d577a65'
+  label: Whatsapp
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

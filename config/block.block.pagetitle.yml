@@ -1,0 +1,27 @@
+uuid: 2043ba72-d62f-4589-a036-324e3bf02da9
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+  theme:
+    - andrespereira
+id: pagetitle
+theme: andrespereira
+region: content
+weight: 0
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      courses_and_workshops: courses_and_workshops

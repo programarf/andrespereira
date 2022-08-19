@@ -1,0 +1,124 @@
+.paragraph--type--cic-carrusel-items {
+  position: relative;
+  .field {
+    &--name-field-cic-title {
+      color: $goldlabel;
+      font-family: $RobotoB;
+      font-size: 2.2rem;
+      position: absolute;
+      top: 3rem;
+      left: 0;
+      right: 0;
+      margin: auto;
+      width: 80%;
+      z-index: 1;
+      @include from (l) {
+        font-size: 3.8rem;
+        margin: initial;
+        padding: 0 0 0 7%;
+        max-width: 65rem;
+        width: 100%;
+        top: 7rem;
+      }
+      @include from(xlg) {
+        left: 0;
+        right: 0;
+        margin: auto;
+        max-width: 130rem;
+      }
+    }
+    &--name-field-cic-bg-imagen {
+      position: relative;
+      &::before {
+        @include pseudo();
+        background: linear-gradient(270deg, transparent, #000000 40%);
+        width: 80%;
+        height: 100%;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+      }
+      img {
+        width: 100%;
+        height: 90rem;
+        object-fit: cover;
+        object-position: top;
+        @include from (l) {
+          height: 85rem;
+        }
+      }
+    }
+    &--name-field-cic-items {
+      position: absolute;
+      top: 12rem;
+      @include from (l) {
+        padding: 0 0 0 7%;
+        top: 22rem;
+        max-width: 65rem;
+      }
+      @include from(xlg) {
+        padding: 0 0 0 3.5%;
+        left: 25%;
+      }
+      > .field__item {
+        padding: 0 2.5rem;
+        @include from (l) {
+          padding: 0 0 0 15rem;  
+        }
+        
+      }
+    }
+  }
+}
+.paragraph--type--isc-items-slider-complete {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 2rem;
+  @include from (l) {
+    margin: 0 0 5rem; 
+  }
+  .field {
+    &--name-field-isc-icono {
+      
+      @include from (l) {
+        position: absolute;
+        margin-left: -15rem; 
+      }
+      &::after {
+        @include from (l) {
+          @include pseudo();
+          background-color: $goldlabel;
+          top: 0;
+          right: -2rem;
+          width: .1rem;
+          height: 8rem;
+        }
+      }
+      img {
+        height: 5rem;
+        width: 5rem;
+        object-fit: contain;
+        @include from (l) {
+          height: 7rem;
+          width: 7rem;  
+        }
+      }
+    }
+    &--name-field-isc-title {
+      color: $white;
+      display: block;
+      font-family: $RobotoB;
+      font-size: 1.8rem;
+      margin: 0 0 2rem;
+    }
+    &--name-field-isc-content {
+      color: $white;
+      font-family: $RobotoM;
+      font-size: 1.4rem;
+      line-height: 1.4;
+      @include from (l) {
+        font-size: 1.6rem;
+      }
+    }
+  }
+}

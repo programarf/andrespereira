@@ -1,0 +1,34 @@
+uuid: ed8db9cf-e415-4beb-8b5f-2bebae411e2e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_bc_banners
+    - paragraphs.paragraphs_type.banner_carousel
+    - paragraphs.paragraphs_type.image_banner
+  module:
+    - entity_reference_revisions
+id: paragraph.banner_carousel.field_bc_banners
+field_name: field_bc_banners
+entity_type: paragraph
+bundle: banner_carousel
+label: Banners
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      image_banner: image_banner
+    negate: 0
+    target_bundles_drag_drop:
+      banner_carousel:
+        weight: 3
+        enabled: false
+      image_banner:
+        weight: 4
+        enabled: true
+field_type: entity_reference_revisions

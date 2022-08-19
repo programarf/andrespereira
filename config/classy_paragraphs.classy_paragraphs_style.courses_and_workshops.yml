@@ -1,0 +1,7 @@
+uuid: 36ff40e4-8abe-4c7f-8c3c-6dd5c42f8cd9
+langcode: es
+status: true
+dependencies: {  }
+id: courses_and_workshops
+label: 'Courses and workshops left'
+classes: Coursesandworkshops__paragraph--left

@@ -1,0 +1,10 @@
+uuid: 150c702a-c961-42e9-a4cb-c8fe62c5ee33
+langcode: es
+status: true
+dependencies: {  }
+id: group_objectives
+label: 'Group objectives'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

@@ -1,0 +1,20 @@
+uuid: 993bbeee-65d6-4857-82a7-c4ce8d6d1aa7
+langcode: es
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - text
+id: paragraph.field_pst_sub_title
+field_name: field_pst_sub_title
+entity_type: paragraph
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

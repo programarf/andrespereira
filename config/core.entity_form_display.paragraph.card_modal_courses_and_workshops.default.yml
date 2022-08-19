@@ -1,0 +1,44 @@
+uuid: f3031b66-0153-408a-a4e8-042d8452112f
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.card_modal_courses_and_workshops.field_mcw_body
+    - field.field.paragraph.card_modal_courses_and_workshops.field_mcw_cta
+    - field.field.paragraph.card_modal_courses_and_workshops.field_mcw_modal
+    - paragraphs.paragraphs_type.card_modal_courses_and_workshops
+  module:
+    - link
+    - text
+id: paragraph.card_modal_courses_and_workshops.default
+targetEntityType: paragraph
+bundle: card_modal_courses_and_workshops
+mode: default
+content:
+  field_mcw_body:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_mcw_cta:
+    type: link_default
+    weight: 3
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_mcw_modal:
+    type: text_textarea
+    weight: 4
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

@@ -1,0 +1,20 @@
+uuid: f721dd98-64c2-4ed8-8a4c-e6e50c96c43f
+langcode: es
+status: true
+dependencies:
+  module:
+    - media
+    - paragraphs
+id: paragraph.field_bw_bg
+field_name: field_bw_bg
+entity_type: paragraph
+type: entity_reference
+settings:
+  target_type: media
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

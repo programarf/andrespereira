@@ -1,0 +1,22 @@
+uuid: 5fde1edc-f3f7-4f5c-8385-37e7797a5287
+langcode: es
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - andrespereira
+_core:
+  default_config_hash: kigu8pTxXt1qGR2NJ5HHdC4G2G1wsDrIjLPKBT5wUBc
+id: andrespereira_content
+theme: andrespereira
+region: content
+weight: -6
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Contenido principal de la página'
+  label_display: '0'
+  provider: system
+visibility: {  }

@@ -1,0 +1,112 @@
+.flickity {
+  &-button {
+    background-color: transparent;
+    border-radius: 0;
+    color: $gold;
+    width: 5rem;
+    height: 5rem;
+    @include from(l) {
+      width: 7rem;
+      height: 7rem;
+    }
+    &:hover {
+      background-color: transparent;
+      color: $gold;
+    }
+    &:focus {
+      box-shadow: none;
+    }
+    svg {
+      display: none;
+    }
+    &:disabled {
+      background: transparent;
+      border: none;
+    }
+  }
+  &-prev-next-button {
+    display: flex;
+    border: .1rem solid $white;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: transparent;
+    top: initial;
+    .flickity {
+      &-button-icon {
+        position: initial;
+      }
+    }
+    &::before {
+      @include pseudo();
+      background-image: url('../assets/images/icons/icon-arrow.svg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      height: 2rem;
+      width: 3.5rem;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
+    &.previous {
+      &::before {
+        transform: rotate(180deg);
+      }
+    }
+    &.next {
+      right: initial;
+      @include from(l) {
+        left: 21rem;
+      }
+    }
+  }
+  &-viewport {
+    padding: 0;
+  }
+  &-slider {
+    padding: 0;
+    width: 100%;
+    .views-row {
+      width: 100%;
+    }
+  }
+  &-page-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 2rem;
+    width: max-content;
+    .dot {
+      order: 3;
+      background-color: $goldlabel;
+      width: .9rem;
+      height: .9rem;
+      &.is-selected {
+        border-radius: .5rem;
+        width: 6.6rem;
+        height: .9rem;
+      }
+    }
+    .dot-play,
+    .dot-paused {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;  
+      display: block;
+      margin: 0 .5rem;
+      width: 2rem;
+      height: 2rem;
+      cursor: pointer;
+    }
+    .dot-play {
+      order: 2;
+      background-image: url('../assets/images/icons/icon-play-slider.svg');
+    }
+    .dot-paused {
+      order: 1;
+      background-image: url('../assets/images/icons/icon-paused-slider.svg');
+    }
+  }
+}

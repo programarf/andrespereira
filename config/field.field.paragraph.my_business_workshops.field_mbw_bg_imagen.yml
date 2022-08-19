@@ -1,0 +1,29 @@
+uuid: f9f28be2-2abb-43eb-b996-d09076216de3
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_mbw_bg_imagen
+    - media.type.image
+    - paragraphs.paragraphs_type.my_business_workshops
+id: paragraph.my_business_workshops.field_mbw_bg_imagen
+field_name: field_mbw_bg_imagen
+entity_type: paragraph
+bundle: my_business_workshops
+label: 'Bg imagen'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

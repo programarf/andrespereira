@@ -1,0 +1,25 @@
+uuid: b7a885a8-361d-4773-a9d0-cfa413de8f88
+langcode: es
+status: true
+dependencies:
+  config:
+    - webform.webform.newsletter
+  module:
+    - webform
+  theme:
+    - andrespereira
+id: webform_2
+theme: andrespereira
+region: footer_second
+weight: -10
+provider: null
+plugin: webform_block
+settings:
+  id: webform_block
+  label: 'Suscríbase a nuestro boletín'
+  label_display: '0'
+  provider: webform
+  webform_id: newsletter
+  default_data: ''
+  redirect: false
+visibility: {  }

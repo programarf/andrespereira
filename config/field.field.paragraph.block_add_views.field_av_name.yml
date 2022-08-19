@@ -1,0 +1,29 @@
+uuid: 51fdf59a-03c2-416a-9eab-c9b433ef74a1
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_av_name
+    - paragraphs.paragraphs_type.block_add_views
+    - taxonomy.vocabulary.class_views
+id: paragraph.block_add_views.field_av_name
+field_name: field_av_name
+entity_type: paragraph
+bundle: block_add_views
+label: 'Nombre del block'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      class_views: class_views
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

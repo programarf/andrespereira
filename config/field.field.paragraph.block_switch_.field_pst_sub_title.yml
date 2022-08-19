@@ -1,0 +1,21 @@
+uuid: ec945b2e-fefa-42aa-aab6-1757437fae6a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pst_sub_title
+    - paragraphs.paragraphs_type.block_switch_
+  module:
+    - text
+id: paragraph.block_switch_.field_pst_sub_title
+field_name: field_pst_sub_title
+entity_type: paragraph
+bundle: block_switch_
+label: 'Sub Title'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

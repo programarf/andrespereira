@@ -1,0 +1,11 @@
+uuid: 92b565e1-53b4-4b97-8b17-bcaecc659b98
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.courses_and_workshops
+id: node.courses_and_workshops
+target_entity_type_id: node
+target_bundle: courses_and_workshops
+default_langcode: site_default
+language_alterable: false

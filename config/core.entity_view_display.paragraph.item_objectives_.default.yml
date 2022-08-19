@@ -1,0 +1,31 @@
+uuid: 76c9e9f5-5df6-4a9e-b310-6b21fbeca5d8
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.item_objectives_.field_io_icono
+    - field.field.paragraph.item_objectives_.field_io_text
+    - paragraphs.paragraphs_type.item_objectives_
+id: paragraph.item_objectives_.default
+targetEntityType: paragraph
+bundle: item_objectives_
+mode: default
+content:
+  field_io_icono:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_io_text:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

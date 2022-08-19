@@ -1,0 +1,29 @@
+uuid: f70b0187-e644-4775-895d-f47f6b3b7461
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_bw_bg
+    - media.type.image
+    - paragraphs.paragraphs_type.block_workshops
+id: paragraph.block_workshops.field_bw_bg
+field_name: field_bw_bg
+entity_type: paragraph
+bundle: block_workshops
+label: Bg
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

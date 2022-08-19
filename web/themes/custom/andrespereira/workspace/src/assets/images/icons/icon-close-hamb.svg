@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="29" height="27" viewBox="0 0 29 27">
+  <defs>
+    <clipPath id="clip-Mesa_de_trabajo_1">
+      <rect width="29" height="27"/>
+    </clipPath>
+  </defs>
+  <g id="Mesa_de_trabajo_1" data-name="Mesa de trabajo – 1" clip-path="url(#clip-Mesa_de_trabajo_1)">
+    <rect width="29" height="27" fill="#fff"/>
+    <g id="Grupo_16163" data-name="Grupo 16163" transform="translate(0.536 -0.464)">
+      <path id="menu-Bold_1_" d="M236.667,1833.667h-30a1.667,1.667,0,1,0,0,3.333h30a1.667,1.667,0,1,0,0-3.333Z" transform="translate(-1440.555 -1127.071) rotate(-45)" fill="#d4ae4d"/>
+      <path id="menu-Bold_1_2" data-name="menu-Bold_1_" d="M236.667,1833.667h-30a1.667,1.667,0,1,0,0,3.333h30a1.667,1.667,0,1,0,0-3.333Z" transform="translate(1154.998 -1440.555) rotate(45)" fill="#d4ae4d"/>
+    </g>
+  </g>
+</svg>

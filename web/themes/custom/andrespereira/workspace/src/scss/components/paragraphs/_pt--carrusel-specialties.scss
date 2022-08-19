@@ -1,0 +1,550 @@
+.paragraph--type--carrusel-specialties {
+  position: relative;
+
+  &--imagen {
+    img {
+      width: 100%;
+      height: 50rem;
+      object-fit: cover;
+      @include from(l) {
+        height: 70rem;
+      }
+    }
+    &::before {
+      @include pseudo();
+      background: linear-gradient(270deg, transparent, #000000 50%);
+      width: 100%;
+      height: 100%;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      z-index: 1;
+      @include from(l) {
+        width: 70%;
+      }
+    }
+  }
+  &--items {
+    // background-image: url("../assets/images/bg/back-rectangle-orange-big.svg");
+    // background-position: center;
+    // background-repeat: no-repeat;
+    // background-size: 110% 110%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0 0 0 2.5rem;
+    width: 85%;
+    height: 100%;
+    z-index: 1;
+    @include from(l) {
+      padding: initial;
+      width: 48%;
+      left: 5%;
+    }
+    @include from(xlg) {
+      left: 25%;
+      width: 20%;
+    }
+    .field--name-field-cs-title {
+      color: #d5af43;
+      font-family: "Roboto Bold";
+      font-size: 2.2rem;
+      position: absolute;
+      top: 2rem;
+      left: 0;
+      right: 0;
+      margin: auto;
+      z-index: 1;
+      @include from (l) {
+        top: 6rem;
+        font-size: 3.8rem; 
+      }
+      &::after {
+        @include pseudo();
+        background-color: $goldlabel;
+        height: 0.1rem;
+        width: 20%;
+        bottom: -1rem;
+      }
+    }
+    .field__items {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: auto;
+      width: 100%;
+      height: 100%;
+      position: relative;
+      @include from(l) {
+        width: 100%;
+      }
+      .field__item {
+        width: 100%;
+      }
+    }
+    .paragraph--type--image-banner {
+      .field {
+        &--name-field-ib-title,
+        &--name-field-ib-body {
+          color: $white;
+        }
+        &--name-field-ib-title {
+          p {
+            display: block;
+            font-family: $RobotoM;
+            font-size: 2.2rem;
+            margin: 0 0 5rem;
+            position: relative;
+            @include from(l) {
+              font-size: 3.8rem;
+              width: auto;
+            }
+            &:after {
+              @include pseudo();
+              background-color: $goldlabel;
+              height: 0.2rem;
+              width: 75%;
+              bottom: -1rem;
+            }
+          }
+        }
+        &--name-field-ib-body {
+          p {
+            font-family: $RobotoM;
+            font-size: 1.6rem;
+            line-height: 1.5;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            @include from(l) {
+              font-size: 2.4rem;
+            }
+          }
+        }
+      }
+    }
+    .flickity-prev-next-button {
+      bottom: 1rem;
+      @include from(l) {
+        bottom: 5rem;
+      }
+      &.previous {
+        left: 0;
+        @include from(l) {
+          left: 0;
+        }
+      }
+      &.next {
+        left: 6rem;
+        @include from(l) {
+          left: 8rem;
+        }
+      }
+    }
+    .paragraph--type--isc-items-slider-complete {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      max-width: 66%;
+      margin: 0 0 3rem;
+      .field--name-field-isc {
+        &-icono {
+          flex: 1 0 12rem;
+          margin: 0;
+          position: relative;
+          &::after {
+            right: 2rem;
+          }
+        }
+        &-title {
+        }
+      }
+    }
+  }
+}
+
+.variant__screen--half {
+  &.paragraph--type--carrusel-specialties {
+    .paragraph--type--carrusel-specialties {
+      &--items {
+        background-image: url("../assets/images/bg/back-rectangle-orange-big.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 110% 110%;
+        .field--name-field-cs-title {
+          width: 100%;
+          color: $white;
+          left: 2rem;
+          @include from (l) {
+            left: initial;
+          }
+        }
+        .field__items {
+          .field--name-field-isc-title {
+            display: block;
+            font-family: $RobotoB;
+            font-size: 2.2rem;
+            margin: 0 0 5rem;
+            position: relative;
+            color: $goldlabel;
+            @include from(l) {
+              font-size: 2.8rem;
+              width: 60%;
+            }
+            &:after {
+              @include pseudo();
+              background-color: $goldlabel;
+              height: 0.2rem;
+              width: 75%;
+              bottom: -1rem;
+            }
+          }
+        }
+        .paragraph--type--isc-items-slider-complete {
+          flex-direction: column;
+          max-width: 60%;
+          align-items: flex-start;
+        }
+      }
+    }
+  }
+}
+
+.variant__screen--all {
+  &.paragraph--type--carrusel-specialties {
+    .paragraph--type--carrusel-specialties {
+      &--items {
+        @include from(l) {
+          padding: initial;
+          width: 70%;
+          left: 0;
+          right: 0;
+          margin: auto;
+        }
+        .field--name-field-cs-title {
+          width: 100%;
+          padding: 0 2rem;
+          top: 5rem;
+          @include from (l) {
+            padding: initial;
+          }
+        }
+        .field--name-field-group {
+          .field--name-field-group-items- {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            width: 100%;
+            .field__item {
+              width: 50%;
+              flex: 1 0 50%;
+              margin: 0;
+              padding: 1rem;
+              @include from (l) {
+                width: 48%;
+                margin: 0 0 2rem;
+                padding: initial;
+              }
+              .field__item {
+                margin: 0;
+                padding: 1rem;
+                flex: 1 0 100%;
+                width: 100%;
+                @include from (l) {
+                  flex: 1 0 48%;
+                  width: 48%;
+                }
+              } 
+            }
+          }
+        }
+      }
+    }
+  }
+  .paragraph--type--carrusel-specialties--imagen {
+    img {
+      height: 70rem;
+    }
+  }
+  .paragraph--type--carrusel-specialties--items {
+    padding: 0 2rem;
+    width: 100%;
+    @include from (l) {
+      padding: 0 0 0 2.5rem;
+      width: 85%;
+    }
+    .paragraph--type--isc-items-slider-complete {
+      flex-direction: column;
+      max-width: 100%;
+      @include from (l) {
+        max-width: 66%;
+        flex-direction: row;
+      }
+    }
+  }
+}
+
+.tercera-generacion {
+  .variant__screen--half {
+    &.paragraph--type--carrusel-specialties {
+      .paragraph--type--carrusel-specialties {
+        &--imagen {
+          &::before {
+            background: linear-gradient(90deg, transparent, #000000 35%);
+            @include from(l) {
+              right: 0;
+            }
+          }
+        }
+        &--items {
+          @include from (l) {
+            right: 0;
+            left: inherit;
+          }
+          @include from (xlg) {
+            right: 25%;
+          }
+          .paragraph--type--isc-items-slider-complete {
+            max-width: 100%;
+            @include from (l) {
+              max-width: 70%;
+            }
+          }
+          .field--name-field-cs-title {
+            @include from (l) {
+              top: 7rem;
+              left: 0;
+              width: 75%;
+            }
+          }
+          .field--name-field-isc-title {
+            @include from (l) {
+              width: 100%;
+            }
+          }
+          .field__items {
+            @include from (l) {
+              width: 85%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.variant__carrusel--complete {
+  .paragraph--type--carrusel-specialties--imagen {
+    img {
+      height: 80rem;
+      @include from (l) {
+        height: 70rem;
+      }
+    }
+  }
+  .paragraph--type--carrusel-specialties--items {
+    width: 95%;
+    @include from (l) {
+      width: 85%;
+    }
+    .field__items {
+      justify-content: flex-start;
+      margin: 5rem auto 0;
+      @include from (l) {
+        justify-content: center;
+        margin: auto;
+      }
+    }
+    .paragraph--type--isc-items-slider-complete {
+      flex-direction: column;
+      position: relative;
+      max-width: 100%;
+      padding: 0 0 0 6rem;
+      @include from (l) {
+        padding: 0 0 0 12rem;
+        max-width: 80%;
+      }
+    }
+    .field--name-field-isc-icono {
+      position: absolute;
+      width: 10rem;
+      left: 0;
+      &::after {
+        right: .5rem;
+      }
+    }
+    .field--name-field-cs-title {
+      padding: 0 2rem;
+      @include from (l) {
+        padding: initial;
+      }
+    }
+    .flickity-prev-next-button {
+      bottom: 6rem;
+      @include from (l) {
+        bottom: 1rem;
+      }
+    }
+  }
+}
+
+.variant__icons--text-small {
+  .paragraph--type--block-iconos--imagen {
+    img {
+      height: 90rem;
+      @include from (l) {
+        height: 80rem;
+      }
+    }
+  }
+  .paragraph--type--block-iconos--content {
+    .field--name-field-bi-descripcion {
+      margin: 0 auto 5rem;
+      text-align: center;
+    }
+    .field--name-field-iconos {
+      .field__item  {
+        margin: 0;
+        position: relative;
+        width: 100%;
+        @include from (l) {
+          width: 33.3%;
+          padding: 0 2rem;
+        }
+        &::after {
+          @include from (l) {
+            @include pseudo();
+            background-color: $goldlabel;
+            margin: auto;
+            width: .1rem;
+            height: 50%;
+            bottom: 0;
+            left: 0;
+          }
+        }
+        &:first-child {
+          &::after {
+            display: none;
+          }
+        }
+        .field__item {
+          &::after {
+            display: none;
+          }
+        }
+        .paragraph--type--iconos {
+          .field--name-field-ic-icono {
+            margin: 0;
+            padding: 0;
+            text-align: left;
+            width: 100%;
+            position: relative;
+            &::after {
+              @include pseudo();
+              background-color: $goldlabel;
+              height: .3rem;
+              width: 3rem;
+              left: 2rem;
+              bottom: 2rem;
+              @include from (l) {
+                left: 4rem;
+                bottom: 3rem;
+                width: 6rem;
+              }
+            }
+            img {
+              height: 7rem;
+              width: 7rem;
+              @include from (l) {
+                height: 14rem;
+                width: 14rem;
+              }
+            }
+          }
+          .field--name-field-ic-descripcion {
+            font-family: $RobotoR;
+            font-size: 1.6rem;
+            text-align: left;
+            width: 100%;
+            height: 14rem;
+            overflow: scroll;
+            &::-webkit-scrollbar {
+              width: .3rem;
+              background-color: transparent;
+            }
+            &::-webkit-scrollbar-track{
+              border-radius: .2rem;
+              background-color: transparent;
+            }
+            &::-webkit-scrollbar-thumb {
+              border-radius: .2rem;
+              background-color: $goldlabel;
+            }
+            @include from (l) {
+              font-size: 1.8rem;
+              height: auto;  
+              &::-webkit-scrollbar {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    } 
+  }
+}
+
+.modelo-trec {
+  .variant__screen--half {
+    &.paragraph--type--carrusel-specialties {
+      .paragraph--type--carrusel-specialties--items {
+        .paragraph--type--isc-items-slider-complete {
+          max-width: 80%;
+          @include from (l) {
+            max-width: 60%;
+          }
+        }
+        .field--name-field-isc-title {
+          color: $white;
+          @include from (l) {
+            width: 100%;
+            font-size: 5.2rem;
+          }
+        }
+      }
+    }
+  }  
+}
+
+.hipnosis {
+  .paragraph--type--carrusel-specialties--imagen {
+    img {
+      height: 80rem;
+      @include from (l) {
+        height: 70rem;
+      }
+    }
+  }
+  .paragraph--type--carrusel-specialties--items {
+    .field--name-field-cs-title {
+      padding: 0 2rem;
+      @include from (l) {
+        padding: initial;
+      }
+    }
+    .paragraph--type--isc-items-slider-complete {
+      max-width: 100%;
+      @include from (l) {
+        max-width: 66%;
+      }
+      .field--name-field-isc-icono {
+        flex: 1 0 8rem;
+        @include from (l) {
+          flex: 1 0 12rem;
+        }
+      }
+    }
+  }
+}

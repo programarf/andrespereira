@@ -1,0 +1,25 @@
+uuid: 0fae5709-2183-403e-8c49-213a646a1fc4
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:275e38c2-96a3-4036-9425-8367df61e557'
+  module:
+    - block_content
+  theme:
+    - andrespereira
+id: blockcontacto
+theme: andrespereira
+region: primary_menu
+weight: -7
+provider: null
+plugin: 'block_content:275e38c2-96a3-4036-9425-8367df61e557'
+settings:
+  id: 'block_content:275e38c2-96a3-4036-9425-8367df61e557'
+  label: 'Block Contacto '
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,0 +1,19 @@
+uuid: 18e67c42-718b-45bb-b61d-5ef6e1791c59
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_autor_cita
+    - node.type.article
+id: node.article.field_autor_cita
+field_name: field_autor_cita
+entity_type: node
+bundle: article
+label: 'Autor:'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

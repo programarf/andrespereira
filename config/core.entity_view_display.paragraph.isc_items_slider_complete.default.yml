@@ -1,0 +1,46 @@
+uuid: 5ccaed06-e1c0-49e1-b845-4e5ca0fd69f4
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.isc_items_slider_complete.field_isc_content
+    - field.field.paragraph.isc_items_slider_complete.field_isc_icono
+    - field.field.paragraph.isc_items_slider_complete.field_isc_title
+    - paragraphs.paragraphs_type.isc_items_slider_complete
+  module:
+    - svg_image
+    - text
+id: paragraph.isc_items_slider_complete.default
+targetEntityType: paragraph
+bundle: isc_items_slider_complete
+mode: default
+content:
+  field_isc_content:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_isc_icono:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_isc_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

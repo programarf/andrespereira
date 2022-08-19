@@ -1,0 +1,19 @@
+uuid: fc9a7fe0-b43c-45c2-b858-ba2904b46a53
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_bc_intro
+    - paragraphs.paragraphs_type.banner_carousel
+id: paragraph.banner_carousel.field_bc_intro
+field_name: field_bc_intro
+entity_type: paragraph
+bundle: banner_carousel
+label: 'Intro Text'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

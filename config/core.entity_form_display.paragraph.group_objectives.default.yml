@@ -1,0 +1,29 @@
+uuid: ac6fbb60-1516-4836-b64a-db77dc128c68
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.group_objectives.field_content
+    - paragraphs.paragraphs_type.group_objectives
+  module:
+    - paragraphs
+id: paragraph.group_objectives.default
+targetEntityType: paragraph
+bundle: group_objectives
+mode: default
+content:
+  field_content:
+    type: entity_reference_paragraphs
+    weight: 0
+    region: content
+    settings:
+      title: Párrafo
+      title_plural: Parráfos
+      edit_mode: closed
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: item_objectives_
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

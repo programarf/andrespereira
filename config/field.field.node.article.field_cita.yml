@@ -1,0 +1,21 @@
+uuid: 765fde15-930d-4c9b-be37-8f2e4d00f064
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cita
+    - node.type.article
+  module:
+    - text
+id: node.article.field_cita
+field_name: field_cita
+entity_type: node
+bundle: article
+label: Cita
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

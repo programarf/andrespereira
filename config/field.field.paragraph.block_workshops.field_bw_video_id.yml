@@ -1,0 +1,19 @@
+uuid: 851bbab3-908c-4878-9e2b-1d894f1e7ada
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_bw_video_id
+    - paragraphs.paragraphs_type.block_workshops
+id: paragraph.block_workshops.field_bw_video_id
+field_name: field_bw_video_id
+entity_type: paragraph
+bundle: block_workshops
+label: 'Video Id'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

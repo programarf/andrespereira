@@ -1,0 +1,19 @@
+uuid: f83c16ca-b82d-4561-b384-0f15ba426cb5
+langcode: es
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - text
+id: paragraph.field_ios_modal
+field_name: field_ios_modal
+entity_type: paragraph
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

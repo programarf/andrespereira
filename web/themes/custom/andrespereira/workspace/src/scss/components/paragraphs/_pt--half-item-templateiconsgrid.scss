@@ -1,0 +1,53 @@
+.paragraph--type--half-item {
+  .container  {
+    .paragraph--type--half-item-templateiconsgrid {
+      position: relative;
+      .block__half--tittle {
+        color: $white;
+        z-index: 2;
+        &::after {
+          bottom: -5rem;
+          @include from (l) {
+            bottom: -7rem;  
+          }
+        }
+      }
+      .block__half--subtittle {
+        display: block;
+        padding: 0 2rem;
+        z-index: 2;
+        @include from (l) {
+          padding: initial;
+        }
+        h3 {
+          color: $goldlabel;
+          font-family: $RobotoB;
+          font-size: 2.5rem;
+          @include from (l) {
+            font-size: 3.8rem;
+          }
+        }
+      }
+      .block__half--body {
+        @include from (l) {
+          margin: 5rem 0 0;
+        }
+      }
+      .block__half--cta {
+        a {
+          @extend %button-trans;
+          margin: 1rem 2rem 5rem;
+          padding: 1.2rem 6rem 1.2rem 1.2rem;
+          width: max-content;
+          @include from (l) {
+            margin: 4rem 0 0;
+          }
+          &:hover {
+            padding: 1.2rem 6rem 1.2rem 1.2rem;
+            width: max-content;
+          }
+        }
+      }
+    }
+  }
+}

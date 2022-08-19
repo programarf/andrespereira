@@ -1,0 +1,130 @@
+uuid: a47b5556-1cc5-48b3-9b62-f51f432077cd
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.studies.field_items
+    - field.field.paragraph.studies.field_st_body
+    - field.field.paragraph.studies.field_st_imagen
+    - field.field.paragraph.studies.field_st_media
+    - field.field.paragraph.studies.field_st_title
+    - paragraphs.paragraphs_type.studies
+  module:
+    - entity_reference_revisions
+    - field_group
+    - svg_image
+    - text
+third_party_settings:
+  field_group:
+    group_div:
+      children:
+        - field_st_imagen
+      label: div
+      parent_name: ''
+      region: content
+      weight: 0
+      format_type: html_element
+      format_settings:
+        classes: paragraph--type--studies--imagen
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+    group_div_items:
+      children:
+        - field_st_title
+        - field_st_body
+        - group_card
+      label: 'Div items'
+      parent_name: ''
+      region: content
+      weight: 1
+      format_type: html_element
+      format_settings:
+        classes: paragraph--type--studies--items
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+    group_card:
+      children:
+        - field_st_media
+        - field_items
+      label: Card
+      parent_name: group_div_items
+      region: content
+      weight: 4
+      format_type: html_element
+      format_settings:
+        classes: paragraph--type--studies--card
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+id: paragraph.studies.default
+targetEntityType: paragraph
+bundle: studies
+mode: default
+content:
+  field_items:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_st_body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_st_imagen:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_st_media:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_st_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden: {  }

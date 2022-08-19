@@ -1,0 +1,8 @@
+uuid: 199ddfcf-be99-4e83-b833-b18b5b2afb80
+langcode: es
+status: true
+dependencies: {  }
+id: publicidad
+label: 'Block publicidad'
+revision: 0
+description: ''

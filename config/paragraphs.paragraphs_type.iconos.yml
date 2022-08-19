@@ -1,0 +1,10 @@
+uuid: 27d0f0a4-b37e-40f0-8eb6-67b606145e17
+langcode: es
+status: true
+dependencies: {  }
+id: iconos
+label: Iconos
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

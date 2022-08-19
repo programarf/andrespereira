@@ -1,0 +1,62 @@
+uuid: f4af90de-ac29-4a04-a24d-b18c626bf931
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.specialties.field_av_name_block
+    - field.field.paragraph.specialties.field_cs_class
+    - field.field.paragraph.specialties.field_cs_imagen
+    - field.field.paragraph.specialties.field_cs_info
+    - field.field.paragraph.specialties.field_cs_titulo
+    - field.field.paragraph.specialties.field_cs_vista
+    - paragraphs.paragraphs_type.specialties
+  module:
+    - image
+id: paragraph.specialties.default
+targetEntityType: paragraph
+bundle: specialties
+mode: default
+content:
+  field_av_name_block:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_cs_imagen:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_cs_info:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_cs_titulo:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_cs_vista:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+hidden:
+  field_cs_class: true

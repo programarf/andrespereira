@@ -1,0 +1,23 @@
+uuid: fd082796-b51f-4cba-b92f-56ec31c2c3ed
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - andrespereira
+id: marcadelsitio_2
+theme: andrespereira
+region: header
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Marca del sitio'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: false
+  use_site_slogan: false
+visibility: {  }

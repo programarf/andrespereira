@@ -1,0 +1,87 @@
+uuid: dfeedef3-ddaf-4b73-b153-6c82c6240705
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.carrusel_specialties.field_cr_variant_class
+    - field.field.paragraph.carrusel_specialties.field_cs_bg_imagen
+    - field.field.paragraph.carrusel_specialties.field_cs_title
+    - field.field.paragraph.carrusel_specialties.field_group
+    - paragraphs.paragraphs_type.carrusel_specialties
+  module:
+    - entity_reference_revisions
+    - field_group
+third_party_settings:
+  field_group:
+    group_cs_div_imagen:
+      children:
+        - field_cs_bg_imagen
+      label: 'div Imagen'
+      parent_name: ''
+      region: content
+      weight: 0
+      format_type: html_element
+      format_settings:
+        classes: paragraph--type--carrusel-specialties--imagen
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+    group_cs_div_items:
+      children:
+        - field_cs_title
+        - field_group
+      label: 'Div items'
+      parent_name: ''
+      region: content
+      weight: 1
+      format_type: html_element
+      format_settings:
+        classes: paragraph--type--carrusel-specialties--items
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+id: paragraph.carrusel_specialties.default
+targetEntityType: paragraph
+bundle: carrusel_specialties
+mode: default
+content:
+  field_cs_bg_imagen:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_cs_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_group:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
+hidden:
+  field_cr_variant_class: true

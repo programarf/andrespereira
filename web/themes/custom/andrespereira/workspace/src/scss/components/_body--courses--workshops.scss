@@ -1,0 +1,29 @@
+.body--courses--workshops {
+  background-color: $black;
+  background-image: url('../assets/images/bg/back-transparent-shapes.svg');
+  background-size: cover;
+  img {
+    display: none;
+  }
+  .field--name-body {
+    margin: auto;
+    padding: 3rem;
+    @include from (l) {
+      padding: 12rem 0 6rem;
+      width: 100%;
+      max-width: 80%;
+    }
+    @include from (xlg) {
+      max-width: 130rem;
+    }
+    p {
+      color: $white;
+      line-height: 1.2;
+      width: 100%;
+      @include from (l) {
+        line-height: 1.5;
+        width: 60%;
+      }
+    }
+  }
+}

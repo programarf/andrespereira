@@ -1,0 +1,10 @@
+uuid: 3151e714-33c6-4f7a-9aaf-ab218776fb59
+langcode: es
+status: true
+dependencies: {  }
+id: carrusel_specialties_group
+label: 'Carrusel specialties group'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

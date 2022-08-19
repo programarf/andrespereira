@@ -1,0 +1,8 @@
+uuid: fc5ade46-6e89-46cf-ad44-cde9d61bc9d9
+langcode: es
+status: true
+dependencies: {  }
+id: bloque_banner
+label: 'Bloque banner'
+revision: 0
+description: ''

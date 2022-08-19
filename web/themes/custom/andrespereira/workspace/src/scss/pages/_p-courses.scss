@@ -1,0 +1,79 @@
+body {
+  &.page-cursos-empresariales,
+  &.page-instituciones-educativas,
+  &.page-alto-rendimiento,
+  &.page-para-todos {
+    #block-pagetitle {
+      display: none;
+    }
+  }
+  &.page-instituciones-educativas,
+  &.page-alto-rendimiento,
+  &.page-para-todos {
+    .field__item {
+      &:nth-child(odd) {
+        .paragraph--type--block-course-and-workshops {
+          .paragraph--type--block-course-and-workshops  {
+            &--bg {
+              &::before {
+                @include pseudo();
+                background: linear-gradient(90deg, transparent, #000000 60%);
+                width: 70%;
+                height: 100%;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                margin: auto;
+                z-index: 1;
+              }
+            }
+            &--content {
+              .paragraph--type--card-modal-courses-and-workshops {
+                &--content {
+                  right: 0;
+                  @include from (l) {
+                    padding: 0 7% 0 0;
+                  }
+                  @include from (xlg) {
+                    padding: 0 30% 0 0;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      &:nth-child(even) {
+        .paragraph--type--block-course-and-workshops {
+          .paragraph--type--block-course-and-workshops  {
+            &--bg {
+              &::before {
+                @include pseudo();
+                background: linear-gradient(270deg, transparent, #000000 40%);
+                width: 70%;
+                height: 100%;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                z-index: 1;
+              }
+            }
+            &--content {
+              .paragraph--type--card-modal-courses-and-workshops {
+                &--content {
+                  left: 0;
+                  @include from (l) {
+                    padding: 0 0 0 7%;
+                  }
+                  @include from (xlg) {
+                    padding: 0 0 0 30%;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,34 @@
+uuid: e1d0bbe3-70d6-44d0-ab0a-fa0365d6f8e1
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_imagen_autor_cita
+    - media.type.image
+    - node.type.article
+  content:
+    - 'media:image:40905065-7815-46a3-83c2-d2bd651965de'
+id: node.article.field_imagen_autor_cita
+field_name: field_imagen_autor_cita
+entity_type: node
+bundle: article
+label: 'Imagen Autor Cita'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    target_uuid: 40905065-7815-46a3-83c2-d2bd651965de
+    weight: 0
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

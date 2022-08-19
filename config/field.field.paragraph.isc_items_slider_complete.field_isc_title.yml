@@ -1,0 +1,19 @@
+uuid: d57e6265-d753-4688-b588-a2eda456b280
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_isc_title
+    - paragraphs.paragraphs_type.isc_items_slider_complete
+id: paragraph.isc_items_slider_complete.field_isc_title
+field_name: field_isc_title
+entity_type: paragraph
+bundle: isc_items_slider_complete
+label: Title
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

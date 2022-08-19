@@ -1,0 +1,29 @@
+// Headings
+%h1 {
+  font-family: $FontFamilyH1;
+  font-size: rem(20px);
+}
+
+%h2 {
+  font-family: $FontFamilyH2;
+  font-size: rem(30px);
+}
+
+%h3 {
+  font-family: $FontFamilyH3;
+  font-size: rem(16px);
+}
+
+%h4 {
+  font-family: $FontFamilyH4;
+  font-size: rem(12px);
+}
+%h5 {
+  font-family: $FontFamilyH5;
+  font-size: rem(12px);
+}
+
+%body {
+  font-family: $FontFamilyBody;
+  font-size: rem(16px);
+}

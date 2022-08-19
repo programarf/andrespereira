@@ -1,0 +1,72 @@
+uuid: 10f7e34d-f889-4324-946f-559ab5445d02
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.other_studies.field_os_imagen_bg
+    - field.field.paragraph.other_studies.field_os_item
+    - field.field.paragraph.other_studies.field_os_support
+    - field.field.paragraph.other_studies.field_sing_svg
+    - field.field.paragraph.other_studies.field_video_os_id
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.other_studies
+  module:
+    - media_library
+    - paragraphs
+    - svg_image
+id: paragraph.other_studies.default
+targetEntityType: paragraph
+bundle: other_studies
+mode: default
+content:
+  field_os_imagen_bg:
+    type: media_library_widget
+    weight: 0
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_os_item:
+    type: paragraphs
+    weight: 3
+    region: content
+    settings:
+      title: Párrafo
+      title_plural: Parráfos
+      edit_mode: open
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+      features:
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
+    third_party_settings: {  }
+  field_os_support:
+    type: media_library_widget
+    weight: 2
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_sing_svg:
+    type: image_image
+    weight: 4
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_video_os_id:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

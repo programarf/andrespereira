@@ -1,0 +1,29 @@
+uuid: d3212893-f2d6-4c77-851f-698a6734f38a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_bg_imagen
+    - media.type.image
+    - paragraphs.paragraphs_type.block_iconos
+id: paragraph.block_iconos.field_bg_imagen
+field_name: field_bg_imagen
+entity_type: paragraph
+bundle: block_iconos
+label: 'Bg imagen'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

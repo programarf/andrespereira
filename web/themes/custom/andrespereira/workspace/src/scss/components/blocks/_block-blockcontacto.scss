@@ -1,0 +1,33 @@
+#block-blockcontacto {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 10rem;
+  @include from (l) {
+    display: flex;
+    border-left: .2rem solid $gray;
+  }
+  @include from (lm) {
+    width: 34rem;
+  }
+  cursor: pointer;
+  .block__top {
+    &--contact {
+      display: flex;
+      align-items: center;
+    }
+    &--text {
+      font-family: $RobotoM;
+      font-size: 1.6rem;
+      padding-left: 1rem;
+      display: none;
+      @include from (lm) {
+        display: block;
+      }
+      @include from (xl) {
+        font-size: 1.8rem;  
+      }
+    }
+  }
+}

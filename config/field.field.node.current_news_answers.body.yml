@@ -1,0 +1,23 @@
+uuid: 6ac080bc-401d-4147-99ee-36d67735dfd9
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.current_news_answers
+  module:
+    - text
+id: node.current_news_answers.body
+field_name: body
+entity_type: node
+bundle: current_news_answers
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

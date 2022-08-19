@@ -1,0 +1,38 @@
+uuid: c1012b5f-a403-4a71-bde5-796d2b359226
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_av_support_image
+    - paragraphs.paragraphs_type.block_add_views
+  module:
+    - image
+id: paragraph.block_add_views.field_av_support_image
+field_name: field_av_support_image
+entity_type: paragraph
+bundle: block_add_views
+label: 'Imagen de apoyo'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: true
+  title_field_required: true
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+field_type: image

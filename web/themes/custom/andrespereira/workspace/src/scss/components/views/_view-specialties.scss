@@ -1,0 +1,73 @@
+.view-specialties {
+  .view-content {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    .views-row {
+      width: 80%;
+      @include from(l) {
+        width: 20%;
+      }
+      .card_specialty {
+        position: relative;
+        &--content {
+          position: absolute;
+          padding: 0 0 2rem 3rem;
+          bottom: 0;
+          width: 100%;
+        }
+        &--imagen {
+          padding: 0 .7rem;
+          .card_specialty--imagen {
+            padding: 0;
+            position: relative;
+            &::after {
+              @include pseudo();
+              background: linear-gradient(180deg, transparent, #000000 90%);
+              border-radius: 0 0 1rem 1rem;
+              left: 0;
+              right: 0;
+              margin: auto;
+              bottom: 0;
+              height: 60%;
+              width: 100%;
+            }
+            img {
+              border-radius: 1rem;
+              height: auto;
+              width: 100%;
+            }
+          }
+        }
+        &--title {
+          color: $white;
+          display: block;
+          font-family: $RobotoB;
+          font-size: 2rem;
+          margin: 0 0 3rem;
+          position: relative;
+          &::after {
+            @include pseudo();
+            background-color: $white;
+            height: .2rem;
+            width: 3.5rem;
+            bottom: -0.7rem;
+          }
+        }
+        &--link {
+          a {
+            @extend %button;
+            margin: 0;
+            max-width: 85%;
+            @include from(l) {
+              font-size: 1.2rem;
+            }
+            @include from(lm) {
+              font-size: 1.4rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

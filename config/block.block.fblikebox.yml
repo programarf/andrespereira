@@ -1,0 +1,34 @@
+uuid: 483a60c3-8072-47e5-a6fa-730845fea271
+langcode: es
+status: true
+dependencies:
+  module:
+    - fb_likebox
+  theme:
+    - andrespereira
+id: fblikebox
+theme: andrespereira
+region: footer_third
+weight: 0
+provider: null
+plugin: fb_likebox_block
+settings:
+  id: fb_likebox_block
+  label: 'FB Likebox'
+  label_display: visible
+  provider: fb_likebox
+  url: 'https://dev-site-andrespereira.pantheonsite.io/'
+  app_id: '478767933635379'
+  hide_header: 0
+  stream: 1
+  events: 0
+  messages: 0
+  show_faces: '0'
+  title: e
+  width: 200
+  height: 2000
+  hide_cta: 0
+  small_header: 0
+  adapt_container_width: 0
+  language: af_ZA
+visibility: {  }

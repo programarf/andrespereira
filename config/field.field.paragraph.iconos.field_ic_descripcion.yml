@@ -1,0 +1,19 @@
+uuid: 50427058-13ab-43eb-874d-580c2e967a3b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_ic_descripcion
+    - paragraphs.paragraphs_type.iconos
+id: paragraph.iconos.field_ic_descripcion
+field_name: field_ic_descripcion
+entity_type: paragraph
+bundle: iconos
+label: 'Descripción  '
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

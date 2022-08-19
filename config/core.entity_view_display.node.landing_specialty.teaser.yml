@@ -1,0 +1,33 @@
+uuid: ecf1d34c-314d-4ea7-a1ba-23a22102186d
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.landing_specialty.body
+    - field.field.node.landing_specialty.field_ps_content
+    - node.type.landing_specialty
+  module:
+    - text
+    - user
+id: node.landing_specialty.teaser
+targetEntityType: node
+bundle: landing_specialty
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_ps_content: true
+  langcode: true

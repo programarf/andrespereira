@@ -1,0 +1,22 @@
+uuid: 1a39ab49-f433-4e58-a30a-c0a6a5187758
+langcode: es
+status: true
+dependencies:
+  theme:
+    - andrespereira
+_core:
+  default_config_hash: Qf2BoIzd9py5AYXZj8fJzCYDyVk1-AWXcu-AqQeDZKA
+id: andrespereira_local_tasks
+theme: andrespereira
+region: content
+weight: -13
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Pestañas
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }

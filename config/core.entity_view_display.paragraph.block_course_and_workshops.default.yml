@@ -1,0 +1,117 @@
+uuid: 6d8a5429-8adf-438f-ae94-da10db277c15
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.block_course_and_workshops.field_caw_body
+    - field.field.paragraph.block_course_and_workshops.field_caw_content
+    - field.field.paragraph.block_course_and_workshops.field_caw_media
+    - field.field.paragraph.block_course_and_workshops.field_caw_video_id
+    - field.field.paragraph.block_course_and_workshops.field_class_custom
+    - paragraphs.paragraphs_type.block_course_and_workshops
+  module:
+    - entity_reference_revisions
+    - field_group
+    - media
+    - text
+third_party_settings:
+  field_group:
+    group_div_bg:
+      children:
+        - field_caw_video_id
+        - group_caw_video
+        - field_caw_media
+        - field_caw_body
+      label: 'Div bg'
+      parent_name: ''
+      region: content
+      weight: 0
+      format_type: html_element
+      format_settings:
+        classes: paragraph--type--block-course-and-workshops--bg
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+    group_div_content:
+      children:
+        - field_caw_content
+      label: 'Div content'
+      parent_name: ''
+      region: content
+      weight: 1
+      format_type: html_element
+      format_settings:
+        classes: paragraph--type--block-course-and-workshops--content
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+    group_caw_video:
+      children: {  }
+      label: video
+      parent_name: group_div_bg
+      region: content
+      weight: 2
+      format_type: html_element
+      format_settings:
+        classes: playerap
+        show_empty_fields: true
+        id: playerapcaw
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+id: paragraph.block_course_and_workshops.default
+targetEntityType: paragraph
+bundle: block_course_and_workshops
+mode: default
+content:
+  field_caw_body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_caw_content:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_caw_media:
+    type: media_thumbnail
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_caw_video_id:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  field_class_custom: true

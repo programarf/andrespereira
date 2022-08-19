@@ -1,0 +1,10 @@
+uuid: 4ee74fc9-07a6-4ba8-a4e3-4c2a5497fed6
+langcode: es
+status: true
+dependencies: {  }
+id: block_course_and_workshops
+label: 'Block Course and workshops'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

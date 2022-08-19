@@ -1,0 +1,175 @@
+.paragraph--type--block-workshops {
+  position: relative;
+  &--bg {
+    background-color: $black;
+    height: 70rem;
+    overflow: hidden;
+    .field--name-field-bw-video-id{
+      display: none;
+    }
+    iframe {
+      width: 100%;
+      height: 100rem;
+      position: relative;
+      top: -10rem;
+      visibility: hidden;
+      @include from (l) {
+        visibility: visible;
+      }
+    }
+    img {
+      height: 70rem;
+      width: 100%;
+      object-fit: cover;
+      @include from (l) {
+        height: 70rem;
+      }
+    }
+  }
+  &--content {
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-content: center;
+    bottom: 0;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    right: 0;
+    .field--name-field-bw {
+      &-content {
+        @include from(l) {
+          display: flex;
+          flex-wrap: wrap;
+          max-width: 130rem;
+        }
+        > .field__item {
+          @include from(l) {
+            flex: 1 0 33%;
+          }
+        }
+        .paragraph--type--item {
+          &-workshops {
+            padding: 0 6rem 0 1rem;
+            .field--name-field-iw {
+              &-icono {
+                width: 7rem;
+                position: relative;
+                &:after{
+                  content: "";
+                  display: block;
+                  position: absolute;
+                  background-color: $goldlabel;
+                  height: 0.3rem;
+                  width: 8rem;
+                  bottom: -1.8rem;
+                }
+              }
+              &-body {
+                padding: 2rem 0 0;
+                h3 {
+                  color: $goldlabel;
+                  font-family: $RobotoB;
+                  font-size: 1.8rem;
+                  margin: 2rem 0;
+                }
+                p{
+                  margin:  0 0 2rem;
+                  font-family: $RobotoR;
+                  color: $white;
+                  height: 18rem
+                }
+              }
+              &-cta a{
+                @extend %button-trans ;
+              }
+              &-modal {
+                position: fixed;
+                width: 0;
+                height: 0;
+                opacity: 0;
+                transition: all 1s;
+                &.active-modal {
+                  background-color: $white;
+                  border-radius: 2.5rem;
+                  border-right: 2rem solid $white;
+                  border-top: 3rem solid $white;
+                  border-bottom: 2rem solid $white;
+                  top: 15%;
+                  bottom: 0;
+                  left: 0;
+                  right: 0;
+                  margin: 0 auto 0 0;
+                  padding: 15rem 2.5rem 2.5rem;
+                  height: 75vh;
+                  width: 82%;
+                  overflow-y: scroll;
+                  opacity: 1;
+                  transition: all 1s;
+                  z-index: 3;
+                  @include from(l) {
+                    border-right: 3rem solid $white;
+                    border-top: 5rem solid $white;
+                    border-bottom: 3rem solid $white;
+                    height: 40rem;
+                    top: 12%;
+                    margin: auto;
+                    padding: 0 7rem 7rem 22rem;
+                    width: 80rem;
+                  }
+                  &::before {
+                    @include pseudo();
+                    background-image: url("../assets/images/icons/icon-studies.svg");
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: 100%;
+                    height: 15rem;
+                    width: 15rem;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    margin: auto;
+                    @include from(l) {
+                      top: initial;
+                      left: 3rem;
+                      right: initial;
+                      margin: initial;
+                    }
+                  }
+                  &::-webkit-scrollbar {
+                    width: 12px;
+                    background-color: transparent;
+                    scroll-padding: 2.5rem;
+                  }
+                  &::-webkit-scrollbar-track {
+                    border-radius: 10px;
+                    background-color: transparent;
+                  }
+                  &::-webkit-scrollbar-thumb {
+                    border-radius: 10px;
+                    background-color: $goldlabel;
+                  }
+                  .icon-close {
+                    background-image: url("../assets/images/icons/icon-close.svg");
+                    background-size: 100%;
+                    display: block;
+                    position: absolute;
+                    top: 1.5rem;
+                    right: 1.5rem;
+                    height: 3rem;
+                    width: 3rem;
+                    cursor: pointer;
+                    @include from(l) {
+                      top: 0;
+                      right: 2rem;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+uuid: a8354ed6-f984-4164-9512-56ae2be97fad
+langcode: es
+status: true
+dependencies:
+  config:
+    - webform.webform.contact
+  module:
+    - webform
+  theme:
+    - andrespereira
+id: webform
+theme: andrespereira
+region: content
+weight: -10
+provider: null
+plugin: webform_block
+settings:
+  id: webform_block
+  label: Webform
+  label_display: '0'
+  provider: webform
+  webform_id: contact
+  default_data: ''
+  redirect: false
+visibility: {  }

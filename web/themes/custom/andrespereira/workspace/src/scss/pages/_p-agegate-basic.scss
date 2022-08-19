@@ -1,0 +1,446 @@
+.agegate-visible {
+  // @include mq (md) {
+  //   overflow: hidden;
+  // }
+  #menu__paco {
+    display: none;
+  }
+  #block-titulodelapagina {
+    display: none;
+  }
+  #page {
+    .header {
+      display: none;
+    }
+    #main-wrapper,
+    .featured-bottom {
+      position: absolute;
+      height: 0;
+      overflow: hidden;
+      min-height: 0;
+      padding: 0;
+    }
+  }
+  .site-footer {
+    position: relative;
+    z-index: 9999;
+    @include mq(md) {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  #agv2 {
+    background-image: url("../assets/images/bg/bg_agegate-mobile.jpeg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+
+    @include mq("max-height: 720px") {
+      height: 561px;
+    }
+
+    @include mq(md) {
+      background-image: url("../assets/images/bg/bg_agegate-mobile.jpeg");
+    }
+
+    .agv2__container {
+      background: initial !important;
+      background-size: cover !important;
+      height: 100vh;
+      overflow: hidden;
+      padding: 0;
+      position: absolute !important;
+      top: 0;
+
+      @include mq("max-height: 720px") {
+        align-items: flex-start;
+        height: auto;
+      }
+
+      .agv2__wrapper {
+        margin: auto;
+        max-width: 300px;
+        padding: 5rem 0;
+        width: 100%;
+
+        @include mq("md") {
+          padding: 1rem 0;
+          @include flex(center);
+          flex-direction: column;
+          //flex-direction: r;
+          //max-width: 570px;
+          max-width: 1170px;
+        }
+      }
+
+      &#age-gate-02,
+      &#age-gate-03 {
+        position: absolute !important;
+        top: 0;
+      }
+
+      .agv2__wrapper {
+        header {
+          margin-bottom: 40px;
+
+          @include mq("md") {
+            display: block;
+            margin-bottom: 10px;
+            flex: 0 0 50%;
+            height: 70vh;
+          }
+
+          .agv2__brand {
+            position: relative;
+            width: auto;
+            @include mq("md") {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              height: 100%;
+              margin-bottom: 6rem;
+            }
+            img {
+              width: 165px;
+              margin: 1rem 0 0;
+
+              @include mq("md") {
+                width: 280px;
+              }
+            }
+          }
+          p {
+            color: #6f6f6f;
+            font-size: 14px;
+            margin: 1.4em 0 1.7em;
+            margin-top: 1.4em;
+            margin-bottom: 1.7em;
+            @include mq(md) {
+              font-size: 19px;
+            }
+          }
+        }
+      }
+
+      .form-age {
+        margin: 0;
+        @include mq(md) {
+          flex: 0 0 50%;
+        }
+        .form-age__header {
+          margin-bottom: 2rem;
+
+          .agv2__p {
+            width: 90%;
+            margin: 0 auto 1rem;
+            // font-family: $Poppins;
+            font-weight: bold;
+            font-weight: 400;
+            color: black;
+            @include mq(md) {
+              font-size: 2.5rem;
+              width: 67%;
+              font-weight: 500;
+            }
+          }
+
+          p {
+            color: $white;
+            //Bold;
+            font-size: 1.6rem;
+            line-height: 1.1;
+            text-transform: uppercase;
+
+            @include mq("md") {
+              font-size: 1.8rem;
+            }
+          }
+        }
+
+        .form-age__content {
+          padding: 0;
+          position: relative;
+          // max-width: 477px;
+          width: max-content;
+          margin: 0 auto;
+
+          .age_gate {
+            &_yes,
+            &_no {
+              padding: 4rem 2rem;
+              min-width: 9rem;
+              background: $white;
+              // font-family: $Poppins;
+              font-size: 2rem;
+              font-weight: 500;
+            }
+            &_yes {
+            }
+            &_no {
+            }
+          }
+
+          .year {
+            display: flex;
+            justify-content: center;
+            position: relative;
+
+            &:after {
+              //background-image: url('../assets/images/bg/bg_border-logo.png');
+              background-position: top right;
+              background-repeat: no-repeat;
+              background-size: 480px;
+              bottom: -30px;
+              content: "";
+              display: block;
+              height: 160px;
+              pointer-events: none;
+              position: absolute;
+              right: -80px;
+              width: 100%;
+
+              @include mq("md") {
+                background-size: 520px 185px;
+                bottom: -30px;
+                height: 185px;
+                right: -40px;
+              }
+            }
+
+            label.error {
+              position: absolute;
+              left: 50%;
+              transform: translateX(-50%);
+              font-size: 13px;
+              color: #f75858;
+              top: 109%;
+              margin: 0;
+              line-height: 1;
+              width: 100%;
+              text-transform: lowercase;
+              &::first-letter {
+                text-transform: uppercase;
+              }
+              @include mq("md") {
+                font-size: 14px;
+                top: 115%;
+              }
+            }
+
+            input.agv2__input {
+              background: $white;
+              color: #9a9999;
+              text-align: center;
+              border: none;
+              border-radius: 0;
+              font-size: 40px;
+              // font-family: $Poppins;
+              height: auto;
+              padding: 1.7rem 0.5rem 1.4rem;
+              margin: 0.4rem;
+              width: 61px;
+              box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.4));
+              @include mq("md") {
+                background: transparent;
+                color: $white;
+                border-radius: 10px;
+                border: 1px solid $white;
+                margin: 1rem;
+                padding: 0.8rem;
+                width: 87px;
+                height: 126px;
+              }
+
+              &::placeholder {
+                color: #9a9999;
+                @include mq("md") {
+                  color: $white;
+                }
+              }
+              &:focus {
+                outline: none;
+                box-shadow: none;
+              }
+
+              &::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+                margin: 0;
+              }
+
+              /* Firefox */
+              &[type="number"] {
+                -moz-appearance: textfield;
+              }
+            }
+          }
+          .error-year {
+            font-size: 12px;
+            /* font-family: $DroidSans; */
+          }
+          .form-age__navigation {
+            top: 35%;
+            left: -7rem;
+            @include mq("md") {
+              left: -10rem;
+              top: 42%;
+            }
+          }
+
+          .form-age__back {
+            background: none;
+            border-radius: 0;
+            height: auto;
+            width: auto;
+            &::before {
+              @include pseudo();
+              //background-image: url("../assets/images/icons/arrow-age.png");
+              width: 25px;
+              height: 25px;
+            }
+            svg {
+              display: none;
+            }
+          }
+        }
+        .legal__load {
+          margin: 0 auto;
+          width: 90%;
+
+          @include mq("md") {
+            width: 70%;
+          }
+        }
+      }
+      .agegate-legal {
+        display: block;
+        margin: 2.5rem 0 0;
+
+        @include mq("md") {
+          margin-top: 2.2rem;
+          display: flex;
+          flex-direction: column;
+          align-content: center;
+          align-items: center;
+        }
+
+        .agegate-legal__row {
+          margin: 0;
+
+          .agv2__checkbox {
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 1.5rem;
+            @include mq("md") {
+              justify-content: flex-start;
+            }
+            .checkbox__input {
+              display: block;
+              width: 20px;
+              position: relative;
+
+              input {
+                position: absolute;
+                z-index: -1;
+                opacity: 0;
+                width: 0;
+                height: 0;
+                display: none;
+              }
+
+              input:checked ~ .checkbox__control:before {
+                background-color: #01b433;
+                width: 13px;
+                border-radius: 50%;
+                margin: auto;
+                height: 13px;
+                left: 3px;
+                top: 3px;
+              }
+
+              .checkbox__control {
+                background-color: $white;
+                border: 1px solid $white;
+                border-radius: 50%;
+                cursor: pointer;
+                display: block;
+                font-size: 0;
+                height: 20px;
+                margin-top: 0;
+                margin-top: 1.4em;
+                width: 20px;
+                position: relative;
+                &::before {
+                  @include pseudo();
+                  border-radius: 50%;
+                  height: 20px;
+                  left: 0;
+                  top: 0;
+                  width: 20px;
+                }
+
+                @include mq("md") {
+                  margin-top: 0;
+                  font-size: 0;
+                }
+
+                svg {
+                  display: none;
+                }
+              }
+            }
+
+            .agv2__label {
+              color: $black;
+              cursor: pointer;
+              // font-family: $Poppins;
+              font-size: 16px;
+
+              @include mq("md") {
+                font-size: 18px;
+              }
+            }
+          }
+          .agv2__p {
+            padding: 0;
+            line-height: 1.3;
+
+            &.small {
+              // font-family: $Poppins;
+              font-size: 12px;
+              margin-bottom: 3rem;
+              text-align: center;
+              color: $black;
+              @include mq("md") {
+                font-size: 13px;
+                margin-bottom: 2rem;
+                text-align: left;
+              }
+            }
+
+            a {
+              color: #00b1fd;
+              // font-family: $Poppins;
+              text-decoration: underline;
+            }
+          }
+          .agegate__btns {
+            margin: 0;
+            a {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+
+    .agegate-legal {
+      display: none;
+    }
+    header,
+    .breadcrumb {
+      //display: none;
+    }
+  }
+}

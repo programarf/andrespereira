@@ -1,0 +1,37 @@
+uuid: d1e076bd-7a11-479e-99f4-be880772a778
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.iconos.field_ic_descripcion
+    - field.field.paragraph.iconos.field_ic_icono
+    - paragraphs.paragraphs_type.iconos
+  module:
+    - svg_image
+id: paragraph.iconos.default
+targetEntityType: paragraph
+bundle: iconos
+mode: default
+content:
+  field_ic_descripcion:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_ic_icono:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

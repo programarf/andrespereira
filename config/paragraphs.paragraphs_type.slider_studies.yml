@@ -1,0 +1,10 @@
+uuid: 0a34031e-5c40-40f7-b195-75442da4b85a
+langcode: es
+status: true
+dependencies: {  }
+id: slider_studies
+label: 'Slider studies'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

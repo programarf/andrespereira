@@ -1,0 +1,10 @@
+uuid: 5608c68a-f94f-472c-b095-e6ba163e718a
+langcode: es
+status: true
+dependencies: {  }
+id: block_iconos
+label: 'Block iconos'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

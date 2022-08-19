@@ -1,0 +1,29 @@
+uuid: 4eb42598-acb7-4453-a503-e431ae9afc8a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_st_media
+    - media.type.image
+    - paragraphs.paragraphs_type.studies
+id: paragraph.studies.field_st_media
+field_name: field_st_media
+entity_type: paragraph
+bundle: studies
+label: icono
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,10 @@
+uuid: e67cd362-4c25-4f96-ba93-d57f5f9f976f
+langcode: es
+status: true
+dependencies: {  }
+id: block_switch_
+label: 'Block switch '
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

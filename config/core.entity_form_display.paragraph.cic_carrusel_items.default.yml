@@ -1,0 +1,56 @@
+uuid: 23e566c1-2f61-4772-b4a1-b58c632ea4db
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.cic_carrusel_items.field_cic_bg_imagen
+    - field.field.paragraph.cic_carrusel_items.field_cic_items
+    - field.field.paragraph.cic_carrusel_items.field_cic_title
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.cic_carrusel_items
+  module:
+    - paragraphs
+    - svg_image
+id: paragraph.cic_carrusel_items.default
+targetEntityType: paragraph
+bundle: cic_carrusel_items
+mode: default
+content:
+  field_cic_bg_imagen:
+    type: image_image
+    weight: 1
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_cic_items:
+    type: paragraphs
+    weight: 2
+    region: content
+    settings:
+      title: Párrafo
+      title_plural: Parráfos
+      edit_mode: closed
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: isc_items_slider_complete
+      features:
+        add_above: '0'
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
+    third_party_settings: {  }
+  field_cic_title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

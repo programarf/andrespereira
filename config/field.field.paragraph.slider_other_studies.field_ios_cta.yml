@@ -1,0 +1,28 @@
+uuid: e646c1b0-b35f-4887-bbd3-20c11d948d99
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_ios_cta
+    - paragraphs.paragraphs_type.slider_other_studies
+  module:
+    - link
+id: paragraph.slider_other_studies.field_ios_cta
+field_name: field_ios_cta
+entity_type: paragraph
+bundle: slider_other_studies
+label: CTA
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    attributes: {  }
+    uri: 'internal:#'
+    title: 'Ver Estudio'
+    options: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

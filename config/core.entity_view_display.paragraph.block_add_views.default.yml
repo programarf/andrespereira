@@ -1,0 +1,93 @@
+uuid: 9e3201af-f485-4dfe-96bc-72ea4c8184d5
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.block_add_views.field_av_imagen
+    - field.field.paragraph.block_add_views.field_av_info
+    - field.field.paragraph.block_add_views.field_av_name
+    - field.field.paragraph.block_add_views.field_av_support_image
+    - field.field.paragraph.block_add_views.field_av_titulo
+    - field.field.paragraph.block_add_views.field_av_view
+    - field.field.paragraph.block_add_views.field_id_video
+    - paragraphs.paragraphs_type.block_add_views
+  module:
+    - svg_image
+    - viewsreference
+id: paragraph.block_add_views.default
+targetEntityType: paragraph
+bundle: block_add_views
+mode: default
+content:
+  field_av_imagen:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_av_info:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_av_name:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_av_support_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: true
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_av_titulo:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_av_view:
+    type: viewsreference_formatter
+    label: hidden
+    settings:
+      plugin_types:
+        block: block
+        default: 0
+        page: 0
+        feed: 0
+        embed: 0
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_id_video:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

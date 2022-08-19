@@ -1,0 +1,10 @@
+uuid: d9fda048-f055-4398-9723-e1f2af993e7d
+langcode: es
+status: true
+dependencies: {  }
+id: item_objectives_
+label: 'item objectives '
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

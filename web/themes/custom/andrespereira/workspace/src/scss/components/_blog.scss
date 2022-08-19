@@ -1,0 +1,58 @@
+.blog {
+  background-color: $black;
+  margin: 0;
+  padding: 8rem 0 4rem;
+  position: relative;
+  @include from (l) {
+    padding: 10rem 0 8rem
+  }
+  .row > * {
+    margin: 0;
+    padding: 0;
+  }
+  &--info {
+    color: $gold;
+    font-family: $RobotoR;
+    font-size: 1.8rem;
+    margin: auto;
+    position: relative;
+    left: 4rem;
+    width: 100%;
+    max-width: 70%;
+    @include from (l) {  
+      max-width: 75%;
+    }
+    @include from (xlg) {
+      max-width: 132rem;
+    }
+    &::before {
+      @include pseudo();
+      background-color: $gold;
+      width: 3rem;
+      height: .2rem;
+      top: 0;
+      bottom: 0;
+      left: -4rem;
+      margin: auto;
+    } 
+  }
+  &--title {
+   h3 {
+    color: $white;
+    display: block;
+    font-family: $RobotoM;
+    font-size: 2.5rem;
+    line-height: 1.2;
+    margin: 0 auto 4rem;
+    max-width: 70%;
+    @include from(l) {
+      font-size: 3.8rem;
+      max-width: 75%;
+      margin: 0 auto 7rem;
+    }
+    @include from (xlg) {
+      max-width: 132rem;
+    }
+   }
+  }
+}

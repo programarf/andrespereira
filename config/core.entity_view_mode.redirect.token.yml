@@ -1,0 +1,10 @@
+uuid: c6ba8dc9-0f9d-4429-89c8-74b9531153fe
+langcode: es
+status: true
+dependencies:
+  module:
+    - redirect
+id: redirect.token
+label: Comodín
+targetEntityType: redirect
+cache: true

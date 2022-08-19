@@ -1,0 +1,30 @@
+uuid: fafac6ca-333c-422a-a4c6-5b55f52b0323
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.item_social_media.field_social_media
+    - field.field.paragraph.item_social_media.field_url
+    - paragraphs.paragraphs_type.item_social_media
+id: paragraph.item_social_media.default
+targetEntityType: paragraph
+bundle: item_social_media
+mode: default
+content:
+  field_social_media:
+    type: options_select
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_url:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

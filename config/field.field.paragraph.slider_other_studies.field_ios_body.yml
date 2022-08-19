@@ -1,0 +1,21 @@
+uuid: deb69bda-e9c8-4537-bf7b-f4cbc7a53193
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_ios_body
+    - paragraphs.paragraphs_type.slider_other_studies
+  module:
+    - text
+id: paragraph.slider_other_studies.field_ios_body
+field_name: field_ios_body
+entity_type: paragraph
+bundle: slider_other_studies
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

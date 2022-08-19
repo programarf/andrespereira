@@ -1,0 +1,22 @@
+uuid: 97325593-2d6c-410e-8bbe-0fbfd56e234d
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - andrespereira
+_core:
+  default_config_hash: KC12e0aosUnBBs5bd374JVcQjJaFNOSIHzu0dUGf22o
+id: andrespereira_messages
+theme: andrespereira
+region: highlighted
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Mensajes de estado'
+  label_display: '0'
+  provider: system
+visibility: {  }

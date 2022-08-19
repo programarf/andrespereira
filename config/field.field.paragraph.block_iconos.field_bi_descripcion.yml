@@ -1,0 +1,21 @@
+uuid: 5af55ab3-c8b0-402c-9f13-ece25548008c
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_bi_descripcion
+    - paragraphs.paragraphs_type.block_iconos
+  module:
+    - text
+id: paragraph.block_iconos.field_bi_descripcion
+field_name: field_bi_descripcion
+entity_type: paragraph
+bundle: block_iconos
+label: Descripción
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,263 @@
+.paragraph--type--other-studies {
+  position: relative;
+  &--media {
+    position: relative;
+    height: 50rem;
+    overflow: hidden;
+    @include from (l) {
+      height: 62rem;
+    }
+    &::before {
+      @include pseudo();
+      height: 50rem;
+      width: 100%;
+      z-index: 1;
+      @include from (l) {
+        height: 62rem;
+      }
+    }
+    &::before {  
+      background: linear-gradient(270deg, transparent, #000000 100%);
+    }
+    &::after {
+      @include pseudo();
+      background: linear-gradient(90deg, transparent, #ffffff 50%);
+      top: 0;
+      height: 50rem;
+      width: 100%;
+      opacity: .8;
+      @include from (l) {
+        height: 62rem;
+      }
+    }
+    iframe {
+      display: none;
+      height: 50rem;
+      width: 100%;
+      @include from (l) {
+        display: block;
+        height: 90rem;
+        position: relative;
+        top: -10rem;
+      }
+    }
+    .field {
+      &--name-field-sing-svg,
+      &--name-field-os-support {
+        position: absolute;
+        z-index: 1;
+      }
+      &--name-field-sing-svg {
+        bottom: .4rem;
+        img {
+          opacity: .1;
+          color: $white;
+          width: 30rem;
+          @include from (l) {
+            width: 60rem;
+          }
+        }
+      }
+      &--name-field-os-support {
+        bottom: 0;
+        left: 7%;
+        margin: auto;
+        @include from (l) {
+          left: initial;
+          right: 15%;
+          height: 60rem;
+        }
+        img {
+          width: auto;
+          height: 20rem;
+          @include from (l) {
+            height: 60rem;
+          }
+        }
+      }
+    }
+  }
+  &--items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    @include from (l) {
+      width: 80%;  
+    }
+    .field__items {
+      display: flex;
+      align-items: end;
+      flex-direction: column;
+      justify-content: center;
+      margin: auto;
+      width: 70%;
+      @include from (l) {
+        align-items: center;
+        width: 50%; 
+      }
+      > .field__item {
+        display: block;
+        margin: 3.5rem 0;
+        @include from (l) {
+          margin: 5rem 0;  
+        }
+        .paragraph--type--slider-other-studies--items {
+          display: flex;
+          flex-direction: column;
+          position: relative;      
+          @include from (l) {
+            width: 24rem;
+          }
+          &::before {
+            @include pseudo();
+            background-color: $goldlabel;
+            left: -1.8rem;
+            width: .1rem;
+            height: 100%;
+          }
+          .field {
+            &--name-field-os-icono {
+              .field__label {
+                display: none;
+              }
+              .field__item {
+                width: auto;
+                position: absolute;
+                left: -10rem;
+                @include from (l) {
+                  left: -15rem;  
+                }
+                img {
+                  width: 7rem;
+                  @include from (l) {
+                    width: auto;
+                  }
+                }
+              }
+            }
+            &--name-field-ios-body {
+              p {
+                color: $white;
+                font-family: $RobotoB;
+                font-size: 2rem;
+                @include from (l) {
+                  font-size: 3rem;
+                }
+                span {
+                  color: $goldlabel;
+                  font-family: $RobotoB;
+                  font-size: 2rem;
+                  @include from (l) {
+                    font-size: 3rem;
+                  }
+                }
+              }
+            }
+            &--name-field-ios-cta {
+              a {
+                @extend %button-trans;
+                font-size: 1.2rem;
+                width: 16rem;
+                @include from (l) {
+                  font-size: initial;
+                  width: 75%;
+                }
+              }
+            }
+          }
+        }
+      }
+      .paragraph--type--slider-other-studies {
+        &--modal {
+          position: fixed;
+          width: 0;
+          height: 0;
+          opacity: 0;
+          transition: all 1s;
+          &.active-modal {
+            background-color: $white;
+            border-radius: 2.5rem;
+            border-right: 2rem solid $white;
+            border-top: 3rem solid $white;
+            border-bottom: 2rem solid $white;
+            top: 15%;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: 0 auto 0 0;
+            padding: 15rem 2.5rem 2.5rem;
+            height: 75vh;
+            width: 82%;
+            overflow-y: scroll;
+            opacity: 1;
+            transition: all 1s;
+            z-index: 3;
+            @include from (l) {
+              border-right: 3rem solid $white;
+              border-top: 5rem solid $white;
+              border-bottom: 3rem solid $white;
+              height: 60vh;
+              top: 12%;
+              margin: auto;
+              padding: 0 7rem 7rem 22rem;
+              width: 80rem;
+            }
+            &::before {
+              @include pseudo();
+              background-image: url('../assets/images/icons/icon-studies.svg');
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: 100%;
+              height: 15rem;
+              width: 15rem;
+              top: 0;
+              left: 0;
+              right: 0;
+              margin: auto;
+              @include from (l) {
+                top: initial;
+                left: 3rem;
+                right: initial;
+                margin: initial;
+              }
+            }
+            &::-webkit-scrollbar {
+              width: 12px;
+              background-color: transparent;
+              scroll-padding: 2.5rem;
+            }
+            &::-webkit-scrollbar-track{
+              border-radius: 10px;
+              background-color: transparent;
+            }
+            &::-webkit-scrollbar-thumb {
+              border-radius: 10px;
+              background-color: $goldlabel;
+            }
+            .icon-close {
+              background-image: url('../assets/images/icons/icon-close.svg');
+              background-size: 100%;
+              display: block;
+              position: absolute;
+              top: 1.5rem;
+              right: 1.5rem;
+              height: 3rem;
+              width: 3rem;
+              cursor: pointer;
+              @include from (l) {
+                top: 0;
+                right: 2rem;
+              }
+            } 
+          }
+        }
+      }
+    }
+  }
+}

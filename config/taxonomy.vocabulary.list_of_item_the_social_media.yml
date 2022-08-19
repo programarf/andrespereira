@@ -1,0 +1,8 @@
+uuid: f9c3926c-9e6d-4d9d-8a2e-ef4bad6076c6
+langcode: es
+status: true
+dependencies: {  }
+name: 'list of Item the social media'
+vid: list_of_item_the_social_media
+description: ''
+weight: 0

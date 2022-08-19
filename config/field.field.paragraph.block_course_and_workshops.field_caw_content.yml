@@ -1,0 +1,114 @@
+uuid: 8357ba3c-0b1b-4f09-88a8-736628333db3
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_caw_content
+    - paragraphs.paragraphs_type.block_course_and_workshops
+    - paragraphs.paragraphs_type.card_modal_courses_and_workshops
+    - paragraphs.paragraphs_type.my_business_workshops
+  module:
+    - entity_reference_revisions
+id: paragraph.block_course_and_workshops.field_caw_content
+field_name: field_caw_content
+entity_type: paragraph
+bundle: block_course_and_workshops
+label: Conte
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      card_modal_courses_and_workshops: card_modal_courses_and_workshops
+      my_business_workshops: my_business_workshops
+    negate: 0
+    target_bundles_drag_drop:
+      banner_carousel:
+        weight: 23
+        enabled: false
+      block_add_views:
+        weight: 24
+        enabled: false
+      block_course_and_workshops:
+        weight: 25
+        enabled: false
+      block_iconos:
+        weight: 26
+        enabled: false
+      block_logos:
+        weight: 27
+        enabled: false
+      block_switch_:
+        weight: 28
+        enabled: false
+      block_workshops:
+        weight: 35
+        enabled: false
+      card_modal_courses_and_workshops:
+        weight: 30
+        enabled: true
+      carrusel_specialties:
+        weight: 29
+        enabled: false
+      carrusel_specialties_group:
+        weight: 30
+        enabled: false
+      cic_carrusel_items:
+        weight: 31
+        enabled: false
+      group_objectives:
+        weight: 38
+        enabled: false
+      half_item:
+        weight: 32
+        enabled: false
+      iconos:
+        weight: 33
+        enabled: false
+      image_banner:
+        weight: 34
+        enabled: false
+      isc_items_slider_complete:
+        weight: 35
+        enabled: false
+      item_objectives_:
+        weight: 43
+        enabled: false
+      item_social_media:
+        weight: 36
+        enabled: false
+      item_workshops:
+        weight: 45
+        enabled: false
+      logos:
+        weight: 37
+        enabled: false
+      my_business_workshops:
+        weight: 47
+        enabled: true
+      other_studies:
+        weight: 38
+        enabled: false
+      slider_other_studies:
+        weight: 39
+        enabled: false
+      slider_studies:
+        weight: 40
+        enabled: false
+      social_media:
+        weight: 41
+        enabled: false
+      specialties:
+        weight: 42
+        enabled: false
+      studies:
+        weight: 43
+        enabled: false
+      tabs_link:
+        weight: 44
+        enabled: false
+field_type: entity_reference_revisions

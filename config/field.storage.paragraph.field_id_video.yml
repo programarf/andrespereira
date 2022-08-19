@@ -1,0 +1,21 @@
+uuid: 48f4c020-cbab-4d8e-a6d3-f8577ad1cede
+langcode: es
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_id_video
+field_name: field_id_video
+entity_type: paragraph
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

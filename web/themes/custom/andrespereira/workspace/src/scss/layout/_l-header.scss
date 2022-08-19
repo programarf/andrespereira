@@ -1,0 +1,93 @@
+#menu__paco .menu__paco--header  {
+  padding: 30px 20px 30px 5%;
+}
+#menu__paco > div.menu__paco--wrapper > div.menu__items > ul > li.menu-icon.menu__items--item > a {
+  color: $gold;
+  // font-family: $Poppins;
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+#menu__paco .menu__paco--header {
+  background-color: $black;
+}
+#menu__paco .menu__paco--wrapper {
+  background-color: $black;
+}
+#menu__paco > div.menu__paco--wrapper > div.menu__items > ul > li.menu__items--item.menu-item--expanded > a::before,
+#menu__paco
+  > div.menu__paco--wrapper.menu__paco--open
+  > div.menu__items
+  > ul
+  > li.menu__items--item.menu-item--expanded
+  > div.menu__paco--submenu
+  > div.menu__paco--menu
+  > ul
+  > li
+  > span::before {
+  border: solid $gold;
+  border: solid $gold;
+  border-width: 0 2px 2px 0;
+}
+#menu__paco div.menu__paco--search svg path {
+  stroke: $gold;
+  fill: $gold;
+}
+#menu__paco .menu__paco--wrapper .menu__login .navbar-nav .menu-item--expanded a {
+  background-color: $gold;
+  color: $white;
+  // font-family: $Poppins;
+  font-weight: 500;
+  font-size: 1.4rem;
+  color: $black;
+}
+#menu__paco > div.menu__paco--wrapper > div.menu__login > ul > li > ul > li > a{
+  @include from(l) {
+    padding: 1rem 0;
+    background-color: initial;
+  }
+}
+#menu__paco > div.menu__paco--wrapper > div.menu__login > ul > li > ul.dropdown-menu li.dropdown-item a{
+  padding: 10px 0;
+
+}
+.menu--paco-menu-header {
+  background-color: $black;
+  padding: 0;
+}
+#menu__paco > div.menu__paco--header > div.menu__paco--search.menu__paco--mobile div.menu-paco--search-engine,
+#menu__paco > div.menu__paco--wrapper > div.menu__paco--search.menu__paco--desktop div.menu-paco--search-engine {
+  background-color: $black;
+}
+#menu__paco > div.menu__paco--wrapper > div.menu__paco--search.menu__paco--desktop div.menu-paco--search-engine input,
+#menu__paco > div.menu__paco--header > div.menu__paco--search.menu__paco--mobile div.menu-paco--search-engine input {
+  // font-family: $Poppins;
+}
+#menu__paco div.menu__header--logo a img {
+  max-width: 19rem;
+}
+
+#menu__paco .menu__paco--submenu .menu__paco--head {
+  background-color: $gold;
+}
+#menu__paco .menu__paco--submenu {
+  background-color: $black;
+  color: $white;
+  @include from(l) {
+    background-color: $white;
+    color: $black;
+  }
+}
+#menu__paco .menu__paco--head .menu__head--title {
+  color: $black;
+  // font-family: $Poppins;
+  font-size: 18px;
+  @include from(l) {
+    
+  }
+}
+#menu__paco .menu__paco--header .menu__header--toggle svg path {
+  stroke: $gold;
+}

@@ -1,0 +1,10 @@
+uuid: 32e0b095-2df6-4ada-9171-b0914d767f16
+langcode: es
+status: true
+dependencies: {  }
+id: card_modal_courses_and_workshops
+label: 'Card  modal courses and workshops'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

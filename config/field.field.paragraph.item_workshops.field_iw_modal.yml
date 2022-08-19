@@ -1,0 +1,21 @@
+uuid: 3657172b-f742-480f-888a-8183bebc81af
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_iw_modal
+    - paragraphs.paragraphs_type.item_workshops
+  module:
+    - text
+id: paragraph.item_workshops.field_iw_modal
+field_name: field_iw_modal
+entity_type: paragraph
+bundle: item_workshops
+label: Modal
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

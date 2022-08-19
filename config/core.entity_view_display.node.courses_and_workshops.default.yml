@@ -1,0 +1,158 @@
+uuid: 4e3f29e4-916c-4c25-8e50-f18a7ef2b812
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.courses_and_workshops.body
+    - field.field.node.courses_and_workshops.field_caw_content
+    - field.field.node.courses_and_workshops.field_caw_image_banner
+    - field.field.node.courses_and_workshops.field_caw_watermark
+    - field.field.node.courses_and_workshops.field_image
+    - field.field.node.courses_and_workshops.field_menu
+    - field.field.node.courses_and_workshops.field_texto_caw_banner
+    - node.type.courses_and_workshops
+  module:
+    - entity_reference_revisions
+    - field_group
+    - media
+    - text
+    - user
+third_party_settings:
+  field_group:
+    group_div_banner:
+      children:
+        - field_caw_image_banner
+        - group_div_content
+      label: 'Div banner'
+      parent_name: ''
+      region: content
+      weight: 0
+      format_type: html_element
+      format_settings:
+        classes: banner--courses--workshops
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+    group_sub_menu:
+      children:
+        - field_menu
+      label: 'Sub menu'
+      parent_name: ''
+      region: content
+      weight: 1
+      format_type: html_element
+      format_settings:
+        classes: menu-course-workshops
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+    group_caw_body:
+      children:
+        - body
+      label: 'Div body'
+      parent_name: ''
+      region: content
+      weight: 2
+      format_type: html_element
+      format_settings:
+        classes: body--courses--workshops
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+    group_div_content:
+      children:
+        - field_caw_watermark
+        - field_texto_caw_banner
+      label: 'Div content'
+      parent_name: group_div_banner
+      region: content
+      weight: 4
+      format_type: html_element
+      format_settings:
+        classes: banner--wrapper__item
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+id: node.courses_and_workshops.default
+targetEntityType: node
+bundle: courses_and_workshops
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_caw_content:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_caw_image_banner:
+    type: media_thumbnail
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_caw_watermark:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_menu:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: true
+    third_party_settings: {  }
+    weight: 22
+    region: content
+  field_texto_caw_banner:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 7
+    region: content
+hidden:
+  field_image: true
+  langcode: true
+  links: true

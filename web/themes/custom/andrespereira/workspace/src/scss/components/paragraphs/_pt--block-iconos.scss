@@ -1,0 +1,173 @@
+.paragraph--type--block-iconos {
+  position: relative;
+  &--imagen {
+    &::before {
+      @include pseudo();
+      background: rgba(0, 0, 0, .7);
+      width: 100%;
+      height: 100%;
+      top: 0;
+      margin: auto;
+      z-index: 1;
+    }
+    img {
+      width: 100%;
+      height: 75rem;
+      object-fit: cover;
+      @include from (l) {
+        height: 75rem;  
+      }
+    }
+  }
+  &--content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0 0 0 2.5rem;
+    width: 85%;
+    height: 100%;
+    z-index: 1;
+    @include from (l) {
+      padding: initial;
+      width: 100%;  
+    }
+    .field {
+      &--name-field-bi-descripcion {
+        @include from (l) {
+          margin: 0 auto 7rem;
+          width: 100%;
+          max-width: 80%;
+        }
+        @include from (xlg) {
+          max-width: 132rem;
+        }
+        p {
+          color: $goldlabel;
+          font-family: $RobotoM;
+          font-size: 2.5rem;
+          @include from (l) {
+            font-size: 3.8rem;  
+          }
+        }
+      }
+      &--name-field-iconos {
+        display: flex;
+        flex-wrap: wrap;
+        @include from (l) {
+          margin: 0 auto;
+          width: 100%;
+          max-width: 85%;
+        }
+        @include from (xlg) {
+          max-width: 132rem;
+        }
+        .field__item {
+          .field__item {
+            margin: initial;
+            width: initial;
+          }
+          margin: 1rem 0;
+          width: 50%;
+          @include from (l) {
+            width: 33.3%;
+            margin: 2rem 0;
+          }
+          img {
+            display: block;
+            object-fit: contain;
+            height: 8rem;
+            width: 8rem;
+            margin: 0 0 2rem;
+          }
+          .paragraph--type--iconos {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            .field {
+              &--name-field-ic-descripcion {
+                color: $white;
+                font-family: $RobotoM;
+                font-size: 1.8rem;
+                text-align: center;
+                width: 85%;
+                @include from (l) {
+                  font-size: 2.5rem;
+                  width: 55%;  
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.variant__type--one {
+  &.paragraph--type--block-iconos {
+    .paragraph--type--block-iconos--content {
+      .field--name-field-bi-descripcion {
+        p {
+          color: $white;
+          margin: auto;
+          text-align: center;
+          width: 90%;
+          @include from (l) {
+            width: 60%;  
+          }
+        }
+      }
+      .field--name-field-iconos {
+        > .field__item {
+          @include from (l) {
+            width: 20%;
+          }
+          .paragraph--type--iconos {
+            .field--name-field-ic-descripcion {
+              font-size: 2rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.variant__icons--text {
+  &.paragraph--type--block-iconos {
+    .paragraph--type--block-iconos--content {
+      .field--name-field-bi-descripcion {
+        p {
+          margin: 0 0 3rem;
+          @include from (l) {
+            margin: initial;
+          }
+        }
+      }
+      .field--name-field-iconos {
+        > .field__item {
+          width: 100%;
+          @include from (l) {
+            width: 33.3%;
+          }
+          .paragraph--type--iconos {
+            .field--name-field-ic-descripcion {
+              font-size: 1.6rem;
+              width: 95%;
+              @include from (l) {
+                width: 85%;
+                font-size: 1.8rem; 
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

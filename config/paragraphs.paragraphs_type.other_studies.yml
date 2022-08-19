@@ -1,0 +1,10 @@
+uuid: beb506cb-62f2-4fd1-ab99-df288e647a79
+langcode: es
+status: true
+dependencies: {  }
+id: other_studies
+label: 'Other studies'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

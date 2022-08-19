@@ -1,0 +1,14 @@
+#block-anclaheader {
+  margin: 0;
+  padding: 0;
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $goldlabel;
+    height: 14rem;
+    a {
+      @extend %button-white;
+    }
+  }
+}

@@ -1,0 +1,74 @@
+/**
+ * variables.scss
+ *
+ * These are the styles of variables.
+ *
+ * Index
+ * - FONTS
+ * - COLORS
+ * - FONT SIZE
+ *  |- Title
+ */
+
+
+// -- FONTS -- //
+$RobotoR: "Roboto Regular";
+$RobotoM: "Roboto Medium";
+$RobotoB: "Roboto Bold";
+
+// -- FONTS BASE-- //
+$FontFamilyButton: $RobotoR;
+$FontFamilyH1: $RobotoR;
+$FontFamilyH2: $RobotoR;
+$FontFamilyH3: $RobotoR;
+$FontFamilyH4: $RobotoR;
+$FontFamilyH5: $RobotoR;
+
+$FontFamilyBody: $RobotoR;
+
+// -- COLORS -- //
+
+$black: #000000;
+$white :#FFFFFF;
+$gold: #b4821c;
+$goldlabel: #d5af43;
+$gray: #F3F3F3;
+$grayd: #B1B8C3;
+$grayradio: #6A6A6A;
+$grayinput: #404040;
+$graytags: #F4F4F5;
+$graybtn: #525252;
+$required: #EA682B;
+
+// Font weights
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+$font-weight-extra-bold: 800;
+$font-weight-black: 900;
+
+// Media queries
+$breakpoints-min: (
+  "s": 576px,
+  "m": 768px,
+  "l": 992px,
+  "lm": 1200px,
+  "xl": 1470px,
+  "xlg": 1600px
+);
+
+$breakpoints-max: (
+  "xs": map-get($breakpoints-min, "s") - 1px,
+  "s": map-get($breakpoints-min, "m") - 1px,
+  "m": map-get($breakpoints-min, "l") - 1px,
+  "l": map-get($breakpoints-min, "xl") - 1px,
+);
+
+$container-max-widths: (
+  "s": 540px,
+  "m": 720px,
+  "l": 960px,
+  "xl": 1320px,
+);

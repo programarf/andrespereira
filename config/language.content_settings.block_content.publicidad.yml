@@ -1,0 +1,11 @@
+uuid: ea4a3d3a-b9f5-4540-933c-cacabd470622
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.publicidad
+id: block_content.publicidad
+target_entity_type_id: block_content
+target_bundle: publicidad
+default_langcode: site_default
+language_alterable: false

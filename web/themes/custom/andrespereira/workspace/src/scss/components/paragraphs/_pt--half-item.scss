@@ -1,0 +1,125 @@
+.paragraph--type--half-item {
+  .container {
+    .block__half {
+      &--imagen {
+        img {
+          width: 100%;
+          height: 40rem;
+          object-fit: cover;
+          @include from (l) {
+            height: 70rem;
+          }
+        }
+        &.order-first {
+          + .block__half--content {
+            @include from (l) {
+              padding: 0 5% 0 2.5%;
+            }
+            @include from (xlg) {
+            padding: 0 28% 0 2.5%;  
+            }
+            &::before {
+              @include pseudo();
+              background: linear-gradient(180deg, transparent, #000000 70%);
+              top: -50%;
+              width: 100%;
+              height: 50%;
+              @include from (l) {
+                background: linear-gradient(90deg, transparent, #000000 70%);
+                top: initial;
+                left: -50%;
+                width: 50%;
+                height: 100%;
+              }
+            }
+          }
+        } 
+        &.order-last {
+          + .block__half--content {
+            @include from (l) {
+              padding: 0 2.5% 0 5%;
+            }
+            @include from (xlg) {
+              padding: 0 2.5% 0 28%;  
+            }
+            &::after {
+              @include pseudo();
+              background: linear-gradient(0deg, transparent, #000000 100%);
+              bottom: -50%;
+              width: 100%;
+              height: 50%;
+              @include from (l) {
+                background: linear-gradient(270deg, transparent, #000000 70%);
+                bottom: initial;
+                right: -50%;
+                width: 50%;
+                height: 100%;
+              }
+            }
+          }
+        }
+      }
+      &--content {
+        background-color: $black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+      }
+      &--tittle {
+        color: $white;
+        font-family: $RobotoB;
+        font-size: 2.5rem;
+        padding: 2rem;
+        position: relative;
+    
+        @include from (l) {
+          padding: initial;
+          font-size: 3.8rem;
+        }
+        &::after {
+          @include pseudo();
+          background-color: $gold;
+          height: .1rem;
+          width: 30%;
+          bottom: -1rem;
+        }
+        span {
+          color: $goldlabel;
+        }
+      }
+      &--body {
+        display: block;
+        margin: 3rem 0 0;
+        overflow-y: scroll;
+        height: 30rem;
+        @include from (l) {
+          height: 35rem;
+        }
+        &::-webkit-scrollbar {
+          width: .3rem;
+          background-color: transparent;
+        }
+        &::-webkit-scrollbar-track{
+          border-radius: .2rem;
+          background-color: transparent;
+        }
+        &::-webkit-scrollbar-thumb {
+          border-radius: .2rem;
+          background-color: $goldlabel;
+        }
+        p {
+          color: $white;
+          font-family: $RobotoR;
+          font-size: 1.4rem;
+          line-height: 1.6;
+          padding: 0 3rem 3rem 2rem;
+          @include from (l) {
+            padding: initial;
+            font-size: 1.6rem;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.paragraph--type--block-logos {
+  display: block;
+  margin: 4rem 0;
+  position: relative;
+  .field {
+    &__items {
+      margin: auto;
+      width: 100%;
+      @include from (xlg) {
+        max-width: 132rem;
+      }
+      .field__item {
+        display: flex;
+        align-items: center;
+        margin: 0 1rem;
+        height: 9rem;
+        width: 15rem;
+        @include from (l) {
+          margin: 0 2rem;
+          width: 21.6rem;
+          height: 9rem;
+        }
+        img {
+          width: 100%;
+          height: auto;
+          border-radius: 2rem;
+        }
+      }
+    }
+  }
+}

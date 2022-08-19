@@ -1,0 +1,23 @@
+uuid: b8aebe06-9d38-4cc3-af49-91b468f1a037
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.item_social_media.field_social_media
+    - field.field.paragraph.item_social_media.field_url
+    - paragraphs.paragraphs_type.item_social_media
+id: paragraph.item_social_media.default
+targetEntityType: paragraph
+bundle: item_social_media
+mode: default
+content:
+  field_social_media:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_url: true

@@ -1,0 +1,21 @@
+uuid: ce78b638-67da-4848-87a4-8a192c83c41b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_st_body
+    - paragraphs.paragraphs_type.studies
+  module:
+    - text
+id: paragraph.studies.field_st_body
+field_name: field_st_body
+entity_type: paragraph
+bundle: studies
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

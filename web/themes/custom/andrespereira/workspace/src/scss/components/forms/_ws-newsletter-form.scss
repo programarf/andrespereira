@@ -1,0 +1,36 @@
+form {
+  &.webform-submission-newsletter-form {
+    display: block;
+    margin: 4rem 0 2rem;
+    @include from(l) {
+      margin: initial;
+    }
+    > fieldset {
+      &:first-child {
+        color: $white;
+        display: block;
+        font-family: $RobotoM;
+        font-size: 1.8rem;
+        padding: 0 0 1rem;
+      }
+      &:nth-child(2) {
+        input[type="text"] {
+          border-radius: .7rem;
+          color: $grayradio;
+          font-family: $RobotoR;
+          font-size: 1.6rem;
+          height: 5.5rem;
+          padding: 0 2rem;
+        }
+      }
+    }
+    [data-drupal-selector="edit-actions"] {
+      button {
+        &.button--primary {
+          @extend %button;
+          margin: .5rem 0 0;
+        }
+      }
+    }
+  }
+}

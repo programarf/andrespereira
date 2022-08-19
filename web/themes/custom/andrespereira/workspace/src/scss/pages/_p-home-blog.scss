@@ -1,0 +1,489 @@
+body {
+  &.home-blog,
+  &.node--type-article {
+    .row [class*="col-"]:not(:first-child), 
+    .row [class*="col-"]:not(:last-child) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+    .block-inline-blockbloque-banner {
+      position: relative;
+      &--imagen {
+        &::before {
+          @include pseudo();
+          background: linear-gradient(270deg, transparent, #000000 40%);
+          width: 70%;
+          height: 100%;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+          z-index: 1;
+        }
+        img {
+          height: 25rem;
+          width: 100%;
+          object-fit: cover;
+          @include from (l) {
+            height: auto;
+            width: 100%;
+          }
+        }
+      }
+      &--text {
+        position: absolute;
+        top: 40%;
+        left: 7%;
+        z-index: 1;
+        .field {
+          &--name-body {
+            p {
+              color: $white;
+              font-family: $RobotoB;
+              font-size: 2.5rem;
+              text-transform: uppercase;
+              @include from (l) {
+                font-size: 3.8rem;  
+              }
+              span {
+                color: $goldlabel;  
+              }
+            }
+          }
+        }
+      }
+    }
+    .layout {
+      &--twocol-section {
+        background-color: $black;
+        margin: auto;
+        @include from (xlg) {
+          max-width: 132rem;
+        }
+        .layout__region {
+          &--second {
+            padding: 2rem;
+            @include from (l) {
+              padding: 7% 10% 0 2.5%;
+            }
+            .block-views-blockb-block-3 {
+              form {
+                position: relative;
+                input {
+                  &.form-control {
+                    font-family: $RobotoM;
+                    font-size: 1.4rem;
+                    height: 7rem;
+                    padding: 0 2rem;
+                    &::placeholder {
+                      color: $black;
+                    }
+                  }
+                }
+                [data-drupal-selector="edit-actions"] {
+                  display: flex;
+                  align-items: center;
+                  position: absolute;
+                  top: 0;
+                  bottom: 0;
+                  right: 1.2rem;
+                  margin: 0 0 0 -1rem !important;
+                  padding: 0;
+                  .btn-primary {
+                    background-color: transparent;
+                    border-color: transparent;
+                    background-image: url('../assets/images/icons/icon-lupa-dorado.svg');
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    border-radius: 1rem;
+                    font-size: 0;
+                    height: 5.5rem;
+                    width: 5.5rem;
+                  }
+                }
+              }
+              .view-b {
+                .view-content {
+                  padding: 2rem 0;
+                  a {
+                    color: $goldlabel;
+                    font-family: $RobotoM;
+                    font-size: 1.4rem;
+                    line-height: 1.2;
+                    margin: 2rem .5rem;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 2;
+                    -webkit-box-orient: vertical;
+                  }
+                }
+              }
+            }
+            .block-views-blockcategories-block-1,
+            .block-views-blocktags-block-1,
+            .block-views-blockb-block-2,
+            .block-tagclouds-blocktags {
+              h2 {
+                color: $goldlabel;
+                font-family: $RobotoB;
+                font-size: 2.7rem;
+                position: relative;
+                padding: 0 0 3rem;
+                &::after {
+                  @include pseudo;
+                  background-color: $white;
+                  height: .1rem;
+                  width: 100%;
+                  bottom: 0;
+                }
+              }
+            }
+            .block-views-blockb-block-2 {
+              .view-b {
+                .view-content {
+                  padding: 3rem .8rem;
+                  .views-row {
+                    display: block;
+                    margin: 1rem 0;
+                    .blog__last {
+                      display: flex;
+                      align-items: center;
+                      &--imagen {
+                        img {
+                          border-radius: 1rem;
+                          object-fit: cover;
+                          height: 9rem;
+                          width: 9rem;
+                        }
+                      }
+                      &--info {
+                        .blog__last {
+                          &--title {
+                            display: block;
+                            padding: 0 2rem;
+                            a {
+                              color: $goldlabel;
+                              font-family: $RobotoR;
+                              overflow: hidden;
+                              text-overflow: ellipsis;
+                              display: -webkit-box;
+                              -webkit-line-clamp: 2;
+                              -webkit-box-orient: vertical;
+                            }
+                          }
+                          &--date {
+                            color: $white;
+                            font-family: $RobotoR;
+                            margin: 1.2rem 0 0;
+                            padding: 0 0 0 5rem;
+                            position: relative;
+                            &::after {
+                              @include pseudo();
+                              background-image: url('../assets/images/icons/icon-calendar.svg');
+                              background-position: center;
+                              background-repeat: no-repeat;
+                              background-size: contain;
+                              top: 0;
+                              left: 2.2rem;
+                              height: 1.6rem;
+                              width: 1.6rem;
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            .block-inline-blockpublicidad {
+              img {
+                border-radius: .7rem;
+              }
+              a {
+                @extend %button;
+              }
+            }
+            .block-tagclouds-blocktags {
+              .content {
+                display: block;
+                margin: 3rem 0 0;
+                 .tagclouds-term {
+                   display: inline-block;
+                   padding: 0 0 1.5rem;
+                  a {
+                    background-color: $graytags;
+                    border-radius: 0.5rem;
+                    color: $black;
+                    font-size: 1.4rem;
+                    font-family: "Roboto Regular";
+                    margin: 0 .5rem;
+                    padding: 0.5rem 1rem;
+                    &:hover {
+                      background-color: $goldlabel;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    img {
+      height: auto;
+      width: 100%;
+    }
+  }
+  &.node--type-article {
+    .layout {
+      .layout__region {
+        &--first {
+          padding: 2rem;
+          @include from (l) {
+            padding: 7% 2.5% 0 10%;
+          }
+          .block-field-blocknodearticlefield-image {
+            display: block;
+            padding: 0 0 3rem;
+            img {
+              border-radius: 0.7rem;
+              height: 30rem;
+              object-fit: cover;
+              width: 100%;
+              @include from (l) {
+                height: 60rem;
+              }
+            }
+          }
+          .block-field-blocknodearticleuid,
+          .block-field-blocknodearticlecreated {
+            span {
+              color: $white;
+            }
+          }
+          .block-field-blocknodearticleuid {
+            display: block;
+            margin: 1rem 0;
+            span {
+              span, a {
+                color: $white;
+                font-family: $RobotoR;
+                padding: 0 0 0 3rem;
+                position: relative;
+                &::after {
+                  @include pseudo();
+                  background-image: url('../assets/images/icons/icon-user.svg');
+                  background-position: center;
+                  background-repeat: no-repeat;
+                  background-size: contain;
+                  top: 0;
+                  left: .8rem;
+                  height: 1.6rem;
+                  width: 1.6rem;
+                }
+              }
+            }
+          }
+          .block-field-blocknodearticlecreated {
+            display: block;
+            margin: 1rem 0;
+            span {
+              color: $white;
+              font-family: $RobotoR;
+              padding: 0 0 0 3rem;
+              position: relative;
+              &::after {
+                @include pseudo();
+                background-image: url('../assets/images/icons/icon-calendar.svg');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                top: 0;
+                left: .8rem;
+                height: 1.6rem;
+                width: 1.6rem;
+              }
+            }
+          }
+          .block-field-blocknodearticletitle {
+            span {
+              color: $goldlabel;
+              display: block;
+              font-family: "Roboto Medium";
+              font-size: 2rem;
+              line-height: 1.2;
+              margin: 3rem 0;
+              @include from (l) {
+                font-size: 4rem;
+              }
+            }
+          }
+          .block-field-blocknodearticlebody {
+            display: block;
+            margin: 0 0 7rem;
+            p {
+              color: $white;
+              @include from (l) {
+                font-size: 1.8rem;
+              }
+            }
+          }
+          .block-field-blocknodearticlefield-cita {
+            background-color: $graybtn;
+            border-left: .4rem solid $goldlabel;
+            border-radius: 0 .5rem 0 0;
+            padding: 3rem;
+            @include from (l) {
+              padding: 4rem 6rem 2rem 4rem;
+            }
+            p {
+              color: $white;
+              font-family: $RobotoB;
+              font-size: 2rem;
+              line-height: 1.6;
+              @include from (l) {
+                font-size: 2.7rem;
+              }
+            }
+          }
+          .block-field-blocknodearticlefield-imagen-autor-cita {
+            background-color: $graybtn;
+            border-left: .4rem solid $goldlabel;
+            position: relative;
+            img {
+              border: .4rem solid $goldlabel;
+              border-radius: 5rem;
+              height: 7.1rem;
+              width: 7.1rem;
+              position: relative;
+              left: 4rem;
+              margin: 0 0 2rem;
+            }
+            &::after {
+              @include pseudo();
+              background-image: url('../assets/images/icons/icon-marks.svg');
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: contain;
+              height: 18rem;
+              width: 9rem;
+              right: 1rem;
+              bottom: -6rem;
+            }
+          }
+          .block-field-blocknodearticlefield-autor-cita {
+            .content {
+              position: relative;
+              top: -9rem;
+              left: 14rem;
+              width: max-content;
+              .field__label {
+                color: $white;
+                font-family: $RobotoR;
+                font-size: 2rem;
+                width: 100%;
+                @include from (l) {
+                  font-size: 2.7rem;
+                  width: max-content;
+                }
+              }
+              .field__item {
+                color: $white;
+                font-family: $RobotoB;
+                font-style: italic;
+                font-size: 2rem;
+                width: 100%;
+                @include from (l) {
+                  font-size: 2.7rem;
+                  width: max-content;
+                }
+              }
+            }
+          }
+          .block-field-blocknodearticlefield-tags {
+            display: block;
+            .field--name-field-tags {
+              display: flex;
+              align-items: center;
+              flex-direction: column;
+              @include from (l) {
+                flex-direction: row;
+              }
+              h3 {
+                color: $goldlabel;
+                font-family: $RobotoB;
+                font-size: 2rem;
+                padding: 0 0 4rem;
+                @include from (l) {
+                  font-size: 2.7rem;
+                  padding: 0 1rem 0 0;
+                }
+              }
+              ul {
+                &.links {
+                  li {
+                    margin: 0;
+                    padding: .5rem .5rem 1.2rem;
+                    a {
+                      background-color: $graytags;
+                      border-radius: .5rem;
+                      color: $black;
+                      font-family: $RobotoR;
+                      padding: .5rem 1rem;
+                      &:hover {
+                        background-color: $goldlabel;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .block-inline-blockbasic {
+            a {
+              @extend %button-white;
+              margin: initial;
+            }
+          }
+          .block-social-sharing-buttons-block {
+            .social-sharing-buttons {
+              display: flex;
+              justify-content: flex-end;
+              gap: .5rem;
+              .share-facebook {
+                background-image: url('../assets/images/icons/icon-fb-white.svg');
+              }
+              .share-twitter {
+                background-image: url('../assets/images/icons/icon-tw-white.svg');
+              }
+              .share-facebook,
+              .share-twitter {
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                height: 4.5rem;
+                width: 4.5rem;
+                position: relative;
+                z-index: 1;
+                svg {
+                  display: none;
+                }
+              }
+              &::before {
+                @include pseudo();
+                content: "Compartir";
+                color: $goldlabel;
+                font-family: $RobotoM;
+                font-size: 2rem;
+                padding-right: 12rem;
+                z-index: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,7 @@
+uuid: 01f0ebbd-71a8-4888-b65d-53e3b06b1aa7
+langcode: es
+status: true
+dependencies: {  }
+id: block_icons_text_small
+label: 'block icons text small'
+classes: variant__icons--text-small

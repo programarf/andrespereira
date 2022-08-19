@@ -1,0 +1,21 @@
+uuid: a303d012-b204-49f2-b544-cc374ba03423
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_hi_body
+    - paragraphs.paragraphs_type.half_item
+  module:
+    - text
+id: paragraph.half_item.field_hi_body
+field_name: field_hi_body
+entity_type: paragraph
+bundle: half_item
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

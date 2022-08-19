@@ -1,0 +1,23 @@
+uuid: 9803b358-fb89-44ad-b663-5a56e51003d2
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.courses_and_workshops
+  module:
+    - text
+id: node.courses_and_workshops.body
+field_name: body
+entity_type: node
+bundle: courses_and_workshops
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

@@ -1,0 +1,23 @@
+uuid: 349adf35-9be5-4033-bc65-53089f1e8f34
+langcode: es
+status: false
+dependencies:
+  module:
+    - search
+  theme:
+    - andrespereira
+_core:
+  default_config_hash: jQ-C8l3dJPqYCGST1e-kSjR14PDP4wq-iFbp8dMFcRo
+id: andrespereira_search
+theme: andrespereira
+region: sidebar_first
+weight: -1
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Buscar
+  label_display: visible
+  provider: search
+  page_id: node_search
+visibility: {  }

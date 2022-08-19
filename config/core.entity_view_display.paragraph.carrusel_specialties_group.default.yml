@@ -1,0 +1,24 @@
+uuid: 269f8be9-e066-4a8e-84e3-705fcf91d2b1
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.carrusel_specialties_group.field_group_items_
+    - paragraphs.paragraphs_type.carrusel_specialties_group
+  module:
+    - entity_reference_revisions
+id: paragraph.carrusel_specialties_group.default
+targetEntityType: paragraph
+bundle: carrusel_specialties_group
+mode: default
+content:
+  field_group_items_:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

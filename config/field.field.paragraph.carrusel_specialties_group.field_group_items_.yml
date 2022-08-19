@@ -1,0 +1,91 @@
+uuid: b552c30d-eb93-44bb-8346-77f5a24749d5
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_group_items_
+    - paragraphs.paragraphs_type.carrusel_specialties_group
+    - paragraphs.paragraphs_type.isc_items_slider_complete
+  module:
+    - entity_reference_revisions
+id: paragraph.carrusel_specialties_group.field_group_items_
+field_name: field_group_items_
+entity_type: paragraph
+bundle: carrusel_specialties_group
+label: 'Group Items '
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      isc_items_slider_complete: isc_items_slider_complete
+    negate: 0
+    target_bundles_drag_drop:
+      banner_carousel:
+        weight: 22
+        enabled: false
+      block_add_views:
+        weight: 23
+        enabled: false
+      block_iconos:
+        weight: 24
+        enabled: false
+      block_logos:
+        weight: 25
+        enabled: false
+      block_switch_:
+        weight: 26
+        enabled: false
+      carrusel_specialties:
+        weight: 27
+        enabled: false
+      carrusel_specialties_group:
+        weight: 28
+        enabled: false
+      cic_carrusel_items:
+        weight: 29
+        enabled: false
+      half_item:
+        weight: 30
+        enabled: false
+      iconos:
+        weight: 31
+        enabled: false
+      image_banner:
+        weight: 32
+        enabled: false
+      isc_items_slider_complete:
+        weight: 33
+        enabled: true
+      item_social_media:
+        weight: 34
+        enabled: false
+      logos:
+        weight: 35
+        enabled: false
+      other_studies:
+        weight: 36
+        enabled: false
+      slider_other_studies:
+        weight: 37
+        enabled: false
+      slider_studies:
+        weight: 38
+        enabled: false
+      social_media:
+        weight: 39
+        enabled: false
+      specialties:
+        weight: 40
+        enabled: false
+      studies:
+        weight: 41
+        enabled: false
+      tabs_link:
+        weight: 42
+        enabled: false
+field_type: entity_reference_revisions

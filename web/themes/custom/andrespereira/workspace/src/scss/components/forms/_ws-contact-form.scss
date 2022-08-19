@@ -1,0 +1,197 @@
+body {
+  &.active-contact-form {
+    position: relative;
+    transition: all 1s;
+    overflow: hidden;
+    &::before {
+      @include pseudo();
+      background-color: $white;
+      height: 100%;
+      width: 100%;
+      opacity: .8;
+      transition: all 1s;
+      z-index: 2;
+    }
+    #block-whatsapp {
+      display: none;
+    }
+  }
+}
+
+#block-webform {
+  form {
+    &.webform-submission-contact-form {
+      background-color: $black;
+      background-image: url('../assets/images/bg/back-black-texture.svg');
+      background-size: cover;
+      background-position: top center;
+      padding: 4rem;
+      height: 100vh;
+      width: 100%;
+      max-width: 51.8rem;
+      position: fixed;
+      top: 0;
+      right: -55rem;
+      z-index: 3;
+      overflow-y: scroll;
+      transition: all 1s;
+      @include from (l) {
+        padding: 4rem 8rem; 
+      }
+      &.show-contact-form {
+        right: 0;
+        transition: all 1s;  
+      }
+      h3 {
+        color: $goldlabel;
+        display: block;
+        font-family: $RobotoB;
+        font-size: 1.8rem;
+        margin: 0 0 1rem;
+      }
+      p {
+        color: $white;
+        display: block;
+        font-size: 1.5rem;
+        line-height: 1.4;
+        margin: 0 0 1rem;
+      }
+      label {
+        color: $goldlabel;
+        display: block;
+        font-family: $RobotoB;
+        font-size: 1.8rem;
+        line-height: 1.4;
+        margin: 0 0 1.8rem;
+        width: max-content;
+        &.form-required {
+            position: relative;
+            display: initial;
+            &::after {
+            @include pseudo();
+            content: "(*)";
+            color: $required;
+            font-family: $RobotoB;
+            bottom: 0;
+            right: -3rem;
+          }
+        }
+      }
+      legend {
+        span {
+          color: $goldlabel;
+          font-family: $RobotoB;
+          font-size: 1.8rem;
+          line-height: 1.4;
+          width: max-content;
+          &.form-required {
+              position: relative;
+              &::after {
+              @include pseudo();
+              content: "(*)";
+              color: $required;
+              font-family: $RobotoB;
+              font-size: 1.8rem;
+              bottom: 0;
+              right: -3rem;
+            }
+          }
+        }
+      }
+      input[type="text"],
+      input[type="email"],
+      textarea,
+      select {
+        background-color: $grayinput;
+        border: .1rem solid $white;
+        border-radius: 1.5rem;
+        font-size: 1.6rem;
+        height: 4.8rem;
+        margin: 0 0 .5rem;
+        padding: 0 1.8rem;
+        color: $white;
+        font-family: $RobotoR;
+        &::placeholder {
+          color: $white;
+        }
+      }
+      select {
+        background-image: url('../assets/images/icons/icon-poligon.svg');
+        margin: 1rem 0 .5rem;
+      }
+      textarea {
+        height: 8.5rem;
+        padding: 1.5rem 1.8rem;
+        &:focus {
+          background-color: $grayinput;
+          color: $white;
+        }
+      }
+      .js-webform-radios {
+        display: flex;
+        .js-form-item {
+          padding-left: 4rem;
+        }   
+      }
+      input[type="radio"] {
+        display: none;
+        + label {
+          color: $grayradio;
+          display: block;
+          font-family: $RobotoR;
+          font-size: 1.8rem;
+          margin: 0;
+          position: relative;
+          text-transform: capitalize;
+          cursor: pointer;
+          &::before {
+            @include pseudo();
+            background-color: transparent;
+            border: .2rem solid $goldlabel;
+            border-radius: 5rem;
+            height: 2rem;
+            width: 2rem;
+            left: -2.5rem;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+          }
+        }
+        &:checked {
+          position: relative;
+          + label {
+            position: relative;
+            &::after {
+              @include pseudo();
+              background-color: $goldlabel;
+              border-radius: 5rem;
+              height: 1.2rem;
+              width: 1.2rem;
+              left: -2.1rem;
+              top: 0;
+              bottom: 0;
+              margin: auto;
+            }
+          }
+        }
+      }
+      button {
+        &.btn-primary {
+          @extend %button;
+        }
+      }
+      .btn-close {
+        background-image: url('../assets/images/icons/icon-close.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        right: 1.8rem;
+        top: 1.8rem;
+        height: 3.5rem;
+        width: 3.5rem;
+        cursor: pointer;
+      }
+    }
+  }
+}

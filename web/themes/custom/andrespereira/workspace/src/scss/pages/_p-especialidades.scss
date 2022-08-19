@@ -1,0 +1,110 @@
+body {
+  &.page-especialidades {
+    &.tercera-generacion,
+    &.modelo-trec {
+      .view-specialties {
+        .view-content {
+          .views-row {
+            &:first-child {
+              .card_specialty--imagen {
+                .card_specialty--imagen {
+                  &::after {
+                    background: linear-gradient(180deg, transparent, $goldlabel 90%);
+                    width: 90%;
+                  }
+                  img {
+                    transform: scale(.9);
+                  }
+                }
+              }
+            }  
+          }
+        }
+      }
+    }
+  }
+  &.hipnosis {
+    .view-specialties {
+      .view-content {
+        .views-row {
+          &:nth-child(2) {
+            .card_specialty--imagen {
+              .card_specialty--imagen {
+                &::after {
+                  background: linear-gradient(180deg, transparent, $goldlabel 90%);
+                  width: 90%;
+                }
+                img {
+                  transform: scale(.9);
+                }
+              }
+            }
+          }  
+        }
+      }
+    }
+  }
+  &.mindfulness {
+    .view-specialties {
+      .view-content {
+        .views-row {
+          &:nth-child(3) {
+            .card_specialty--imagen {
+              .card_specialty--imagen {
+                &::after {
+                  background: linear-gradient(180deg, transparent, $goldlabel 90%);
+                  width: 90%;
+                }
+                img {
+                  transform: scale(.9);
+                }
+              }
+            }
+          }  
+        }
+      }
+    }
+  }
+  &.neurofeedback {
+    .view-specialties {
+      .view-content {
+        .views-row {
+          &:nth-child(4) {
+            .card_specialty--imagen {
+              .card_specialty--imagen {
+                &::after {
+                  background: linear-gradient(180deg, transparent, $goldlabel 90%);
+                  width: 90%;
+                }
+                img {
+                  transform: scale(.9);
+                }
+              }
+            }
+          }  
+        }
+      }
+    }
+  }
+  &.tanatologia  {
+    .view-specialties {
+      .view-content {
+        .views-row {
+          &:nth-child(5) {
+            .card_specialty--imagen {
+              .card_specialty--imagen {
+                &::after {
+                  background: linear-gradient(180deg, transparent, $goldlabel 90%);
+                  width: 90%;
+                }
+                img {
+                  transform: scale(.9);
+                }
+              }
+            }
+          }  
+        }
+      }
+    }
+  }
+}

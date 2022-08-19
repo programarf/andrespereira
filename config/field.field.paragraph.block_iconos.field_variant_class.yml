@@ -1,0 +1,23 @@
+uuid: 1d2fd7bf-67b7-41dc-832b-990be795dd46
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_variant_class
+    - paragraphs.paragraphs_type.block_iconos
+id: paragraph.block_iconos.field_variant_class
+field_name: field_variant_class
+entity_type: paragraph
+bundle: block_iconos
+label: 'Variant class'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:classy_paragraphs_style'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: entity_reference

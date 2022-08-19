@@ -1,0 +1,19 @@
+uuid: b6959973-3f9c-4397-9fb6-7d7942eda559
+langcode: es
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - text
+id: paragraph.field_pst_content
+field_name: field_pst_content
+entity_type: paragraph
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

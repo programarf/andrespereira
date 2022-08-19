@@ -1,0 +1,19 @@
+uuid: 3fb5d8f8-da4d-49b1-9e0d-8909d3548c32
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_mbw_id_video
+    - paragraphs.paragraphs_type.my_business_workshops
+id: paragraph.my_business_workshops.field_mbw_id_video
+field_name: field_mbw_id_video
+entity_type: paragraph
+bundle: my_business_workshops
+label: 'Id video'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

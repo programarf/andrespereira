@@ -1,0 +1,21 @@
+uuid: cc976eea-7afb-4bff-b13a-b16aaf7ae6ad
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_iw_body
+    - paragraphs.paragraphs_type.item_workshops
+  module:
+    - text
+id: paragraph.item_workshops.field_iw_body
+field_name: field_iw_body
+entity_type: paragraph
+bundle: item_workshops
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

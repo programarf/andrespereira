@@ -1,0 +1,11 @@
+uuid: cabe984c-94d7-4a7c-9f2b-652fe0c6dcf4
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.bloque_banner
+id: block_content.bloque_banner
+target_entity_type_id: block_content
+target_bundle: bloque_banner
+default_langcode: site_default
+language_alterable: false

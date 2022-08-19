@@ -1,0 +1,25 @@
+uuid: dab47974-cfb4-40f7-8dbc-a1acef196caf
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:123ad991-688b-4c86-a683-a33ac2376123'
+  module:
+    - block_content
+  theme:
+    - andrespereira
+id: topinfo
+theme: andrespereira
+region: top_header
+weight: -9
+provider: null
+plugin: 'block_content:123ad991-688b-4c86-a683-a33ac2376123'
+settings:
+  id: 'block_content:123ad991-688b-4c86-a683-a33ac2376123'
+  label: 'top info'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

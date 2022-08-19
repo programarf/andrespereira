@@ -1,0 +1,34 @@
+uuid: 452d557a-8a7c-4384-8eb1-0fcfd30c84a4
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.tags_courses_and_workshops_
+    - field.field.block_content.tags_courses_and_workshops_.body
+    - field.field.block_content.tags_courses_and_workshops_.field_tab
+  module:
+    - entity_reference_revisions
+    - text
+id: block_content.tags_courses_and_workshops_.default
+targetEntityType: block_content
+bundle: tags_courses_and_workshops_
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_tab:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  langcode: true

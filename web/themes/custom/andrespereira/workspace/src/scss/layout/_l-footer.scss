@@ -1,0 +1,49 @@
+#footer__paco {
+  .footer__paco--disclaimer-up {
+    background-color: $gold;
+    color: $black;
+  }
+  .paco__main {
+    &--subscription {
+      .paco__main--description {
+        color: $white;
+        font-size: 1.4rem;
+      }
+    }
+    &--items {
+      .menu .menu-item.menu-item--expanded span {
+        color: $white;
+        font-weight: 700;
+      }
+    }
+    .footer__paco {
+      &--submenu .menu .menu__items--item a {
+        color: $gray;
+      }
+    }
+    .paco__main--social .paco__main--title-social {
+      color: $white;
+    }
+  }
+
+  .menu__paco--disclaimer-down {
+    background-color: $gold;
+  }
+  .paco__main .paco__main--subscription a.paco__main--button {
+    background-color: $gold;
+    padding: 14px 58px;
+    // font-family: $Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+  }
+  .footer__paco--disclaimer-up p {
+    font-family: "Poppins";
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 24px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: $black;
+  }
+}

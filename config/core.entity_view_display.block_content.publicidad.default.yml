@@ -1,0 +1,38 @@
+uuid: e130e25b-f74f-4e0d-9de6-879b0b73d027
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.publicidad
+    - field.field.block_content.publicidad.field_bb_link
+    - field.field.block_content.publicidad.field_bp_imagen
+  module:
+    - link
+id: block_content.publicidad.default
+targetEntityType: block_content
+bundle: publicidad
+mode: default
+content:
+  field_bb_link:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_bp_imagen:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true

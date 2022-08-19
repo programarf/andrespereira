@@ -1,0 +1,91 @@
+uuid: 0aa75557-bab8-4775-ab6b-d683d126b87a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_group
+    - paragraphs.paragraphs_type.carrusel_specialties
+    - paragraphs.paragraphs_type.carrusel_specialties_group
+  module:
+    - entity_reference_revisions
+id: paragraph.carrusel_specialties.field_group
+field_name: field_group
+entity_type: paragraph
+bundle: carrusel_specialties
+label: Group
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      carrusel_specialties_group: carrusel_specialties_group
+    negate: 0
+    target_bundles_drag_drop:
+      banner_carousel:
+        weight: 22
+        enabled: false
+      block_add_views:
+        weight: 23
+        enabled: false
+      block_iconos:
+        weight: 24
+        enabled: false
+      block_logos:
+        weight: 25
+        enabled: false
+      block_switch_:
+        weight: 26
+        enabled: false
+      carrusel_specialties:
+        weight: 27
+        enabled: false
+      carrusel_specialties_group:
+        weight: 28
+        enabled: true
+      cic_carrusel_items:
+        weight: 29
+        enabled: false
+      half_item:
+        weight: 30
+        enabled: false
+      iconos:
+        weight: 31
+        enabled: false
+      image_banner:
+        weight: 32
+        enabled: false
+      isc_items_slider_complete:
+        weight: 33
+        enabled: false
+      item_social_media:
+        weight: 34
+        enabled: false
+      logos:
+        weight: 35
+        enabled: false
+      other_studies:
+        weight: 36
+        enabled: false
+      slider_other_studies:
+        weight: 37
+        enabled: false
+      slider_studies:
+        weight: 38
+        enabled: false
+      social_media:
+        weight: 39
+        enabled: false
+      specialties:
+        weight: 40
+        enabled: false
+      studies:
+        weight: 41
+        enabled: false
+      tabs_link:
+        weight: 42
+        enabled: false
+field_type: entity_reference_revisions

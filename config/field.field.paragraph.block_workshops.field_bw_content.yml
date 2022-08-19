@@ -1,0 +1,112 @@
+uuid: ae1f699e-fa78-405c-97cd-bae9d54123b5
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_bw_content
+    - paragraphs.paragraphs_type.block_workshops
+    - paragraphs.paragraphs_type.item_workshops
+  module:
+    - entity_reference_revisions
+id: paragraph.block_workshops.field_bw_content
+field_name: field_bw_content
+entity_type: paragraph
+bundle: block_workshops
+label: Content
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      item_workshops: item_workshops
+    negate: 0
+    target_bundles_drag_drop:
+      banner_carousel:
+        weight: 29
+        enabled: false
+      block_add_views:
+        weight: 30
+        enabled: false
+      block_course_and_workshops:
+        weight: 31
+        enabled: false
+      block_iconos:
+        weight: 32
+        enabled: false
+      block_logos:
+        weight: 33
+        enabled: false
+      block_switch_:
+        weight: 34
+        enabled: false
+      block_workshops:
+        weight: 35
+        enabled: false
+      card_modal_courses_and_workshops:
+        weight: 36
+        enabled: false
+      carrusel_specialties:
+        weight: 37
+        enabled: false
+      carrusel_specialties_group:
+        weight: 38
+        enabled: false
+      cic_carrusel_items:
+        weight: 39
+        enabled: false
+      group_objectives:
+        weight: 40
+        enabled: false
+      half_item:
+        weight: 41
+        enabled: false
+      iconos:
+        weight: 42
+        enabled: false
+      image_banner:
+        weight: 43
+        enabled: false
+      isc_items_slider_complete:
+        weight: 44
+        enabled: false
+      item_objectives_:
+        weight: 45
+        enabled: false
+      item_social_media:
+        weight: 46
+        enabled: false
+      item_workshops:
+        weight: 47
+        enabled: true
+      logos:
+        weight: 48
+        enabled: false
+      my_business_workshops:
+        weight: 49
+        enabled: false
+      other_studies:
+        weight: 50
+        enabled: false
+      slider_other_studies:
+        weight: 51
+        enabled: false
+      slider_studies:
+        weight: 52
+        enabled: false
+      social_media:
+        weight: 53
+        enabled: false
+      specialties:
+        weight: 54
+        enabled: false
+      studies:
+        weight: 55
+        enabled: false
+      tabs_link:
+        weight: 56
+        enabled: false
+field_type: entity_reference_revisions

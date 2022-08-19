@@ -1,0 +1,57 @@
+uuid: eb506ecd-5b7c-4600-8a95-f2f363e952f1
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.my_business_workshops.field_mbw_bg_imagen
+    - field.field.paragraph.my_business_workshops.field_mbw_body
+    - field.field.paragraph.my_business_workshops.field_mbw_content
+    - field.field.paragraph.my_business_workshops.field_mbw_id_video
+    - paragraphs.paragraphs_type.my_business_workshops
+  module:
+    - media_library
+    - paragraphs
+    - text
+id: paragraph.my_business_workshops.default
+targetEntityType: paragraph
+bundle: my_business_workshops
+mode: default
+content:
+  field_mbw_bg_imagen:
+    type: media_library_widget
+    weight: 0
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_mbw_body:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_mbw_content:
+    type: entity_reference_paragraphs
+    weight: 3
+    region: content
+    settings:
+      title: Párrafo
+      title_plural: Parráfos
+      edit_mode: closed
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: item_workshops
+    third_party_settings: {  }
+  field_mbw_id_video:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

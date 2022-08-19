@@ -1,0 +1,21 @@
+uuid: ba3c1e76-7654-4680-8e0f-28d1e90e6e1b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_mcw_body
+    - paragraphs.paragraphs_type.card_modal_courses_and_workshops
+  module:
+    - text
+id: paragraph.card_modal_courses_and_workshops.field_mcw_body
+field_name: field_mcw_body
+entity_type: paragraph
+bundle: card_modal_courses_and_workshops
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

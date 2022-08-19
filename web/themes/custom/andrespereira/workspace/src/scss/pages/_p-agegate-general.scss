@@ -1,0 +1,388 @@
+/* ageGate steps */
+
+* {
+  box-sizing: border-box;
+
+  &:before, &:after {
+    box-sizing: border-box;
+  }
+}
+
+#agv2 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  font-size: 16px !important;
+  font-family: Futura;
+  background-color: #ffffff;
+
+  .agv2__container {
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 0 4rem;
+    height: 100%;
+
+    &.black {
+      color: black;
+    }
+
+    &.white {
+      color: white;
+    }
+  }
+
+  .agv2__wrapper {
+    width: 100%;
+    padding: 2rem 1rem;
+    max-width: 547px;
+    margin: 0 auto;
+  }
+
+  .agv2__brand {
+    max-width: 350px;
+    margin: 0 auto;
+    width: 80%;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .agv2__p {
+    font-size: 1rem;
+
+    &.small {
+      font-size: 0.9rem;
+    }
+
+    &.bold {
+      font-weight: 500;
+    }
+  }
+
+  .agv2__input {
+    background: white;
+    color: black;
+    margin: 0.5rem;
+    border-style: none;
+    width: 100px;
+    height: 150px;
+    text-align: center;
+    font-size: 3rem;
+
+    &::placeholder {
+      color: black;
+      opacity: 1;
+    }
+  }
+
+  input[type="number"] {
+    appearance: textfield;
+  }
+
+  .agv2__checkbox {
+    display: grid;
+    grid-template-columns: min-content auto;
+    grid-gap: 0.5em;
+    font-size: 2rem;
+  }
+
+  .agv2__checkbox--disabled {
+    color: var(--disabled);
+  }
+
+  .agv2__checkbox {
+    .checkbox__control {
+      display: inline-grid;
+      width: 1em;
+      height: 1em;
+      border-radius: 50%;
+      background: #FFFFFF;
+      border: 5px solid white;
+
+      svg {
+        transition: transform 0.1s ease-in 25ms;
+        transform: scale(0);
+        transform-origin: bottom left;
+      }
+    }
+
+    .checkbox__input {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      > * {
+        grid-area: checkbox;
+      }
+
+      input {
+        opacity: 0;
+        width: 1em;
+        height: 1em;
+
+        &:focus + .checkbox__control {
+          box-shadow: 0 0 0 0.05em #fff, 0 0 0.15em 0.1em currentColor;
+        }
+
+        &:checked + .checkbox__control svg {
+          transform: scale(1);
+        }
+
+        &:disabled + .checkbox__control {
+          color: var(--disabled);
+        }
+      }
+    }
+  }
+
+  .agv2__label {
+    font-size: 1.6rem;
+    font-weight: 500;
+  }
+
+  .form-age {
+    margin: 2rem 0;
+  }
+
+  .form-age__content {
+    margin: 1rem 0;
+    position: relative;
+  }
+
+  .form-age__navigation {
+    display: flex;
+    justify-content: end;
+    position: absolute;
+    left: 0;
+    top: 45%;
+    width: 20%;
+  }
+
+  .agegate-legal {
+    margin: 3rem 0 1rem;
+    text-align: left;
+  }
+
+  .agegate-legal__row {
+    margin: 1rem 0;
+  }
+
+  .agegate__btns {
+    text-align: center;
+    margin: 2rem 0;
+  }
+
+  .agegate__btn.main {
+    width: 200px;
+    height: 64px;
+    background: #FFFFFF;
+    border: 1px solid #877B52;
+    border-radius: 4px;
+    display: inline-block;
+    text-align: center;
+    line-height: 3.7rem;
+    font-size: 1.7rem;
+    color: black;
+    font-weight: 500;
+  }
+
+  .form-age__back {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: #FFFFFF;
+    border-radius: 50%;
+  }
+}
+
+#age-gate-01 .error-year {
+  font-weight: bold;
+  color: red;
+}
+
+#age-gate-02 .error-year, #age-gate-03 .error-year {
+  font-weight: bold;
+  color: white;
+}
+
+/* animation agegate */
+/* #age-gate-01 {
+  transition-delay: 0.1s;
+}
+
+#age-gate-02 {
+  transition-delay: 0s;
+}
+
+#age-gate-03 {
+  transition-delay: 0.8s;
+} */
+
+.buttons {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  z-index: -1;
+
+  button {
+    border: none;
+    background: rgba(0, 0, 0, 0.02);
+    border-radius: 5px;
+    cursor: pointer;
+
+    &:hover {
+      background: rgba(0, 0, 0, 0.04);
+    }
+  }
+
+  #top {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+  }
+
+  #bottom {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+  }
+
+  #left {
+    position: absolute;
+    top: 50%;
+    left: 0px;
+  }
+
+  #right {
+    position: absolute;
+    top: 50%;
+    right: 0;
+  }
+}
+
+.top-layer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: -100%;
+  left: 0;
+  bottom: auto;
+  right: auto;
+  transition: all 0.9s cubic-bezier(0.6, 0.05, 0.4, 1);
+
+  &.active {
+    top: 100%;
+  }
+}
+
+.top-layer--2 {
+  transition-delay: 0.6s;
+}
+
+.top-layer--3 {
+  transition-delay: 0.4s;
+}
+
+.top-layer--4 {
+  transition-delay: 0.2s;
+}
+
+.top-layer--5 {
+  transition-delay: 0.1s;
+}
+
+.bottom-layer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 100%;
+  left: 0;
+  bottom: auto;
+  right: auto;
+  transition: all 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
+
+  &.active {
+    top: -100%;
+  }
+}
+
+.bottom-layer--2 {
+  transition-delay: 0.12s;
+}
+
+.bottom-layer--3 {
+  transition-delay: 0.4s;
+}
+
+.left-layer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: auto;
+  left: -100%;
+  bottom: auto;
+  right: auto;
+  transition: all 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
+
+  &.active {
+    left: 0;
+  }
+}
+
+.left-layer--2 {
+  transition-delay: 0.3s;
+}
+
+.left-layer--3 {
+  transition-delay: 0.12s;
+}
+
+.left-layer--4 {
+  transition-delay: 0.08s;
+}
+
+.right-layer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: auto;
+  left: -100%;
+  bottom: auto;
+  right: auto;
+  transition: all 0.9s cubic-bezier(0.645, 0.045, 0.355, 1);
+
+  &.active {
+    left: 0;
+  }
+}
+
+.right-layer--2 {
+  transition-delay: 0.3s;
+}
+
+.right-layer--3 {
+  transition-delay: 0.2s;
+}
+
+/* animation agegate */
+/* media querys */
+@media (max-width: 420px) {
+  #agv2 .agv2__input {
+    width: 60px;
+    height: 100px;
+    font-size: 2.5rem;
+  }
+}
+
+/* media querys */
+
+/*# sourceMappingURL=agegate.css.map */

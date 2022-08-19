@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1253.029" height="1060.754" viewBox="0 0 1253.029 1060.754">
+  <defs>
+    <filter id="Rectángulo_15" x="0" y="0" width="1253.029" height="1060.754" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="40" result="blur"/>
+      <feFlood flood-color="#d5af43" flood-opacity="0.122"/>
+      <feComposite operator="in" in2="blur"/>
+    </filter>
+  </defs>
+  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Rectángulo_15)">
+    <rect id="Rectángulo_15-2" data-name="Rectángulo 15" width="1013.029" height="820.754" transform="translate(120 120)" fill="#fff"/>
+  </g>
+</svg>

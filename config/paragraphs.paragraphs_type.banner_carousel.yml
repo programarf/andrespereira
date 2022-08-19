@@ -1,0 +1,10 @@
+uuid: 9ebaf08b-2759-4693-a4e1-fac9874ed9e5
+langcode: es
+status: true
+dependencies: {  }
+id: banner_carousel
+label: 'Banner Carousel'
+icon_uuid: null
+icon_default: null
+description: 'Carrusel de banners con imagen'
+behavior_plugins: {  }

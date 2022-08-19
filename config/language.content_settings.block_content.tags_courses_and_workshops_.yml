@@ -1,0 +1,11 @@
+uuid: a5ff8906-6431-40f2-9eba-c3186f3277e3
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.tags_courses_and_workshops_
+id: block_content.tags_courses_and_workshops_
+target_entity_type_id: block_content
+target_bundle: tags_courses_and_workshops_
+default_langcode: site_default
+language_alterable: false

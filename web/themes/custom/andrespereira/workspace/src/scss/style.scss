@@ -1,0 +1,29 @@
+/**
+ * theme.scss v!
+ *
+ * These are the styles of theme .
+ *
+ * Index
+ * - settings
+ * - Bootstrap
+ * - Base
+ * - Components
+ * - Layouts
+ * - Pages 
+
+ */
+//@charset "UTF-8";
+// -- Bootstrap -- //
+@import "~bootstrap/scss/bootstrap";
+@import "~flickity/dist/flickity.min.css";
+// -- Base -- //
+@import "base/base";
+// -- Components -- //
+@import "components/component.scss";
+// -- Layouts -- //
+@import "layout/layout";
+// -- Pages -- //
+@import "pages/page";
+
+
+

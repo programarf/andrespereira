@@ -1,0 +1,122 @@
+.paragraph--type--studies {
+  position: relative;
+  &--imagen {
+    position: relative;
+    &::before {
+      @include pseudo();
+      background: linear-gradient(90deg, transparent, #000000 40%);
+      width: 100%;
+      height: 100%;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      z-index: 1;
+      @include from (l) {
+        width: 80%;  
+      }
+    }
+    img {
+      width: 100%;
+      height: 40rem;
+      object-fit: cover;
+      @include from (l) {
+        height: 75rem;
+      }
+    }
+  }
+  &--items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    padding: 0 0 0 7%;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 90%;
+    z-index: 1;
+    @include from (l) {
+      width: 50%;
+    }
+    .field {
+      &--name-field-st-title {
+        color: $white;
+        font-size: 2rem;
+        display: block;
+        margin: 0 0 1rem;
+        font-family: $RobotoB;
+        @include from (l) {
+          margin: 0 0 1.5rem;
+          font-size: 3.8rem;
+        }
+      }
+       &--name-field-st-body {
+        display: block;
+        @include from (l) {
+          width: 40rem;
+        }
+        p {
+          color: $white;
+          font-size: 1.8rem;
+          font-family: $RobotoM;
+          @include from (l) {
+            font-size: 3rem; 
+          }
+        }
+      }
+    }  
+    .paragraph--type--studies--card {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      min-height: 18rem;
+      @include from (l) {
+        min-height: 28rem;
+        background-image: url('../assets/images/bg/bg-rectangle-orange.svg');
+        background-size: 110%;
+        background-position: right center;
+      }
+      @include from (xlg) {
+        max-width: 50%;
+      }
+      .field {
+        &--name-field-st-media {
+          padding: 0 5% 0 0;
+        }
+        &--name-field-items {
+          padding: 0 15% 0 0;
+          width: 100%;
+          .field__item {
+            width: 100%;
+            p {
+              color: $white;
+              font-family: $RobotoB;
+              font-size: 1.6rem;
+              @include from (l) {
+                font-size: 2rem; 
+              }
+            }
+            span {
+              font-family: $RobotoR;
+              font-style: italic;
+              &.text-yellow {
+                color: $gold;
+                font-family: $RobotoB;
+                font-style: normal;
+              }
+            }
+          }
+        }
+      }
+      .flickity-page-dots {
+        position: absolute;
+        bottom: -18rem;
+        left: -10rem;
+        @include from (l) {
+           bottom: -30rem; 
+        }
+      }
+    }
+  }
+}

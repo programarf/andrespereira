@@ -1,0 +1,10 @@
+uuid: 79552f29-32d9-4527-b560-00bb2037c8b2
+langcode: es
+status: true
+dependencies: {  }
+id: block_logos
+label: 'Block logos'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

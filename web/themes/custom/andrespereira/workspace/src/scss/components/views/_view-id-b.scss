@@ -1,0 +1,164 @@
+.view-b {
+  .row > * {
+    padding: 0;
+    margin: 0;
+  }
+  .view-content {
+    padding: 3rem;
+    @include from (l) {
+      padding: 10% 2.5% 0 10%;
+    }
+   .views-row {
+     position: relative;
+     .views-field {
+        &-field-tags {
+         position: absolute;
+         top: 2rem;
+         left: 1.4rem;
+         a {
+           background-color: $black;
+           border: .2rem solid $goldlabel;
+           border-radius: .5rem;
+           color: $goldlabel;
+           font-family: $RobotoM;
+           font-size: 1.4rem;
+           padding: 0.5rem 1rem;
+         }
+        }
+        &-nothing {
+          .blog__summary {
+            display: block;
+            margin: 0 0 3rem;
+            &--imagen {
+              img {
+                border-radius: .7rem;
+                height: 30rem;
+                object-fit: cover;
+                width: 100%;
+                @include from (l) {
+                  height: 60rem;
+                }
+              }
+            }
+            &--info {
+              display: flex;
+              margin: 3rem 0;
+              .blog__summary {
+                &-author {
+                  a, span {
+                    color: $white;
+                    font-family: $RobotoR;
+                    padding: 0 0 0 4rem;
+                    position: relative;
+                    &::after {
+                      @include pseudo();
+                      background-image: url('../assets/images/icons/icon-user.svg');
+                      background-position: center;
+                      background-repeat: no-repeat;
+                      background-size: contain;
+                      top: 0;
+                      left: 1.5rem;
+                      height: 1.6rem;
+                      width: 1.6rem;
+                    }
+                  }
+                }
+                &--date {
+                  color: $white;
+                  font-family: $RobotoR;
+                  padding: 0 0 0 4rem;
+                  position: relative;
+                  &::after {
+                    @include pseudo();
+                    background-image: url('../assets/images/icons/icon-calendar.svg');
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    top: 0;
+                    left: 1.5rem;
+                    height: 1.6rem;
+                    width: 1.6rem;
+                  }
+                }
+              }
+            }
+            &--title {
+              a {
+                color: $goldlabel;
+                font-family: $RobotoM;
+                font-size: 2rem;
+                line-height: 1.2;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical;
+                @include from (l) {
+                  font-size: 4rem;  
+                }
+              }
+            }
+            &--body {
+              display: block;
+              margin: 2rem 0 5rem;
+              p {
+                color: $white;
+                font-size: 1.8rem;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 4;
+                -webkit-box-orient: vertical;
+              }
+            }
+            &--link {
+              display: block;
+              max-width: 25rem;
+              a {
+                @extend %button;
+              }
+            }
+          }
+        }
+      }
+    } 
+  }
+  .pagination {
+    padding: 3rem 2rem;
+    @include from (l) {
+      padding: 6% 2.5% 6% 10%;
+    }
+    .page-item {
+      margin: 0 .5rem;
+      a {
+        background-color: transparent;
+        border: .2rem solid $goldlabel;
+        border-radius: .5rem;
+        color: $goldlabel;
+        font-family: $RobotoM;
+        font-size: 1.6rem;
+      }
+      &.active {
+        .page-link {
+          background-color: $goldlabel;
+          border-color: $white;
+          color: $white;
+          border: .2rem solid $white;
+          border-radius: .5rem;
+          font-family: $RobotoM;
+          font-size: 1.6rem;
+        }
+      }
+    }
+    .pager__item--next {
+      a {
+        background-color: transparent;
+        border: .2rem solid $goldlabel;
+        border-radius: .5rem;
+        color: $goldlabel;
+        font-family: $RobotoM;
+        font-size: 1.6rem;
+      }
+    }
+  }
+}

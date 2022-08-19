@@ -1,0 +1,7 @@
+uuid: 438dbcba-75de-4c41-be53-d7ed45df2b03
+langcode: es
+status: true
+dependencies: {  }
+id: classy_paragraphs_carrusel
+label: 'Carrusel screen all'
+classes: variant__screen--all

@@ -1,0 +1,40 @@
+uuid: 1ebfa768-3a27-4fdb-98dd-031211fa7d5e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.current_news_answers.body
+    - field.field.node.current_news_answers.field_image
+    - node.type.current_news_answers
+  module:
+    - image
+    - text
+    - user
+id: node.current_news_answers.default
+targetEntityType: node
+bundle: current_news_answers
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_image:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

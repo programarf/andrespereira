@@ -1,0 +1,105 @@
+uuid: ac1dadc6-7573-4b82-959c-6c7a7c456fbd
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.block_workshops.field_bw_bg
+    - field.field.paragraph.block_workshops.field_bw_content
+    - field.field.paragraph.block_workshops.field_bw_video_id
+    - paragraphs.paragraphs_type.block_workshops
+  module:
+    - entity_reference_revisions
+    - field_group
+    - media
+third_party_settings:
+  field_group:
+    group_div_bg:
+      children:
+        - field_bw_bg
+        - field_bw_video_id
+        - group_bw_video_workshops
+      label: 'Div bg'
+      parent_name: ''
+      region: content
+      weight: 0
+      format_type: html_element
+      format_settings:
+        classes: paragraph--type--block-workshops--bg
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+    group_div_content:
+      children:
+        - field_bw_content
+      label: 'Div content'
+      parent_name: ''
+      region: content
+      weight: 1
+      format_type: html_element
+      format_settings:
+        classes: paragraph--type--block-workshops--content
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+    group_bw_video_workshops:
+      children: {  }
+      label: 'video  workshops '
+      parent_name: group_div_bg
+      region: content
+      weight: 3
+      format_type: html_element
+      format_settings:
+        classes: playerap
+        show_empty_fields: true
+        id: videoworkshops
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+id: paragraph.block_workshops.default
+targetEntityType: paragraph
+bundle: block_workshops
+mode: default
+content:
+  field_bw_bg:
+    type: media_thumbnail
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_bw_content:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_bw_video_id:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden: {  }

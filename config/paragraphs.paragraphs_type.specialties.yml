@@ -1,0 +1,10 @@
+uuid: df9e8e99-07ed-4050-b94d-3b420dae41c0
+langcode: es
+status: true
+dependencies: {  }
+id: specialties
+label: 'Block vista'
+icon_uuid: null
+icon_default: null
+description: 'All the Block vista'
+behavior_plugins: {  }

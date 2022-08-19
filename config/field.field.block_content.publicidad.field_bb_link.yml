@@ -1,0 +1,23 @@
+uuid: 9ba86caf-6b1f-4966-b08d-6849031b6392
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.publicidad
+    - field.storage.block_content.field_bb_link
+  module:
+    - link
+id: block_content.publicidad.field_bb_link
+field_name: field_bb_link
+entity_type: block_content
+bundle: publicidad
+label: Link
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

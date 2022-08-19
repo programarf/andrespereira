@@ -1,0 +1,10 @@
+uuid: 2793edb5-0716-4c4c-97cb-91dd065f8a73
+langcode: es
+status: true
+dependencies: {  }
+id: block_workshops
+label: 'Block workshops'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

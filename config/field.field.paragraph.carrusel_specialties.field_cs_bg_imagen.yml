@@ -1,0 +1,29 @@
+uuid: 0e7ef53e-13aa-4e29-9ad5-13543e03f80a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_cs_bg_imagen
+    - media.type.image
+    - paragraphs.paragraphs_type.carrusel_specialties
+id: paragraph.carrusel_specialties.field_cs_bg_imagen
+field_name: field_cs_bg_imagen
+entity_type: paragraph
+bundle: carrusel_specialties
+label: 'Bg imagen'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

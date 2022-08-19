@@ -1,0 +1,21 @@
+uuid: 5d053f3a-1e2a-4b0f-8dd6-bd489a0e411b
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_caw_watermark
+field_name: field_caw_watermark
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

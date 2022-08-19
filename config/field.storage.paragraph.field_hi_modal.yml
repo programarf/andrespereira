@@ -1,0 +1,19 @@
+uuid: c92afb2b-768b-46a2-a33e-e7e5ce1e16a2
+langcode: es
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - text
+id: paragraph.field_hi_modal
+field_name: field_hi_modal
+entity_type: paragraph
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

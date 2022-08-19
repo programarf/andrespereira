@@ -1,0 +1,21 @@
+uuid: 639fdc26-8509-4ae9-9271-546a4ece891b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_ib_title
+    - paragraphs.paragraphs_type.image_banner
+  module:
+    - text
+id: paragraph.image_banner.field_ib_title
+field_name: field_ib_title
+entity_type: paragraph
+bundle: image_banner
+label: Title
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,10 @@
+uuid: dcce422f-4a73-4ae2-ab48-19debe212f1c
+langcode: es
+status: true
+dependencies: {  }
+id: isc_items_slider_complete
+label: 'Items slider complete'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

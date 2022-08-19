@@ -1,0 +1,23 @@
+uuid: 1a88046d-5003-4637-b1d5-71d745aa8a03
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_class_custom
+    - paragraphs.paragraphs_type.block_course_and_workshops
+id: paragraph.block_course_and_workshops.field_class_custom
+field_name: field_class_custom
+entity_type: paragraph
+bundle: block_course_and_workshops
+label: 'Class custom'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:classy_paragraphs_style'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: entity_reference

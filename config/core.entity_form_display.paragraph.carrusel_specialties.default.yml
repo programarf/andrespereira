@@ -1,0 +1,60 @@
+uuid: e5a820b8-e591-4635-8bcf-7cb809a993f0
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.carrusel_specialties.field_cr_variant_class
+    - field.field.paragraph.carrusel_specialties.field_cs_bg_imagen
+    - field.field.paragraph.carrusel_specialties.field_cs_title
+    - field.field.paragraph.carrusel_specialties.field_group
+    - paragraphs.paragraphs_type.carrusel_specialties
+  module:
+    - media_library
+    - paragraphs
+id: paragraph.carrusel_specialties.default
+targetEntityType: paragraph
+bundle: carrusel_specialties
+mode: default
+content:
+  field_cr_variant_class:
+    type: options_select
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_cs_bg_imagen:
+    type: media_library_widget
+    weight: 1
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_cs_title:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_group:
+    type: paragraphs
+    weight: 3
+    region: content
+    settings:
+      title: Párrafo
+      title_plural: Parráfos
+      edit_mode: open
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+      features:
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

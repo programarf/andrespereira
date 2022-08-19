@@ -1,0 +1,23 @@
+uuid: 3f1ab6a2-d9d6-4185-9d48-d920e8768348
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_hi_cta
+    - paragraphs.paragraphs_type.half_item
+  module:
+    - link
+id: paragraph.half_item.field_hi_cta
+field_name: field_hi_cta
+entity_type: paragraph
+bundle: half_item
+label: 'Link CTA'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

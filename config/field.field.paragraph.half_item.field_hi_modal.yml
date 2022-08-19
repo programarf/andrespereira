@@ -1,0 +1,21 @@
+uuid: dbba932c-6f6f-4e72-a033-b4e5bdbc49b7
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_hi_modal
+    - paragraphs.paragraphs_type.half_item
+  module:
+    - text
+id: paragraph.half_item.field_hi_modal
+field_name: field_hi_modal
+entity_type: paragraph
+bundle: half_item
+label: Modal
+description: 'Este campo se usa cuando necesitamos un modal. '
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

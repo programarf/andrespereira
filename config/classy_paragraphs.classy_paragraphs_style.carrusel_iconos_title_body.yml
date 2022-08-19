@@ -1,0 +1,7 @@
+uuid: 72b1b434-5184-4d33-84a8-bcb4b7c86265
+langcode: es
+status: true
+dependencies: {  }
+id: carrusel_iconos_title_body
+label: 'Carrusel iconos title body'
+classes: variant__carrusel--complete

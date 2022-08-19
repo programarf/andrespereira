@@ -1,0 +1,24 @@
+uuid: 4e19e734-375a-4e3a-8c73-b3a96f543db6
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.group_objectives.field_content
+    - paragraphs.paragraphs_type.group_objectives
+  module:
+    - entity_reference_revisions
+id: paragraph.group_objectives.default
+targetEntityType: paragraph
+bundle: group_objectives
+mode: default
+content:
+  field_content:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

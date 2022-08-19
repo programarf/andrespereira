@@ -1,0 +1,21 @@
+uuid: 1391243c-d5ce-4ea8-95f7-ea68a3b6063c
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_mbw_body
+    - paragraphs.paragraphs_type.my_business_workshops
+  module:
+    - text
+id: paragraph.my_business_workshops.field_mbw_body
+field_name: field_mbw_body
+entity_type: paragraph
+bundle: my_business_workshops
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

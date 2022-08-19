@@ -1,0 +1,30 @@
+uuid: ea54d69f-e8cb-482e-9595-5fd52d3e6017
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:f51c03e6-fc50-4190-816e-d0e4583db9a8'
+  module:
+    - block_content
+    - system
+  theme:
+    - andrespereira
+id: anclaheader
+theme: andrespereira
+region: featured_bottom_first
+weight: -12
+provider: null
+plugin: 'block_content:f51c03e6-fc50-4190-816e-d0e4583db9a8'
+settings:
+  id: 'block_content:f51c03e6-fc50-4190-816e-d0e4583db9a8'
+  label: 'Ancla header'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/especialidades/*'

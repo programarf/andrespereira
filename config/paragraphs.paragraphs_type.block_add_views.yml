@@ -1,0 +1,10 @@
+uuid: 7bc84737-9558-49bd-8d65-63d1fd1176d2
+langcode: es
+status: true
+dependencies: {  }
+id: block_add_views
+label: 'Block add views'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

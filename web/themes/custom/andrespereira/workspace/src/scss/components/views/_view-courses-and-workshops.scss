@@ -1,0 +1,113 @@
+.view-courses-and-workshops {
+  .view-content {
+    width: 100%;
+    @include from (l) {
+      width: 50%;
+    }
+    .views-row {
+      .card_curses {
+        &--content {
+          padding: 0 3.5rem;
+          @include  from (l) {
+            padding: initial;
+          }
+          .card_curses {
+            &--tilte {
+              color: $goldlabel;
+              display: block;
+              font-family: $RobotoM;
+              font-size: 2.2rem;
+              margin: 2rem 4rem 4rem 3rem;
+              padding-left: 7rem;
+              @include from (l) {
+                padding-left: 9rem;
+                margin: 0 0 3rem;
+                font-size: 2.8rem;
+                width: auto;
+              }
+            }
+            &--body {
+              height: 25rem;
+              overflow: scroll;
+              @include from (l) {
+                height: initial;
+                overflow: initial;
+              }
+              img {
+                height: 8rem;
+                width: 8rem;
+                position: absolute;
+                top: 0;
+              }
+              p {
+                color: $white;
+                display: block;
+                font-family: $RobotoR;
+                font-size: 1.4rem;
+                line-height: 1.6;
+                @include from (l) {
+                  font-size: 1.6rem;
+                  padding-left: 9rem;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                  display: -webkit-box;
+                  -webkit-line-clamp: 4;
+                  -webkit-box-orient: vertical;
+                }
+                &:first-child {    
+                  height: 8rem;
+                  width: 8rem;
+                  position: absolute;
+                  margin: initial;
+                  padding: initial;
+                  top: 0;
+                  img {
+                    height: 8rem;
+                    width: 8rem;
+                    position: absolute;
+                    top: 0;
+                  }
+                }
+              }
+            }
+            &--link {
+              @include from (l) {
+                width: 30rem;
+                padding-left: 9rem;
+              }
+              a {
+                @extend %button;
+              }
+            }
+          }
+        }
+      }
+    }
+    .flickity-prev-next-button {
+      top: initial;
+      bottom: -11.5rem;
+      &.next {
+        left: 10rem;
+        right: initial;
+        @include from (l) {
+          left: initial;
+          right: 4rem;
+        }
+      }
+      &.previous {
+        left: 3.5rem;
+        @include from (l) {
+          left: initial;
+          right: 12.5rem;
+        }
+      }
+    }
+    .flickity-page-dots {
+      padding: 0 3.5rem;
+      @include from (l) {
+        padding: initial;
+        padding-left: 9rem; 
+      }
+    }
+  }
+}

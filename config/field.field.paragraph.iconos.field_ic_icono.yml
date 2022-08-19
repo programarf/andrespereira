@@ -1,0 +1,38 @@
+uuid: 60de18a2-9b6e-4119-af9d-e36760baed6e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_ic_icono
+    - paragraphs.paragraphs_type.iconos
+  module:
+    - image
+id: paragraph.iconos.field_ic_icono
+field_name: field_ic_icono
+entity_type: paragraph
+bundle: iconos
+label: Icono
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg svg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: true
+  title_field_required: true
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+field_type: image

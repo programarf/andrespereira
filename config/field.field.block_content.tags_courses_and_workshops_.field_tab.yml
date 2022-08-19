@@ -1,0 +1,94 @@
+uuid: 83303da7-c474-45a1-9c8d-cca0cfd28287
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.tags_courses_and_workshops_
+    - field.storage.block_content.field_tab
+    - paragraphs.paragraphs_type.tabs_link
+  module:
+    - entity_reference_revisions
+id: block_content.tags_courses_and_workshops_.field_tab
+field_name: field_tab
+entity_type: block_content
+bundle: tags_courses_and_workshops_
+label: Tab
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      tabs_link: tabs_link
+    negate: 0
+    target_bundles_drag_drop:
+      banner_carousel:
+        weight: 23
+        enabled: false
+      block_add_views:
+        weight: 24
+        enabled: false
+      block_course_and_workshops:
+        weight: 25
+        enabled: false
+      block_iconos:
+        weight: 26
+        enabled: false
+      block_logos:
+        weight: 27
+        enabled: false
+      block_switch_:
+        weight: 28
+        enabled: false
+      carrusel_specialties:
+        weight: 29
+        enabled: false
+      carrusel_specialties_group:
+        weight: 30
+        enabled: false
+      cic_carrusel_items:
+        weight: 31
+        enabled: false
+      half_item:
+        weight: 32
+        enabled: false
+      iconos:
+        weight: 33
+        enabled: false
+      image_banner:
+        weight: 34
+        enabled: false
+      isc_items_slider_complete:
+        weight: 35
+        enabled: false
+      item_social_media:
+        weight: 36
+        enabled: false
+      logos:
+        weight: 37
+        enabled: false
+      other_studies:
+        weight: 38
+        enabled: false
+      slider_other_studies:
+        weight: 39
+        enabled: false
+      slider_studies:
+        weight: 40
+        enabled: false
+      social_media:
+        weight: 41
+        enabled: false
+      specialties:
+        weight: 42
+        enabled: false
+      studies:
+        weight: 43
+        enabled: false
+      tabs_link:
+        weight: 44
+        enabled: true
+field_type: entity_reference_revisions

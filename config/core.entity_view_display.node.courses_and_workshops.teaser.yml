@@ -1,0 +1,43 @@
+uuid: 7fcee177-3630-4a59-bf94-c287a3229d27
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.courses_and_workshops.body
+    - field.field.node.courses_and_workshops.field_caw_content
+    - field.field.node.courses_and_workshops.field_caw_image_banner
+    - field.field.node.courses_and_workshops.field_caw_watermark
+    - field.field.node.courses_and_workshops.field_image
+    - field.field.node.courses_and_workshops.field_menu
+    - field.field.node.courses_and_workshops.field_texto_caw_banner
+    - node.type.courses_and_workshops
+  module:
+    - text
+    - user
+id: node.courses_and_workshops.teaser
+targetEntityType: node
+bundle: courses_and_workshops
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_caw_content: true
+  field_caw_image_banner: true
+  field_caw_watermark: true
+  field_image: true
+  field_menu: true
+  field_texto_caw_banner: true
+  langcode: true

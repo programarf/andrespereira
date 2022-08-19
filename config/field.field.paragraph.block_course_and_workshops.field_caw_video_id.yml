@@ -1,0 +1,19 @@
+uuid: 5de0b173-1335-431a-8abf-b11ce635b289
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_caw_video_id
+    - paragraphs.paragraphs_type.block_course_and_workshops
+id: paragraph.block_course_and_workshops.field_caw_video_id
+field_name: field_caw_video_id
+entity_type: paragraph
+bundle: block_course_and_workshops
+label: 'Video Id'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,19 @@
+uuid: bb02ec65-bb88-4144-9fa7-402e9c56882f
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_av_info
+    - paragraphs.paragraphs_type.block_add_views
+id: paragraph.block_add_views.field_av_info
+field_name: field_av_info
+entity_type: paragraph
+bundle: block_add_views
+label: Info
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,11 @@
+uuid: fb255ce9-06bb-4e0f-a463-5fdea51ab02f
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.current_news_answers
+id: node.current_news_answers
+target_entity_type_id: node
+target_bundle: current_news_answers
+default_langcode: site_default
+language_alterable: false

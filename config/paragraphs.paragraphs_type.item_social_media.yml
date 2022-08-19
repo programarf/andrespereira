@@ -1,0 +1,10 @@
+uuid: 404bff84-a651-46a4-9cff-af698426d213
+langcode: es
+status: true
+dependencies: {  }
+id: item_social_media
+label: 'Item social media'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

@@ -1,0 +1,21 @@
+uuid: 094e3e32-7ee4-41a4-872b-74641867ce6b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_ios_modal
+    - paragraphs.paragraphs_type.slider_other_studies
+  module:
+    - text
+id: paragraph.slider_other_studies.field_ios_modal
+field_name: field_ios_modal
+entity_type: paragraph
+bundle: slider_other_studies
+label: Modal
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

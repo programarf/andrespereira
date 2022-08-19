@@ -1,0 +1,54 @@
+uuid: cc774aa2-3303-4de9-a089-d31345315a1b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.item_workshops.field_iw_body
+    - field.field.paragraph.item_workshops.field_iw_cta
+    - field.field.paragraph.item_workshops.field_iw_icono
+    - field.field.paragraph.item_workshops.field_iw_modal
+    - paragraphs.paragraphs_type.item_workshops
+  module:
+    - link
+    - text
+id: paragraph.item_workshops.default
+targetEntityType: paragraph
+bundle: item_workshops
+mode: default
+content:
+  field_iw_body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_iw_cta:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_iw_icono:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_iw_modal:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+hidden: {  }

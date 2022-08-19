@@ -1,0 +1,29 @@
+uuid: 3cfe2534-a112-4ec5-b7c3-40af3dd69563
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_os_support
+    - media.type.image
+    - paragraphs.paragraphs_type.other_studies
+id: paragraph.other_studies.field_os_support
+field_name: field_os_support
+entity_type: paragraph
+bundle: other_studies
+label: Support
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

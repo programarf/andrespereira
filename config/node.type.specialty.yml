@@ -1,0 +1,18 @@
+uuid: 7f5512a4-c415-4f35-a5aa-2712020a1801
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Specialty
+type: specialty
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true
